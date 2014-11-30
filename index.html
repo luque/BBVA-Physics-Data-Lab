@@ -451,12 +451,12 @@ function addStaticBox(size, position, rotation, spec) {
                 var selectedBody = bodys[selectedMesh.name].body;
                 var metadata = selectedMesh.userData;
                 document.getElementById("sphereInfo").innerHTML =
-                    "date: " + metadata.date + "<br/>" +
-                    "category: " + metadata.category + "<br/>" +
-                    "payments: " + metadata.payments + "<br/>" +
-                    "avg: " + metadata.avg + "<br/>" +
-                    "gender: " + metadata.gender + "<br/>" +
-                    "age: " + metadata.age;
+                    "Date: " + metadata.date + "<br/>" +
+                    "Category: " + metadata.category + "<br/>" +
+                    "Payments: " + metadata.payments + "<br/>" +
+                    "Avg payment: " + metadata.avg + "<br/>" +
+                    "Gender: " + genderAsString(metadata.gender) + "<br/>" +
+                    "Age: " + ageAsString(metadata.age);
                 //selectedBody.resetPosition(selectedBody.position.x, 200, selectedBody.position.z);
                 previousSelectedMeshMaterial = selectedMesh.material;
                 selectedMesh.material = selectedMesh.material.clone();
@@ -478,7 +478,9 @@ function addStaticBox(size, position, rotation, spec) {
         } else {
             document.getElementById("sphereInfo").innerHTML = "";            
             document.getElementById("inspectorBtn").className = "";
-            selectedMesh.material = previousSelectedMeshMaterial;
+            if (selectedMesh) {
+                selectedMesh.material = previousSelectedMeshMaterial;
+            }
         }
     }
 
@@ -493,6 +495,30 @@ function addStaticBox(size, position, rotation, spec) {
         config[4] = all & ~group2; // all except group2
         var filter = new OIMO.Body({size:[5, 100, 390], pos:[0,40,0], rot:[0,0,0], world:world, config:config});
         addStaticBox([10, 400, 1000], [0,200,0], [0,0,0], true);            
+    }
+
+    function genderAsString(gender) {
+        var genders = {
+            'M': 'male',
+            'F': 'female',
+            'E': 'enterprise',
+            'U': 'unknown'
+        };
+        return genders[gender];
+    }
+
+    function ageAsString(age) {
+        var ages = {
+            '0': '<= 18',
+            '1': '19 - 25',
+            '2': '26 - 35',
+            '3': '36 - 45',
+            '4': '46 - 55',
+            '5': '56 - 65',
+            '6': '> 66',
+            'U': 'unknown'
+        };
+        return ages[age];    
     }
 
 </script>
