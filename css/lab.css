@@ -1,0 +1,11 @@
+* {  margin: 0; padding: 0; border: 0;}
+body{ background-color: #3D4143; overflow: hidden; color:#cccccc; font-family:Consolas, 'ConsolasRegular', 'Courier New', monospace;; font-size: 11px;}
+
+#dayInfo {
+    position: absolute;
+    left:10px;
+    top:200px;
+    width: 400px;
+    height: 400px;
+    font-size: 3em;
+}
