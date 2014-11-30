@@ -67,13 +67,20 @@
 
     // Dataset vars
     var textureColors = {
-        'sph.mx_barsandrestaurants': '#3884AA',
-        'sph.mx_services': '#AA6538',
-        'sph.mx_food': '#66FF00'
+        'sph.mx_barsandrestaurants': '#81c16a',
+        'sph.mx_services': '#67b0b6',
+        'sph.mx_food': '#d66f6c',
+        'sph.mx_office': '#c0a0e0',
+        'sph.mx_car': '#fa842c',
+        'sph.mx_auto':'#fb2d22',
+        'sph.mx_travel': '#ebef4e',
+        'sph.mx_sport': '#2c66a4',
+        'sph.mx_beauty': '#ecc82c',
+        'sph.mx_health':'#fffeef'
     };
     var paymentsPerSphere = 50;
-    var paymentBucket = 150;
-    var radioPerPaymentBucket = 10;
+    var paymentBucket = 500;
+    var radioPerPaymentBucket = 20;
     var yGapBetweenDays = 100;
     var daysOfMonth = [
         30, // 0 -> 11/2013
@@ -163,6 +170,15 @@
             mats['sph.mx_barsandrestaurants'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_barsandrestaurants'), name:'sph.mx_barsandrestaurants' } );
             mats['sph.mx_services'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_services'), name:'sph.mx_services' } );
             mats['sph.mx_food'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_food'), name:'sph.mx_food' } );            
+	    mats['sph.mx_office'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_office'), name:'sph.mx_office' } );            
+            mats['sph.mx_car'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_car'), name:'sph.mx_car' } );            
+	    mats['sph.mx_auto'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_auto'), name:'sph.mx_auto' } );            
+	    mats['sph.mx_travel'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_travel'), name:'sph.mx_travel' } );            
+	    mats['sph.mx_sport'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_sport'), name:'sph.mx_sport' } );            
+	    mats['sph.mx_beauty'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_beauty'), name:'sph.mx_beauty' } );            
+	    mats['sph.mx_health'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_health'), name:'sph.mx_health' } );            
+
+
             mats['box'] = new THREE.MeshPhongMaterial( { map: basicTexture(1), name:'box' } );
             mats['filter'] = new THREE.MeshLambertMaterial( { color: 0x3D4143, transparent:true, opacity:0.6 } );            
             mats['ground'] = new THREE.MeshBasicMaterial( { color:debugColor, wireframe:true, transparent:true, opacity:0, fog: false, depthTest: false, depthWrite: false});
@@ -170,8 +186,16 @@
             mats['sph.mx_barsandrestaurants'] = new THREE.MeshBasicMaterial( { map: basicTexture('sph.mx_barsandrestaurants'), name:'sph.mx_barsandrestaurants' } );
             mats['sph.mx_services'] = new THREE.MeshBasicMaterial( { map: basicTexture('sph.mx_services'), name:'sph.mx_services' } );
             mats['sph.mx_food'] = new THREE.MeshBasicMaterial( { map: basicTexture('sph.mx_food'), name:'sph.mx_food' } );            
+	    mats['sph.mx_office'] = new THREE.MeshBasicMaterial( { map: basicTexture('sph.mx_office'), name:'sph.mx_office' } );    
+            mats['sph.mx_car'] = new THREE.MeshBasicMaterial( { map: basicTexture('sph.mx_car'), name:'sph.mx_car' } );            
+	    mats['sph.mx_auto'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_auto'), name:'sph.mx_auto' } );            
+	    mats['sph.mx_travel'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_travel'), name:'sph.mx_travel' } );            
+            mats['sph.mx_sport'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_sport'), name:'sph.mx_sport' } );            
+	    mats['sph.mx_beauty'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_beauty'), name:'sph.mx_beauty' } );            
+	    mats['sph.mx_health'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_health'), name:'sph.mx_health' } );            
             mats['box'] = new THREE.MeshBasicMaterial( { map: basicTexture(1), name:'box' } );
-            mats['filter'] = new THREE.MeshLambertMaterial( { color: 0x3D4143, transparent:true, opacity:0.6 } );            
+            mats['filter'] = new THR
+EE.MeshLambertMaterial( { color: 0x3D4143, transparent:true, opacity:0.6 } );            
             mats['ground'] = new THREE.MeshBasicMaterial( { color:debugColor, wireframe:true, transparent:true, opacity:0, fog: false, depthTest: false, depthWrite: false});
         }
 
@@ -285,8 +309,7 @@ function addStaticBox(size, position, rotation, spec) {
 
         // add objects
         var i = 0;
-        var x, y, z, w, h, d, date;
-
+        var x, y, z, w, h, d,p, date;
         for (var day = fromDay; day < toDay; day++)
         {
             date = dataset[categories[0]].stats[day].date;
@@ -306,7 +329,12 @@ function addStaticBox(size, position, rotation, spec) {
                     for (var j = 0; j < numBodiesPerCube; j++) {
                         x = -500 + Math.random()*1000;
                         z = -500 + Math.random()*1000;
-                        w = (Math.floor(cube.avg / paymentBucket) + 1) * radioPerPaymentBucket;
+			p = Math.floor(cube.avg / paymentBucket);
+                        if (p < 5) {
+                             w = (p + 1) * radioPerPaymentBucket;
+                         } else {
+			     w= p* radioPerPaymentBucket / 5;
+                         }
                         
                         var numPayments = (((j + 1) * paymentsPerSphere) > cube.num_payments) ?
                             cube.num_payments % paymentsPerSphere :

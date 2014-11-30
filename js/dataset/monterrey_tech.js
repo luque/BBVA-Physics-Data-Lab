@@ -34150,6 +34150,12454 @@ var monterrey_tech_dataset = { // zipcode = 64700
                 ]
             }
         ]                   
-    }
+    },
+    "mx_office": {
+     "stats": [
+            {
+                "date": "20131101",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 3,
+                        "avg": 135.2,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#4",
+                        "num_payments": 4,
+                        "avg": 3096.55,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 13746.53,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 1735.47,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 1120.13,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131102",
+                "cube": []
+            },
+            {
+                "date": "20131103",
+                "cube": []
+            },
+            {
+                "date": "20131104",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 9,
+                        "avg": 6030,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 4481.67,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131105",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 1419.06,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 10,
+                        "avg": 2183.68,
+                        "num_cards": 8
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 3992.58,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131106",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 5,
+                        "avg": 1635.24,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 9,
+                        "avg": 2520.68,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 4,
+                        "avg": 2623.02,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 839.7,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 14,
+                        "avg": 2623.82,
+                        "num_cards": 9
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 3615.69,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 4,
+                        "avg": 3363.72,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131107",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 7,
+                        "avg": 1041.75,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 5,
+                        "avg": 5827.17,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 7,
+                        "avg": 2020.69,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 8,
+                        "avg": 2633.53,
+                        "num_cards": 7
+                    }
+                ]
+            },
+            {
+                "date": "20131108",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 7,
+                        "avg": 3046.83,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 10,
+                        "avg": 2251.92,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 2140.93,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 910.17,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131109",
+                "cube": []
+            },
+            {
+                "date": "20131110",
+                "cube": []
+            },
+            {
+                "date": "20131111",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 3,
+                        "avg": 240.8,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#2",
+                        "num_payments": 8,
+                        "avg": 2265.15,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 8,
+                        "avg": 2296.99,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 290.67,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 3033.11,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131112",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 7,
+                        "avg": 2581.48,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 1254.59,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131113",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 1364.13,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 10,
+                        "avg": 1197.71,
+                        "num_cards": 9
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 645.57,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 4184.25,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131114",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 8,
+                        "avg": 1647.35,
+                        "num_cards": 8
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 7,
+                        "avg": 2973.94,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 2331.04,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 3265.37,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131115",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 4,
+                        "avg": 3792.3,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "F#4",
+                        "num_payments": 5,
+                        "avg": 2452.65,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 924,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 5965.6,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 7,
+                        "avg": 4600.81,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 8,
+                        "avg": 3762.32,
+                        "num_cards": 8
+                    }
+                ]
+            },
+            {
+                "date": "20131116",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 2020.54,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#4",
+                        "num_payments": 4,
+                        "avg": 2060.77,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 4,
+                        "avg": 383.13,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 1402.34,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 1556.67,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 8,
+                        "avg": 1942.3,
+                        "num_cards": 8
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 3,
+                        "avg": 2688.33,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131117",
+                "cube": []
+            },
+            {
+                "date": "20131118",
+                "cube": []
+            },
+            {
+                "date": "20131119",
+                "cube": []
+            },
+            {
+                "date": "20131120",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 151.2,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 1022.99,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 2035.01,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 7,
+                        "avg": 3044.68,
+                        "num_cards": 7
+                    }
+                ]
+            },
+            {
+                "date": "20131121",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 4,
+                        "avg": 243.46,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 7,
+                        "avg": 104.26,
+                        "num_cards": 6
+                    }
+                ]
+            },
+            {
+                "date": "20131122",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 6,
+                        "avg": 348.68,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "F#2",
+                        "num_payments": 8,
+                        "avg": 1477.89,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 6,
+                        "avg": 4974.12,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 6,
+                        "avg": 197.49,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 6,
+                        "avg": 1692.77,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 1654.6,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 1155.25,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131123",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 3,
+                        "avg": 206.97,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#2",
+                        "num_payments": 6,
+                        "avg": 2988.6,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 1513.27,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 1354.51,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20131124",
+                "cube": []
+            },
+            {
+                "date": "20131125",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 5,
+                        "avg": 432.9,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 7,
+                        "avg": 447.79,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 394.45,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 1790.66,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 4,
+                        "avg": 3923.43,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131126",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 2574.36,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 2795.67,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 7,
+                        "avg": 925.15,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 6,
+                        "avg": 2836.3,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 993.92,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131127",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 5,
+                        "avg": 1396.2,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 6,
+                        "avg": 1805.37,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 2148.03,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 6,
+                        "avg": 2382.52,
+                        "num_cards": 6
+                    }
+                ]
+            },
+            {
+                "date": "20131128",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 3,
+                        "avg": 65.57,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#2",
+                        "num_payments": 12,
+                        "avg": 1738.77,
+                        "num_cards": 11
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 20,
+                        "avg": 2965.24,
+                        "num_cards": 15
+                    },
+                    {
+                        "hash": "F#5",
+                        "num_payments": 3,
+                        "avg": 1101.06,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 4,
+                        "avg": 4309.13,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 7,
+                        "avg": 1289.51,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 2342.69,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 1442.64,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131129",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 4,
+                        "avg": 821.03,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "F#2",
+                        "num_payments": 13,
+                        "avg": 1730.54,
+                        "num_cards": 12
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 18,
+                        "avg": 1874.17,
+                        "num_cards": 14
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 6,
+                        "avg": 475.53,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 507.92,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 11,
+                        "avg": 3415.56,
+                        "num_cards": 10
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 2992.5,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131130",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 10,
+                        "avg": 3771.95,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 419.93,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 7,
+                        "avg": 2828.5,
+                        "num_cards": 6
+                    }
+                ]
+            },
+            {
+                "date": "20131201",
+                "cube": []
+            },
+            {
+                "date": "20131202",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 5,
+                        "avg": 720.1,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 6,
+                        "avg": 1743.18,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 10,
+                        "avg": 138.36,
+                        "num_cards": 10
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 6,
+                        "avg": 7135.6,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 6,
+                        "avg": 2882.91,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 3,
+                        "avg": 1426,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131203",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 7,
+                        "avg": 181.33,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "F#2",
+                        "num_payments": 4,
+                        "avg": 1077.14,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 1746.42,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 9,
+                        "avg": 1609.97,
+                        "num_cards": 9
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 7,
+                        "avg": 1822.4,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 10,
+                        "avg": 3405.19,
+                        "num_cards": 8
+                    }
+                ]
+            },
+            {
+                "date": "20131204",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 3,
+                        "avg": 301.78,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#2",
+                        "num_payments": 7,
+                        "avg": 2150.75,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 10,
+                        "avg": 1642.95,
+                        "num_cards": 8
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 4,
+                        "avg": 390.73,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 15,
+                        "avg": 2256.4,
+                        "num_cards": 14
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 1050.2,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131205",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 285.19,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 2174.69,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 1392.51,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131206",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 9,
+                        "avg": 815.06,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 5,
+                        "avg": 2797.88,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 4,
+                        "avg": 277.3,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 9,
+                        "avg": 1876.44,
+                        "num_cards": 9
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 2328.5,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 387.67,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131207",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 4,
+                        "avg": 145.27,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "F#2",
+                        "num_payments": 7,
+                        "avg": 1454.55,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 9,
+                        "avg": 3210.08,
+                        "num_cards": 8
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 5,
+                        "avg": 181.64,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 9,
+                        "avg": 1007.85,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 1735.97,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 5,
+                        "avg": 1053.13,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131208",
+                "cube": []
+            },
+            {
+                "date": "20131209",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 6,
+                        "avg": 2304.5,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 382.8,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 10,
+                        "avg": 1042,
+                        "num_cards": 10
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 8,
+                        "avg": 2111.36,
+                        "num_cards": 7
+                    }
+                ]
+            },
+            {
+                "date": "20131210",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 1297.07,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 12,
+                        "avg": 1683.31,
+                        "num_cards": 10
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 7,
+                        "avg": 2365.03,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 622.48,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131211",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 6,
+                        "avg": 3787.26,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 5,
+                        "avg": 3036,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 11,
+                        "avg": 2806.97,
+                        "num_cards": 11
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 1967.38,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131212",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 6,
+                        "avg": 1590.07,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 1089.79,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 6,
+                        "avg": 3835.39,
+                        "num_cards": 6
+                    }
+                ]
+            },
+            {
+                "date": "20131213",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 5,
+                        "avg": 345.8,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 6,
+                        "avg": 389.41,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 10,
+                        "avg": 710.74,
+                        "num_cards": 8
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 2489.19,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131214",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 3543.81,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 1440.08,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 3819.34,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 1591.15,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 7,
+                        "avg": 1152.63,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 2778.98,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131215",
+                "cube": []
+            },
+            {
+                "date": "20131216",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 7,
+                        "avg": 581.92,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 248.68,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 8,
+                        "avg": 969.25,
+                        "num_cards": 7
+                    }
+                ]
+            },
+            {
+                "date": "20131217",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 6,
+                        "avg": 1645.03,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 977.93,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 11,
+                        "avg": 2415.16,
+                        "num_cards": 10
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 6,
+                        "avg": 3430.73,
+                        "num_cards": 6
+                    }
+                ]
+            },
+            {
+                "date": "20131218",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 5,
+                        "avg": 1276.66,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 5,
+                        "avg": 1125.5,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 6,
+                        "avg": 3166.46,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 11,
+                        "avg": 1741.7,
+                        "num_cards": 8
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 3052.32,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131219",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 5,
+                        "avg": 1353.36,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 9,
+                        "avg": 2276.73,
+                        "num_cards": 9
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 2902.69,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 2428,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131220",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 6,
+                        "avg": 1231.62,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "F#4",
+                        "num_payments": 4,
+                        "avg": 3485.52,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 8,
+                        "avg": 619,
+                        "num_cards": 8
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 5,
+                        "avg": 734.08,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20131221",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 6,
+                        "avg": 965.09,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 1151.1,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#4",
+                        "num_payments": 5,
+                        "avg": 1534.97,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 6,
+                        "avg": 3026.52,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 1397.42,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131222",
+                "cube": []
+            },
+            {
+                "date": "20131223",
+                "cube": []
+            },
+            {
+                "date": "20131224",
+                "cube": []
+            },
+            {
+                "date": "20131225",
+                "cube": []
+            },
+            {
+                "date": "20131226",
+                "cube": []
+            },
+            {
+                "date": "20131227",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 2405.32,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 2663.71,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 349.11,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131228",
+                "cube": []
+            },
+            {
+                "date": "20131229",
+                "cube": []
+            },
+            {
+                "date": "20131230",
+                "cube": []
+            },
+            {
+                "date": "20131231",
+                "cube": []
+            },
+            {
+                "date": "20140101",
+                "cube": []
+            },
+            {
+                "date": "20140102",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 3267.74,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 7,
+                        "avg": 1581.9,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 3179.57,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140103",
+                "cube": [
+                    {
+                        "hash": "F#4",
+                        "num_payments": 4,
+                        "avg": 462.99,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 6,
+                        "avg": 2131.79,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 6089.75,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140104",
+                "cube": []
+            },
+            {
+                "date": "20140105",
+                "cube": []
+            },
+            {
+                "date": "20140106",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 8,
+                        "avg": 2185.63,
+                        "num_cards": 8
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 7,
+                        "avg": 1835.32,
+                        "num_cards": 6
+                    }
+                ]
+            },
+            {
+                "date": "20140107",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 3938.46,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 8,
+                        "avg": 804.83,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 11,
+                        "avg": 4011.28,
+                        "num_cards": 9
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 5,
+                        "avg": 2151.07,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 3,
+                        "avg": 300.64,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140108",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 6,
+                        "avg": 2092.72,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 6,
+                        "avg": 1234.95,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 7,
+                        "avg": 691.58,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 10,
+                        "avg": 6591.29,
+                        "num_cards": 8
+                    }
+                ]
+            },
+            {
+                "date": "20140109",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 1309.97,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 8,
+                        "avg": 1696.29,
+                        "num_cards": 8
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 8,
+                        "avg": 3598.73,
+                        "num_cards": 8
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 6,
+                        "avg": 1060.06,
+                        "num_cards": 6
+                    }
+                ]
+            },
+            {
+                "date": "20140110",
+                "cube": [
+                    {
+                        "hash": "F#5",
+                        "num_payments": 6,
+                        "avg": 3039.51,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 6,
+                        "avg": 2917.78,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 5753.19,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 615.16,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140111",
+                "cube": []
+            },
+            {
+                "date": "20140112",
+                "cube": []
+            },
+            {
+                "date": "20140113",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 586.53,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 5,
+                        "avg": 177.26,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 148.05,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 7,
+                        "avg": 3786.14,
+                        "num_cards": 7
+                    }
+                ]
+            },
+            {
+                "date": "20140114",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 4,
+                        "avg": 505.23,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "F#2",
+                        "num_payments": 4,
+                        "avg": 3312.3,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#4",
+                        "num_payments": 4,
+                        "avg": 3226.84,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 284.53,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 9,
+                        "avg": 2429.25,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 738.94,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 2517.16,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140115",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 4,
+                        "avg": 1668.65,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 726.99,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "F#4",
+                        "num_payments": 5,
+                        "avg": 2776.4,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 5,
+                        "avg": 872.85,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 7,
+                        "avg": 2740.56,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 10,
+                        "avg": 873.02,
+                        "num_cards": 9
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 6,
+                        "avg": 1534.24,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 7,
+                        "avg": 2671.3,
+                        "num_cards": 7
+                    }
+                ]
+            },
+            {
+                "date": "20140116",
+                "cube": [
+                    {
+                        "hash": "F#4",
+                        "num_payments": 3,
+                        "avg": 4320.5,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 4,
+                        "avg": 4852.67,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 999.26,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 1875.42,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 9026.61,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140117",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 3,
+                        "avg": 299.67,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 786.23,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 7,
+                        "avg": 1594.76,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 7,
+                        "avg": 1845.46,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 1196.72,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140118",
+                "cube": []
+            },
+            {
+                "date": "20140119",
+                "cube": []
+            },
+            {
+                "date": "20140120",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 1737.77,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 7,
+                        "avg": 886.12,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 6,
+                        "avg": 229.28,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 11,
+                        "avg": 690.41,
+                        "num_cards": 11
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 7,
+                        "avg": 1603.2,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 2215.91,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140121",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 3,
+                        "avg": 102.53,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 4,
+                        "avg": 841.68,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 8,
+                        "avg": 3718.58,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 408.11,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 5,
+                        "avg": 1323.26,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140122",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 2280.77,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 6,
+                        "avg": 1453,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 4,
+                        "avg": 1677.15,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 9,
+                        "avg": 2690.08,
+                        "num_cards": 9
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 6,
+                        "avg": 1301.14,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140123",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 5,
+                        "avg": 1850.55,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 6,
+                        "avg": 1233.95,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 5804.7,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140124",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 4,
+                        "avg": 2401.51,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 5,
+                        "avg": 1641.11,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 962.67,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 6014.04,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 8542.76,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140125",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 4,
+                        "avg": 206.55,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 3211.1,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 2225.75,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 4,
+                        "avg": 1187.87,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140126",
+                "cube": []
+            },
+            {
+                "date": "20140127",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 5,
+                        "avg": 89.93,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 5,
+                        "avg": 477.43,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 5,
+                        "avg": 2301.78,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 10,
+                        "avg": 1768.72,
+                        "num_cards": 9
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 8,
+                        "avg": 1733.65,
+                        "num_cards": 8
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 3821.57,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140128",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 3243.71,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 7,
+                        "avg": 1967.88,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 6,
+                        "avg": 1781.47,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 7,
+                        "avg": 1578.22,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 8,
+                        "avg": 2106.69,
+                        "num_cards": 8
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 5,
+                        "avg": 699.53,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140129",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 2174.97,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 15,
+                        "avg": 2316.55,
+                        "num_cards": 14
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 7,
+                        "avg": 2712.71,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 3462.06,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140130",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 1919.25,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 4,
+                        "avg": 612,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 11,
+                        "avg": 1684.58,
+                        "num_cards": 10
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 2422.64,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140131",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 1066.77,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 6,
+                        "avg": 675.24,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 8,
+                        "avg": 1728.22,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 6169.55,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140201",
+                "cube": []
+            },
+            {
+                "date": "20140202",
+                "cube": []
+            },
+            {
+                "date": "20140203",
+                "cube": []
+            },
+            {
+                "date": "20140204",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 10,
+                        "avg": 3251.8,
+                        "num_cards": 9
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 7,
+                        "avg": 9462.61,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 1166.95,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 6,
+                        "avg": 4231.94,
+                        "num_cards": 6
+                    }
+                ]
+            },
+            {
+                "date": "20140205",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 3756.09,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 1068.38,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 5,
+                        "avg": 1068.79,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 717.08,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 6,
+                        "avg": 3269.24,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 5,
+                        "avg": 1255.27,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140206",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 9,
+                        "avg": 2287.45,
+                        "num_cards": 9
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 7,
+                        "avg": 3454.1,
+                        "num_cards": 7
+                    }
+                ]
+            },
+            {
+                "date": "20140207",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 6,
+                        "avg": 236.32,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "F#2",
+                        "num_payments": 7,
+                        "avg": 1351.7,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "F#4",
+                        "num_payments": 3,
+                        "avg": 1474.57,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 12,
+                        "avg": 2043.41,
+                        "num_cards": 12
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 9,
+                        "avg": 1498.62,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 1442.21,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140208",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 2720.43,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140209",
+                "cube": []
+            },
+            {
+                "date": "20140210",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 4,
+                        "avg": 122.02,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "F#2",
+                        "num_payments": 5,
+                        "avg": 2191.78,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 2242.77,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 6,
+                        "avg": 2748,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 8,
+                        "avg": 1317.62,
+                        "num_cards": 8
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 359.4,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 1790.77,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140211",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 4,
+                        "avg": 82.7,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 889.63,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 3439.51,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 2807.55,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140212",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 8,
+                        "avg": 6999.37,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 8,
+                        "avg": 2826.65,
+                        "num_cards": 7
+                    }
+                ]
+            },
+            {
+                "date": "20140213",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 7,
+                        "avg": 81,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "F#2",
+                        "num_payments": 5,
+                        "avg": 1360.61,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 5,
+                        "avg": 1735.12,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 189.12,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 495.4,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 1504.94,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140214",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 3,
+                        "avg": 310.27,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#2",
+                        "num_payments": 8,
+                        "avg": 647.74,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 431.05,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 1112.32,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 10,
+                        "avg": 2041.14,
+                        "num_cards": 10
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 1194.29,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140215",
+                "cube": []
+            },
+            {
+                "date": "20140216",
+                "cube": []
+            },
+            {
+                "date": "20140217",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 4,
+                        "avg": 98.5,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 500.53,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 1860.07,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 6,
+                        "avg": 2381.86,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 6,
+                        "avg": 1340.3,
+                        "num_cards": 6
+                    }
+                ]
+            },
+            {
+                "date": "20140218",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 4,
+                        "avg": 178.48,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 7224.46,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 5,
+                        "avg": 1344.18,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 11,
+                        "avg": 2293.21,
+                        "num_cards": 9
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 6,
+                        "avg": 897.8,
+                        "num_cards": 6
+                    }
+                ]
+            },
+            {
+                "date": "20140219",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 1407.02,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#4",
+                        "num_payments": 4,
+                        "avg": 2403.36,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 2492.39,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 7,
+                        "avg": 2283.35,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 1865.01,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140220",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 4,
+                        "avg": 83.39,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 4,
+                        "avg": 695.32,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 9,
+                        "avg": 4972.48,
+                        "num_cards": 9
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 7,
+                        "avg": 2338.57,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 2740.23,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 4,
+                        "avg": 833.06,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140221",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 3162.34,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 1175.23,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 4,
+                        "avg": 71.51,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 7,
+                        "avg": 1088.33,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 580.05,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140222",
+                "cube": []
+            },
+            {
+                "date": "20140223",
+                "cube": []
+            },
+            {
+                "date": "20140224",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 8,
+                        "avg": 110.14,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 3090.03,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 4,
+                        "avg": 137.48,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 10,
+                        "avg": 1367.82,
+                        "num_cards": 9
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 147.16,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 1219,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140225",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 6,
+                        "avg": 3348.27,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 5,
+                        "avg": 1074.19,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 10,
+                        "avg": 1662.92,
+                        "num_cards": 10
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 9,
+                        "avg": 1110.5,
+                        "num_cards": 8
+                    }
+                ]
+            },
+            {
+                "date": "20140226",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 5135.43,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 1527.23,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 856.53,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 3438.1,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140227",
+                "cube": []
+            },
+            {
+                "date": "20140228",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 3466.52,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 2476.95,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 5,
+                        "avg": 2696.64,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140301",
+                "cube": []
+            },
+            {
+                "date": "20140302",
+                "cube": []
+            },
+            {
+                "date": "20140303",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 899.31,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 5677.45,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 9,
+                        "avg": 2332.27,
+                        "num_cards": 9
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 203.07,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 2873.84,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140304",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 3727.74,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 4,
+                        "avg": 949.87,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 10,
+                        "avg": 520.21,
+                        "num_cards": 8
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 6,
+                        "avg": 6678.29,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 1488.76,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140305",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 5944.62,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "F#4",
+                        "num_payments": 3,
+                        "avg": 4047.37,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 305.32,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 9,
+                        "avg": 1111.72,
+                        "num_cards": 9
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 1381.58,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 3,
+                        "avg": 2765.53,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140306",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 4743.88,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 6,
+                        "avg": 275.7,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 9,
+                        "avg": 1031.97,
+                        "num_cards": 9
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 10,
+                        "avg": 6547.91,
+                        "num_cards": 9
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 592.6,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 3,
+                        "avg": 7323.66,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140307",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 2637.58,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 6,
+                        "avg": 680.11,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 2660.16,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140308",
+                "cube": []
+            },
+            {
+                "date": "20140309",
+                "cube": []
+            },
+            {
+                "date": "20140310",
+                "cube": []
+            },
+            {
+                "date": "20140311",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 3,
+                        "avg": 141.43,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#2",
+                        "num_payments": 4,
+                        "avg": 3026.55,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 136.25,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 7,
+                        "avg": 1608.06,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 8,
+                        "avg": 3588.2,
+                        "num_cards": 6
+                    }
+                ]
+            },
+            {
+                "date": "20140312",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 3,
+                        "avg": 53.13,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#2",
+                        "num_payments": 7,
+                        "avg": 2186.76,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 8,
+                        "avg": 3015.04,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 7,
+                        "avg": 1460.88,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 6,
+                        "avg": 731.57,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 3191.98,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140313",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 6,
+                        "avg": 664.85,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 5,
+                        "avg": 2376.11,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140314",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 12,
+                        "avg": 2106.74,
+                        "num_cards": 12
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 1845.27,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 1116.06,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140315",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 4,
+                        "avg": 1489.58,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 6,
+                        "avg": 1998.57,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 4306.19,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140316",
+                "cube": []
+            },
+            {
+                "date": "20140317",
+                "cube": []
+            },
+            {
+                "date": "20140318",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 6,
+                        "avg": 1084.82,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 720.42,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 1796.83,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "F#4",
+                        "num_payments": 3,
+                        "avg": 5041.56,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 4,
+                        "avg": 140.84,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 12,
+                        "avg": 1903.57,
+                        "num_cards": 11
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 7,
+                        "avg": 3128.4,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 3,
+                        "avg": 3582.65,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140319",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 30656.14,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 8,
+                        "avg": 301.48,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 428.56,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 6,
+                        "avg": 725.08,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 5,
+                        "avg": 1448.68,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140320",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 2302.2,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 9,
+                        "avg": 1145.16,
+                        "num_cards": 8
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 12,
+                        "avg": 826.81,
+                        "num_cards": 11
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 402.4,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 6,
+                        "avg": 542.96,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 7,
+                        "avg": 1832.52,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140321",
+                "cube": []
+            },
+            {
+                "date": "20140322",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 1372.74,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 247.12,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 3589.96,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140323",
+                "cube": []
+            },
+            {
+                "date": "20140324",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 4,
+                        "avg": 128.28,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 8,
+                        "avg": 585.36,
+                        "num_cards": 8
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 2882.27,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 11,
+                        "avg": 2361.35,
+                        "num_cards": 7
+                    }
+                ]
+            },
+            {
+                "date": "20140325",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 1944.22,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 7,
+                        "avg": 3895.58,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 3,
+                        "avg": 849.91,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140326",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 4,
+                        "avg": 54.6,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 1490.4,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 11291.8,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 8,
+                        "avg": 2001.18,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 4409.61,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140327",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 3,
+                        "avg": 129.91,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#4",
+                        "num_payments": 3,
+                        "avg": 3390.35,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 6,
+                        "avg": 1441.67,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 410.95,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140328",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 1740.48,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 4014,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 7,
+                        "avg": 4075.56,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 3,
+                        "avg": 777.18,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140329",
+                "cube": []
+            },
+            {
+                "date": "20140330",
+                "cube": []
+            },
+            {
+                "date": "20140331",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 851.61,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 2331.59,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 2510.09,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140401",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 4,
+                        "avg": 1667.2,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 2643.62,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 8,
+                        "avg": 1337.75,
+                        "num_cards": 8
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 6,
+                        "avg": 3035.07,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 1945.77,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140402",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 4,
+                        "avg": 592.53,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#2",
+                        "num_payments": 6,
+                        "avg": 1437.81,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 2300.61,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 8,
+                        "avg": 811.66,
+                        "num_cards": 8
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 7,
+                        "avg": 3220.59,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 6,
+                        "avg": 263.75,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 3,
+                        "avg": 517.3,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140403",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 4,
+                        "avg": 1776.87,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 7,
+                        "avg": 515.46,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 11,
+                        "avg": 2187.79,
+                        "num_cards": 11
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 8,
+                        "avg": 3167.98,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 6,
+                        "avg": 2837.18,
+                        "num_cards": 6
+                    }
+                ]
+            },
+            {
+                "date": "20140404",
+                "cube": []
+            },
+            {
+                "date": "20140405",
+                "cube": []
+            },
+            {
+                "date": "20140406",
+                "cube": []
+            },
+            {
+                "date": "20140407",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 4,
+                        "avg": 117.88,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 4,
+                        "avg": 373.79,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 8,
+                        "avg": 1221.85,
+                        "num_cards": 8
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 2053.6,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 733.72,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140408",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 4,
+                        "avg": 2336.35,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 1431.53,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 6,
+                        "avg": 23986.15,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 14,
+                        "avg": 845.48,
+                        "num_cards": 11
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 4,
+                        "avg": 1500.18,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140409",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 8,
+                        "avg": 2896.96,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "F#4",
+                        "num_payments": 5,
+                        "avg": 577.9,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 7,
+                        "avg": 1190.68,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 635.66,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 875.79,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 3,
+                        "avg": 1879.27,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140410",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 5,
+                        "avg": 453.21,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 1904.29,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 154.9,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 6,
+                        "avg": 1395.78,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 13,
+                        "avg": 1784.33,
+                        "num_cards": 13
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 558.7,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140411",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 1904.66,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 4,
+                        "avg": 881.16,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 7,
+                        "avg": 2165.83,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 477.02,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 694.29,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140412",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 4,
+                        "avg": 768.83,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 6,
+                        "avg": 1649.75,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 9,
+                        "avg": 1266.27,
+                        "num_cards": 9
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 985.31,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 1089.09,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140413",
+                "cube": []
+            },
+            {
+                "date": "20140414",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 7,
+                        "avg": 3056.99,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 9,
+                        "avg": 802.33,
+                        "num_cards": 9
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 9,
+                        "avg": 4753.09,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 5,
+                        "avg": 1677.03,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140415",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 9,
+                        "avg": 695.47,
+                        "num_cards": 8
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 708.02,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140416",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 180.4,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 10,
+                        "avg": 1220.2,
+                        "num_cards": 8
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 761.29,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140417",
+                "cube": []
+            },
+            {
+                "date": "20140418",
+                "cube": []
+            },
+            {
+                "date": "20140419",
+                "cube": []
+            },
+            {
+                "date": "20140420",
+                "cube": []
+            },
+            {
+                "date": "20140421",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 860.54,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#4",
+                        "num_payments": 4,
+                        "avg": 1879.14,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 3158.89,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 2158.35,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140422",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 5,
+                        "avg": 155.48,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 7,
+                        "avg": 517.21,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 7,
+                        "avg": 2904.68,
+                        "num_cards": 6
+                    }
+                ]
+            },
+            {
+                "date": "20140423",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 5,
+                        "avg": 958,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 7,
+                        "avg": 1212.12,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 886.19,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 1842.15,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 2122.88,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140424",
+                "cube": []
+            },
+            {
+                "date": "20140425",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 1204.24,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 386.11,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140426",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 4,
+                        "avg": 500.09,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 683.83,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140427",
+                "cube": []
+            },
+            {
+                "date": "20140428",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 3,
+                        "avg": 132.33,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#4",
+                        "num_payments": 3,
+                        "avg": 2268.38,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 4,
+                        "avg": 320.6,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 6,
+                        "avg": 1561.22,
+                        "num_cards": 6
+                    }
+                ]
+            },
+            {
+                "date": "20140429",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 1845.57,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 6,
+                        "avg": 256.53,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 1953.52,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 6,
+                        "avg": 1152.23,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 1212,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140430",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 5,
+                        "avg": 1639.04,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 978.96,
+                        "num_cards": 3
+                    }
+                ]
+            }
+        ]
+    },
+    "mx_car": {
+                "stats": [
+            {
+                "date": "20131101",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 6,
+                        "avg": 1003.84,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 948.72,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 1121.43,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131102",
+                "cube": []
+            },
+            {
+                "date": "20131103",
+                "cube": []
+            },
+            {
+                "date": "20131104",
+                "cube": []
+            },
+            {
+                "date": "20131105",
+                "cube": []
+            },
+            {
+                "date": "20131106",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 978,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131107",
+                "cube": []
+            },
+            {
+                "date": "20131108",
+                "cube": []
+            },
+            {
+                "date": "20131109",
+                "cube": []
+            },
+            {
+                "date": "20131110",
+                "cube": []
+            },
+            {
+                "date": "20131111",
+                "cube": []
+            },
+            {
+                "date": "20131112",
+                "cube": [
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 969.91,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131113",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 642.26,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131114",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 1725.33,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 821.32,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 5,
+                        "avg": 699.79,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131115",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 1233.33,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131116",
+                "cube": []
+            },
+            {
+                "date": "20131117",
+                "cube": []
+            },
+            {
+                "date": "20131118",
+                "cube": []
+            },
+            {
+                "date": "20131119",
+                "cube": []
+            },
+            {
+                "date": "20131120",
+                "cube": []
+            },
+            {
+                "date": "20131121",
+                "cube": []
+            },
+            {
+                "date": "20131122",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 2051.75,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131123",
+                "cube": []
+            },
+            {
+                "date": "20131124",
+                "cube": []
+            },
+            {
+                "date": "20131125",
+                "cube": []
+            },
+            {
+                "date": "20131126",
+                "cube": []
+            },
+            {
+                "date": "20131127",
+                "cube": []
+            },
+            {
+                "date": "20131128",
+                "cube": []
+            },
+            {
+                "date": "20131129",
+                "cube": []
+            },
+            {
+                "date": "20131130",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 713.73,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 1675.76,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 834.81,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 5,
+                        "avg": 738.54,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131201",
+                "cube": []
+            },
+            {
+                "date": "20131202",
+                "cube": []
+            },
+            {
+                "date": "20131203",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 492.01,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 1411.76,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131204",
+                "cube": [
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 1038.13,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131205",
+                "cube": []
+            },
+            {
+                "date": "20131206",
+                "cube": []
+            },
+            {
+                "date": "20131207",
+                "cube": []
+            },
+            {
+                "date": "20131208",
+                "cube": []
+            },
+            {
+                "date": "20131209",
+                "cube": []
+            },
+            {
+                "date": "20131210",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 1822.5,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131211",
+                "cube": []
+            },
+            {
+                "date": "20131212",
+                "cube": []
+            },
+            {
+                "date": "20131213",
+                "cube": []
+            },
+            {
+                "date": "20131214",
+                "cube": []
+            },
+            {
+                "date": "20131215",
+                "cube": []
+            },
+            {
+                "date": "20131216",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 2731.51,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20131217",
+                "cube": []
+            },
+            {
+                "date": "20131218",
+                "cube": [
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 1035.44,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131219",
+                "cube": []
+            },
+            {
+                "date": "20131220",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 6,
+                        "avg": 1740.59,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 500.34,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131221",
+                "cube": []
+            },
+            {
+                "date": "20131223",
+                "cube": []
+            },
+            {
+                "date": "20131224",
+                "cube": []
+            },
+            {
+                "date": "20131226",
+                "cube": []
+            },
+            {
+                "date": "20131227",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 583.05,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 805.96,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131228",
+                "cube": []
+            },
+            {
+                "date": "20131230",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 1912.43,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131231",
+                "cube": []
+            },
+            {
+                "date": "20140102",
+                "cube": [
+                    {
+                        "hash": "M#5",
+                        "num_payments": 3,
+                        "avg": 774.5,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140103",
+                "cube": []
+            },
+            {
+                "date": "20140104",
+                "cube": []
+            },
+            {
+                "date": "20140105",
+                "cube": []
+            },
+            {
+                "date": "20140106",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 279.2,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 4,
+                        "avg": 4828.5,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140107",
+                "cube": []
+            },
+            {
+                "date": "20140108",
+                "cube": []
+            },
+            {
+                "date": "20140109",
+                "cube": []
+            },
+            {
+                "date": "20140110",
+                "cube": []
+            },
+            {
+                "date": "20140111",
+                "cube": []
+            },
+            {
+                "date": "20140113",
+                "cube": []
+            },
+            {
+                "date": "20140114",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 463.57,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140115",
+                "cube": []
+            },
+            {
+                "date": "20140116",
+                "cube": []
+            },
+            {
+                "date": "20140117",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 1032.78,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 373.79,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 3,
+                        "avg": 936.61,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140118",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 1235.87,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 1202.09,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#6",
+                        "num_payments": 3,
+                        "avg": 848.26,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140119",
+                "cube": []
+            },
+            {
+                "date": "20140120",
+                "cube": []
+            },
+            {
+                "date": "20140121",
+                "cube": [
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 1560.73,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140122",
+                "cube": []
+            },
+            {
+                "date": "20140123",
+                "cube": []
+            },
+            {
+                "date": "20140124",
+                "cube": []
+            },
+            {
+                "date": "20140125",
+                "cube": []
+            },
+            {
+                "date": "20140127",
+                "cube": []
+            },
+            {
+                "date": "20140128",
+                "cube": []
+            },
+            {
+                "date": "20140129",
+                "cube": [
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 1215.3,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140130",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 1089.16,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 6,
+                        "avg": 1698.56,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 3,
+                        "avg": 3542.29,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140131",
+                "cube": [
+                    {
+                        "hash": "M#5",
+                        "num_payments": 4,
+                        "avg": 3075.09,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140201",
+                "cube": []
+            },
+            {
+                "date": "20140203",
+                "cube": []
+            },
+            {
+                "date": "20140204",
+                "cube": []
+            },
+            {
+                "date": "20140205",
+                "cube": [
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 993.63,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140206",
+                "cube": []
+            },
+            {
+                "date": "20140207",
+                "cube": []
+            },
+            {
+                "date": "20140208",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 3537.77,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140210",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 987.16,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140211",
+                "cube": []
+            },
+            {
+                "date": "20140212",
+                "cube": []
+            },
+            {
+                "date": "20140213",
+                "cube": [
+                    {
+                        "hash": "F#4",
+                        "num_payments": 3,
+                        "avg": 1855.28,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 2377.54,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140214",
+                "cube": [
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 1365.55,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140215",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 2321.39,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 1359.67,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 1414.77,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140217",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 3823.66,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140218",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 6,
+                        "avg": 912.09,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140219",
+                "cube": [
+                    {
+                        "hash": "F#4",
+                        "num_payments": 3,
+                        "avg": 2892.95,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140220",
+                "cube": [
+                    {
+                        "hash": "F#4",
+                        "num_payments": 3,
+                        "avg": 1783.85,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#5",
+                        "num_payments": 3,
+                        "avg": 20447.04,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 908.51,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140221",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 6,
+                        "avg": 2252.85,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 7,
+                        "avg": 31327.86,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140222",
+                "cube": []
+            },
+            {
+                "date": "20140223",
+                "cube": []
+            },
+            {
+                "date": "20140224",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 1951.2,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140225",
+                "cube": []
+            },
+            {
+                "date": "20140226",
+                "cube": []
+            },
+            {
+                "date": "20140227",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 710.85,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140228",
+                "cube": []
+            },
+            {
+                "date": "20140301",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 1154.91,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 1118.67,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140302",
+                "cube": []
+            },
+            {
+                "date": "20140303",
+                "cube": []
+            },
+            {
+                "date": "20140304",
+                "cube": []
+            },
+            {
+                "date": "20140305",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 1292.2,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 3,
+                        "avg": 2844.2,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140306",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 1602.2,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140307",
+                "cube": []
+            },
+            {
+                "date": "20140308",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 4,
+                        "avg": 1570.16,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 1108.97,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140309",
+                "cube": []
+            },
+            {
+                "date": "20140310",
+                "cube": []
+            },
+            {
+                "date": "20140311",
+                "cube": []
+            },
+            {
+                "date": "20140312",
+                "cube": []
+            },
+            {
+                "date": "20140313",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 620.13,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 1874.7,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#6",
+                        "num_payments": 3,
+                        "avg": 717.48,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140314",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 932.38,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140315",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 1469.73,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 976.9,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140316",
+                "cube": []
+            },
+            {
+                "date": "20140318",
+                "cube": [
+                    {
+                        "hash": "M#5",
+                        "num_payments": 5,
+                        "avg": 2145.1,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140319",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 2264.01,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 1671.35,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140320",
+                "cube": [
+                    {
+                        "hash": "F#4",
+                        "num_payments": 3,
+                        "avg": 2691.33,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140321",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 2997.12,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 3,
+                        "avg": 964.67,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140322",
+                "cube": []
+            },
+            {
+                "date": "20140323",
+                "cube": []
+            },
+            {
+                "date": "20140324",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 1635.51,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140325",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 2444.57,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 6,
+                        "avg": 5379.4,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#6",
+                        "num_payments": 5,
+                        "avg": 2146.4,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140326",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 1263.84,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 4,
+                        "avg": 310.54,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140327",
+                "cube": []
+            },
+            {
+                "date": "20140328",
+                "cube": []
+            },
+            {
+                "date": "20140329",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 1075.12,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 5,
+                        "avg": 1300.76,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140330",
+                "cube": []
+            },
+            {
+                "date": "20140331",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 511.28,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140401",
+                "cube": []
+            },
+            {
+                "date": "20140402",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 2698,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 863.71,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 5,
+                        "avg": 612.35,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 3,
+                        "avg": 828.02,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140403",
+                "cube": [
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 467,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140404",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 8,
+                        "avg": 1011.46,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 4816.75,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140405",
+                "cube": [
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 1471.33,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140407",
+                "cube": []
+            },
+            {
+                "date": "20140408",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 2488.57,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 885.23,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140409",
+                "cube": [
+                    {
+                        "hash": "M#5",
+                        "num_payments": 3,
+                        "avg": 2350,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140410",
+                "cube": []
+            },
+            {
+                "date": "20140411",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 2463.92,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 2392.23,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140412",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 3438.5,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 1567.48,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140413",
+                "cube": []
+            },
+            {
+                "date": "20140414",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 8,
+                        "avg": 1742.72,
+                        "num_cards": 8
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 1022.31,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#6",
+                        "num_payments": 3,
+                        "avg": 393,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140415",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 515.16,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 1182.56,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 366.89,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 921.57,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140416",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 2486.67,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 1781.55,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 6,
+                        "avg": 1501.92,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 4,
+                        "avg": 2570.56,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140417",
+                "cube": []
+            },
+            {
+                "date": "20140418",
+                "cube": []
+            },
+            {
+                "date": "20140419",
+                "cube": []
+            },
+            {
+                "date": "20140421",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 1569.02,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 9,
+                        "avg": 2130.46,
+                        "num_cards": 8
+                    }
+                ]
+            },
+            {
+                "date": "20140422",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 1970.49,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140423",
+                "cube": []
+            },
+            {
+                "date": "20140424",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 1224.74,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140425",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 3343.51,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 1314.33,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140426",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 1788.17,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140428",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 881.94,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140429",
+                "cube": []
+            },
+            {
+                "date": "20140430",
+                "cube": []
+            }
+        ]
+
+
+     },
+
+      "mx_auto": {
+      "stats": [
+            {
+                "date": "20131101",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 7,
+                        "avg": 954.72,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 798.97,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 1121.43,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131102",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 710.67,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 1495.87,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131103",
+                "cube": []
+            },
+            {
+                "date": "20131104",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 3245.49,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 3684.33,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131105",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 345,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 1192,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131106",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 978,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131107",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 1645.72,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 5,
+                        "avg": 276.8,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#6",
+                        "num_payments": 3,
+                        "avg": 478.06,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131108",
+                "cube": [
+                    {
+                        "hash": "M#4",
+                        "num_payments": 6,
+                        "avg": 1108.17,
+                        "num_cards": 6
+                    }
+                ]
+            },
+            {
+                "date": "20131109",
+                "cube": []
+            },
+            {
+                "date": "20131110",
+                "cube": []
+            },
+            {
+                "date": "20131111",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 4,
+                        "avg": 957,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 3,
+                        "avg": 624,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131112",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 5,
+                        "avg": 668,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 969.91,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131113",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 866.67,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 505.36,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 623.2,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131114",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 386.67,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 1115.2,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 821.32,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 7,
+                        "avg": 549.85,
+                        "num_cards": 6
+                    }
+                ]
+            },
+            {
+                "date": "20131115",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 4,
+                        "avg": 1207,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 1002.5,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 2023.44,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131116",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 600.9,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 3653.8,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20131117",
+                "cube": []
+            },
+            {
+                "date": "20131118",
+                "cube": []
+            },
+            {
+                "date": "20131119",
+                "cube": []
+            },
+            {
+                "date": "20131120",
+                "cube": []
+            },
+            {
+                "date": "20131121",
+                "cube": [
+                    {
+                        "hash": "M#6",
+                        "num_payments": 3,
+                        "avg": 1366,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131122",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 2001.4,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20131123",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 771.62,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 709.53,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131124",
+                "cube": []
+            },
+            {
+                "date": "20131125",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 1380.19,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#6",
+                        "num_payments": 4,
+                        "avg": 1423.15,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131126",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 8174,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131127",
+                "cube": [
+                    {
+                        "hash": "F#4",
+                        "num_payments": 5,
+                        "avg": 1994.53,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131128",
+                "cube": []
+            },
+            {
+                "date": "20131129",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 1328.15,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131130",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 3,
+                        "avg": 859.67,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 5,
+                        "avg": 561.24,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 1293.07,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 676.11,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 5,
+                        "avg": 738.54,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#6",
+                        "num_payments": 3,
+                        "avg": 1011.33,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131201",
+                "cube": []
+            },
+            {
+                "date": "20131202",
+                "cube": []
+            },
+            {
+                "date": "20131203",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 492.01,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 1411.76,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131204",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 637,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 2487.31,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 2061.67,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 976.1,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131205",
+                "cube": []
+            },
+            {
+                "date": "20131206",
+                "cube": [
+                    {
+                        "hash": "M#4",
+                        "num_payments": 5,
+                        "avg": 316.04,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20131207",
+                "cube": []
+            },
+            {
+                "date": "20131208",
+                "cube": []
+            },
+            {
+                "date": "20131209",
+                "cube": []
+            },
+            {
+                "date": "20131210",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 1518,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20131211",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 1006.33,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#5",
+                        "num_payments": 3,
+                        "avg": 105.98,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 2200,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 2848.67,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 4,
+                        "avg": 10574.09,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131212",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 983.33,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 6,
+                        "avg": 322.46,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 2412.45,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131213",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 734.15,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 506.3,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131214",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 3804.17,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 714.9,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 1947.12,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131215",
+                "cube": []
+            },
+            {
+                "date": "20131216",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 2731.51,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20131217",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 3466.67,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131218",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 835,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 633.71,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 1035.44,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#6",
+                        "num_payments": 3,
+                        "avg": 1089.33,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131219",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 916.57,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131220",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 6,
+                        "avg": 1740.59,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 500.34,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131221",
+                "cube": [
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 2160.93,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131222",
+                "cube": []
+            },
+            {
+                "date": "20131223",
+                "cube": []
+            },
+            {
+                "date": "20131224",
+                "cube": [
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 1132.84,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131225",
+                "cube": []
+            },
+            {
+                "date": "20131226",
+                "cube": [
+                    {
+                        "hash": "M#6",
+                        "num_payments": 4,
+                        "avg": 199.7,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131227",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 583.05,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 805.96,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131228",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 1289.6,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20131229",
+                "cube": []
+            },
+            {
+                "date": "20131230",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 1912.43,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131231",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 316.4,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140101",
+                "cube": []
+            },
+            {
+                "date": "20140102",
+                "cube": [
+                    {
+                        "hash": "M#5",
+                        "num_payments": 4,
+                        "avg": 645.87,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140103",
+                "cube": [
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 593.75,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 3,
+                        "avg": 1915.67,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140104",
+                "cube": []
+            },
+            {
+                "date": "20140105",
+                "cube": []
+            },
+            {
+                "date": "20140106",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 320.65,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 6,
+                        "avg": 3552.34,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140107",
+                "cube": []
+            },
+            {
+                "date": "20140108",
+                "cube": []
+            },
+            {
+                "date": "20140109",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 2748.33,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140110",
+                "cube": []
+            },
+            {
+                "date": "20140111",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 838.22,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140112",
+                "cube": []
+            },
+            {
+                "date": "20140113",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 1129.67,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140114",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 5,
+                        "avg": 381.94,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "F#4",
+                        "num_payments": 3,
+                        "avg": 1949.95,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 486.47,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140115",
+                "cube": [
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 5580.4,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140116",
+                "cube": []
+            },
+            {
+                "date": "20140117",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 6,
+                        "avg": 1409.67,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 1032.78,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 5,
+                        "avg": 392.27,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 3,
+                        "avg": 936.61,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140118",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 1235.87,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 5,
+                        "avg": 1069.67,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#6",
+                        "num_payments": 3,
+                        "avg": 848.26,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140119",
+                "cube": []
+            },
+            {
+                "date": "20140120",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 441.67,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 6,
+                        "avg": 560.68,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 5,
+                        "avg": 1772.29,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140121",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 4,
+                        "avg": 170.5,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 806.55,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 1560.73,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140122",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 5,
+                        "avg": 1632,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 3,
+                        "avg": 1167.21,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140123",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 1568.64,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140124",
+                "cube": []
+            },
+            {
+                "date": "20140125",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 4,
+                        "avg": 843,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 1200,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 594.75,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 266.62,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 1254.31,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140126",
+                "cube": []
+            },
+            {
+                "date": "20140127",
+                "cube": []
+            },
+            {
+                "date": "20140128",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 5096.06,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 3,
+                        "avg": 968.32,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140129",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 151.41,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 5,
+                        "avg": 1070.8,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140130",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 891.33,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 6,
+                        "avg": 1698.56,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 3,
+                        "avg": 3542.29,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#6",
+                        "num_payments": 3,
+                        "avg": 1120.33,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140131",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 247.2,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 846,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 4,
+                        "avg": 3075.09,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140201",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 1750.66,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 3822.33,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 2380.75,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 1520.52,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140202",
+                "cube": []
+            },
+            {
+                "date": "20140203",
+                "cube": []
+            },
+            {
+                "date": "20140204",
+                "cube": []
+            },
+            {
+                "date": "20140205",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 1124.33,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 993.63,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140206",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 240.57,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140207",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 362.5,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 4468.34,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140208",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 3537.77,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140209",
+                "cube": []
+            },
+            {
+                "date": "20140210",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 987.16,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 444.55,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140211",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 1933.33,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140212",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 364.66,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 901.16,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140213",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 1603.33,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#4",
+                        "num_payments": 3,
+                        "avg": 1855.28,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 5,
+                        "avg": 2302.03,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140214",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 620.5,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 1365.55,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#6",
+                        "num_payments": 3,
+                        "avg": 2291.63,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140215",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 2321.39,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 7,
+                        "avg": 960.26,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 1414.77,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140216",
+                "cube": []
+            },
+            {
+                "date": "20140217",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 240,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 3823.66,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140218",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 6,
+                        "avg": 912.09,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 3,
+                        "avg": 836,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140219",
+                "cube": [
+                    {
+                        "hash": "F#4",
+                        "num_payments": 3,
+                        "avg": 2892.95,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 1117.44,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 1461.54,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140220",
+                "cube": [
+                    {
+                        "hash": "F#4",
+                        "num_payments": 4,
+                        "avg": 1450.39,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "F#5",
+                        "num_payments": 3,
+                        "avg": 20447.04,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 7,
+                        "avg": 816.17,
+                        "num_cards": 6
+                    }
+                ]
+            },
+            {
+                "date": "20140221",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 9,
+                        "avg": 1546.34,
+                        "num_cards": 8
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 7,
+                        "avg": 31327.86,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 2515.2,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140222",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 1464.25,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 15864.78,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140223",
+                "cube": []
+            },
+            {
+                "date": "20140224",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 6,
+                        "avg": 2026.01,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 437.16,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 1995.33,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140225",
+                "cube": []
+            },
+            {
+                "date": "20140226",
+                "cube": [
+                    {
+                        "hash": "M#5",
+                        "num_payments": 4,
+                        "avg": 1605.06,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140227",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 710.85,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140228",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 752.67,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 848.67,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 1944.95,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 8784.8,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 3189.9,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140301",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 893.39,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 1154.91,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 1214,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140302",
+                "cube": []
+            },
+            {
+                "date": "20140303",
+                "cube": []
+            },
+            {
+                "date": "20140304",
+                "cube": []
+            },
+            {
+                "date": "20140305",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 316.67,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 7,
+                        "avg": 1000.54,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 4,
+                        "avg": 2145.65,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140306",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 1602.2,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140307",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 308.27,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 11824.85,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 1466.43,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#6",
+                        "num_payments": 4,
+                        "avg": 791.05,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140308",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 5,
+                        "avg": 1356.13,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 403.33,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 726.48,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 1108.97,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140309",
+                "cube": []
+            },
+            {
+                "date": "20140310",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 4,
+                        "avg": 1601.5,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "F#4",
+                        "num_payments": 3,
+                        "avg": 967.33,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 312.5,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 579.8,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140311",
+                "cube": []
+            },
+            {
+                "date": "20140312",
+                "cube": [
+                    {
+                        "hash": "F#4",
+                        "num_payments": 3,
+                        "avg": 1543.33,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 502.49,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140313",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 556.1,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 1874.7,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#6",
+                        "num_payments": 3,
+                        "avg": 717.48,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140314",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 233.99,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 932.38,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140315",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 1469.73,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 976.9,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140316",
+                "cube": []
+            },
+            {
+                "date": "20140317",
+                "cube": []
+            },
+            {
+                "date": "20140318",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 601.27,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 5,
+                        "avg": 2145.1,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140319",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 4,
+                        "avg": 150,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 2264.01,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 1671.35,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140320",
+                "cube": [
+                    {
+                        "hash": "F#4",
+                        "num_payments": 3,
+                        "avg": 2691.33,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 1682,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140321",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 7,
+                        "avg": 1892.57,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 3,
+                        "avg": 964.67,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140322",
+                "cube": []
+            },
+            {
+                "date": "20140323",
+                "cube": []
+            },
+            {
+                "date": "20140324",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 656.7,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 1635.51,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140325",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 4,
+                        "avg": 1883.43,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 2337.2,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 6,
+                        "avg": 5379.4,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#6",
+                        "num_payments": 7,
+                        "avg": 1918.86,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140326",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 1278.3,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 4,
+                        "avg": 310.54,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140327",
+                "cube": []
+            },
+            {
+                "date": "20140328",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 836,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 1214.34,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 1212.77,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 1098.95,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140329",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 1075.12,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 6,
+                        "avg": 1108.96,
+                        "num_cards": 6
+                    }
+                ]
+            },
+            {
+                "date": "20140330",
+                "cube": []
+            },
+            {
+                "date": "20140331",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 742.76,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140401",
+                "cube": []
+            },
+            {
+                "date": "20140402",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 2003,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 4,
+                        "avg": 2148.5,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 863.71,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 5,
+                        "avg": 612.35,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 3,
+                        "avg": 828.02,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140403",
+                "cube": [
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 467,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#6",
+                        "num_payments": 3,
+                        "avg": 920.33,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140404",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 10,
+                        "avg": 885.17,
+                        "num_cards": 8
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 3737.56,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140405",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 678.87,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 1471.33,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140406",
+                "cube": []
+            },
+            {
+                "date": "20140407",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 644.34,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 2167.25,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 876.95,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140408",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 9,
+                        "avg": 1558.03,
+                        "num_cards": 9
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 885.23,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140409",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 603.33,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#4",
+                        "num_payments": 3,
+                        "avg": 371.12,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 460.25,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 2258.22,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 3,
+                        "avg": 2350,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140410",
+                "cube": []
+            },
+            {
+                "date": "20140411",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 607.25,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 2463.92,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 2392.23,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140412",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 2803.88,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 6,
+                        "avg": 1223.32,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 370.34,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140413",
+                "cube": []
+            },
+            {
+                "date": "20140414",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 895,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 8,
+                        "avg": 1742.72,
+                        "num_cards": 8
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 5,
+                        "avg": 969.85,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#6",
+                        "num_payments": 3,
+                        "avg": 393,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140415",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 515.16,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 1182.56,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 366.89,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 921.57,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 3,
+                        "avg": 998.83,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140416",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 2486.67,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 1781.55,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 7,
+                        "avg": 1351.64,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 4,
+                        "avg": 2570.56,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140417",
+                "cube": []
+            },
+            {
+                "date": "20140418",
+                "cube": []
+            },
+            {
+                "date": "20140419",
+                "cube": []
+            },
+            {
+                "date": "20140420",
+                "cube": []
+            },
+            {
+                "date": "20140421",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 4,
+                        "avg": 686.02,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 1569.02,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 10,
+                        "avg": 1952.42,
+                        "num_cards": 9
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 686.24,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140422",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 1716.39,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140423",
+                "cube": []
+            },
+            {
+                "date": "20140424",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 986.11,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 1075.79,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140425",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 1560.85,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 2582.63,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 1314.33,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140426",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 5,
+                        "avg": 1754,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 6,
+                        "avg": 1540.14,
+                        "num_cards": 6
+                    }
+                ]
+            },
+            {
+                "date": "20140427",
+                "cube": []
+            },
+            {
+                "date": "20140428",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 881.94,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 547.72,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140429",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 1788.11,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 1047.8,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140430",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 267.27,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 2227.62,
+                        "num_cards": 4
+                    }
+                ]
+            }
+        ]
+    },
+    "mx_travel": {
+    "stats": [
+            {
+                "date": "20131101",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 4,
+                        "avg": 1955.75,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 601.66,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 1011.94,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 3,
+                        "avg": 1772.91,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131102",
+                "cube": []
+            },
+            {
+                "date": "20131103",
+                "cube": []
+            },
+            {
+                "date": "20131104",
+                "cube": []
+            },
+            {
+                "date": "20131105",
+                "cube": []
+            },
+            {
+                "date": "20131106",
+                "cube": []
+            },
+            {
+                "date": "20131107",
+                "cube": []
+            },
+            {
+                "date": "20131108",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 1384.95,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131109",
+                "cube": []
+            },
+            {
+                "date": "20131110",
+                "cube": []
+            },
+            {
+                "date": "20131111",
+                "cube": []
+            },
+            {
+                "date": "20131112",
+                "cube": []
+            },
+            {
+                "date": "20131113",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 463.87,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 2058.23,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20131114",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 11,
+                        "avg": 1425.02,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 570.61,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 7,
+                        "avg": 3230.94,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20131115",
+                "cube": []
+            },
+            {
+                "date": "20131116",
+                "cube": [
+                    {
+                        "hash": "M#5",
+                        "num_payments": 4,
+                        "avg": 2141.44,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131117",
+                "cube": []
+            },
+            {
+                "date": "20131118",
+                "cube": []
+            },
+            {
+                "date": "20131119",
+                "cube": []
+            },
+            {
+                "date": "20131120",
+                "cube": []
+            },
+            {
+                "date": "20131121",
+                "cube": []
+            },
+            {
+                "date": "20131122",
+                "cube": []
+            },
+            {
+                "date": "20131123",
+                "cube": []
+            },
+            {
+                "date": "20131124",
+                "cube": []
+            },
+            {
+                "date": "20131125",
+                "cube": []
+            },
+            {
+                "date": "20131126",
+                "cube": []
+            },
+            {
+                "date": "20131127",
+                "cube": []
+            },
+            {
+                "date": "20131128",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 1474.13,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 1308.29,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131129",
+                "cube": []
+            },
+            {
+                "date": "20131130",
+                "cube": []
+            },
+            {
+                "date": "20131201",
+                "cube": []
+            },
+            {
+                "date": "20131202",
+                "cube": []
+            },
+            {
+                "date": "20131203",
+                "cube": []
+            },
+            {
+                "date": "20131204",
+                "cube": []
+            },
+            {
+                "date": "20131205",
+                "cube": []
+            },
+            {
+                "date": "20131206",
+                "cube": []
+            },
+            {
+                "date": "20131207",
+                "cube": []
+            },
+            {
+                "date": "20131208",
+                "cube": []
+            },
+            {
+                "date": "20131209",
+                "cube": [
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 1472.45,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131210",
+                "cube": []
+            },
+            {
+                "date": "20131211",
+                "cube": []
+            },
+            {
+                "date": "20131212",
+                "cube": []
+            },
+            {
+                "date": "20131213",
+                "cube": []
+            },
+            {
+                "date": "20131214",
+                "cube": []
+            },
+            {
+                "date": "20131215",
+                "cube": []
+            },
+            {
+                "date": "20131216",
+                "cube": []
+            },
+            {
+                "date": "20131217",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 5,
+                        "avg": 1729.69,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 1140.75,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 3966.69,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 1749.49,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131218",
+                "cube": []
+            },
+            {
+                "date": "20131219",
+                "cube": []
+            },
+            {
+                "date": "20131220",
+                "cube": []
+            },
+            {
+                "date": "20131221",
+                "cube": []
+            },
+            {
+                "date": "20131222",
+                "cube": []
+            },
+            {
+                "date": "20131223",
+                "cube": []
+            },
+            {
+                "date": "20131224",
+                "cube": []
+            },
+            {
+                "date": "20131225",
+                "cube": []
+            },
+            {
+                "date": "20131226",
+                "cube": []
+            },
+            {
+                "date": "20131227",
+                "cube": []
+            },
+            {
+                "date": "20131228",
+                "cube": []
+            },
+            {
+                "date": "20131229",
+                "cube": []
+            },
+            {
+                "date": "20131230",
+                "cube": []
+            },
+            {
+                "date": "20131231",
+                "cube": []
+            },
+            {
+                "date": "20140101",
+                "cube": []
+            },
+            {
+                "date": "20140102",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 5567.1,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140103",
+                "cube": []
+            },
+            {
+                "date": "20140104",
+                "cube": []
+            },
+            {
+                "date": "20140105",
+                "cube": []
+            },
+            {
+                "date": "20140106",
+                "cube": []
+            },
+            {
+                "date": "20140107",
+                "cube": []
+            },
+            {
+                "date": "20140108",
+                "cube": []
+            },
+            {
+                "date": "20140109",
+                "cube": []
+            },
+            {
+                "date": "20140110",
+                "cube": []
+            },
+            {
+                "date": "20140111",
+                "cube": []
+            },
+            {
+                "date": "20140112",
+                "cube": []
+            },
+            {
+                "date": "20140113",
+                "cube": []
+            },
+            {
+                "date": "20140114",
+                "cube": []
+            },
+            {
+                "date": "20140115",
+                "cube": []
+            },
+            {
+                "date": "20140116",
+                "cube": []
+            },
+            {
+                "date": "20140117",
+                "cube": []
+            },
+            {
+                "date": "20140118",
+                "cube": []
+            },
+            {
+                "date": "20140119",
+                "cube": []
+            },
+            {
+                "date": "20140120",
+                "cube": []
+            },
+            {
+                "date": "20140121",
+                "cube": []
+            },
+            {
+                "date": "20140122",
+                "cube": []
+            },
+            {
+                "date": "20140123",
+                "cube": []
+            },
+            {
+                "date": "20140124",
+                "cube": []
+            },
+            {
+                "date": "20140125",
+                "cube": []
+            },
+            {
+                "date": "20140126",
+                "cube": []
+            },
+            {
+                "date": "20140127",
+                "cube": []
+            },
+            {
+                "date": "20140128",
+                "cube": []
+            },
+            {
+                "date": "20140129",
+                "cube": []
+            },
+            {
+                "date": "20140130",
+                "cube": []
+            },
+            {
+                "date": "20140131",
+                "cube": []
+            },
+            {
+                "date": "20140201",
+                "cube": []
+            },
+            {
+                "date": "20140202",
+                "cube": []
+            },
+            {
+                "date": "20140203",
+                "cube": []
+            },
+            {
+                "date": "20140204",
+                "cube": []
+            },
+            {
+                "date": "20140205",
+                "cube": []
+            },
+            {
+                "date": "20140206",
+                "cube": []
+            },
+            {
+                "date": "20140207",
+                "cube": []
+            },
+            {
+                "date": "20140208",
+                "cube": []
+            },
+            {
+                "date": "20140209",
+                "cube": []
+            },
+            {
+                "date": "20140210",
+                "cube": []
+            },
+            {
+                "date": "20140211",
+                "cube": []
+            },
+            {
+                "date": "20140212",
+                "cube": []
+            },
+            {
+                "date": "20140213",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 1745.17,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 1668.96,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140214",
+                "cube": []
+            },
+            {
+                "date": "20140215",
+                "cube": []
+            },
+            {
+                "date": "20140216",
+                "cube": []
+            },
+            {
+                "date": "20140217",
+                "cube": []
+            },
+            {
+                "date": "20140218",
+                "cube": []
+            },
+            {
+                "date": "20140219",
+                "cube": []
+            },
+            {
+                "date": "20140220",
+                "cube": []
+            },
+            {
+                "date": "20140221",
+                "cube": []
+            },
+            {
+                "date": "20140222",
+                "cube": []
+            },
+            {
+                "date": "20140223",
+                "cube": []
+            },
+            {
+                "date": "20140224",
+                "cube": []
+            },
+            {
+                "date": "20140225",
+                "cube": []
+            },
+            {
+                "date": "20140226",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 1063.78,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140227",
+                "cube": []
+            },
+            {
+                "date": "20140228",
+                "cube": []
+            },
+            {
+                "date": "20140301",
+                "cube": []
+            },
+            {
+                "date": "20140302",
+                "cube": []
+            },
+            {
+                "date": "20140303",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 5,
+                        "avg": 773.51,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140304",
+                "cube": []
+            },
+            {
+                "date": "20140305",
+                "cube": []
+            },
+            {
+                "date": "20140306",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 4,
+                        "avg": 1632.85,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 4296.33,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 6,
+                        "avg": 1513.86,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 363.44,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140307",
+                "cube": []
+            },
+            {
+                "date": "20140308",
+                "cube": []
+            },
+            {
+                "date": "20140309",
+                "cube": []
+            },
+            {
+                "date": "20140310",
+                "cube": []
+            },
+            {
+                "date": "20140311",
+                "cube": []
+            },
+            {
+                "date": "20140312",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 4,
+                        "avg": 20828.75,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#2",
+                        "num_payments": 5,
+                        "avg": 1332.77,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 2308.88,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 7,
+                        "avg": 2653.93,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 4,
+                        "avg": 2833.5,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140313",
+                "cube": []
+            },
+            {
+                "date": "20140314",
+                "cube": []
+            },
+            {
+                "date": "20140315",
+                "cube": []
+            },
+            {
+                "date": "20140316",
+                "cube": []
+            },
+            {
+                "date": "20140317",
+                "cube": []
+            },
+            {
+                "date": "20140318",
+                "cube": []
+            },
+            {
+                "date": "20140319",
+                "cube": []
+            },
+            {
+                "date": "20140320",
+                "cube": []
+            },
+            {
+                "date": "20140321",
+                "cube": []
+            },
+            {
+                "date": "20140322",
+                "cube": []
+            },
+            {
+                "date": "20140323",
+                "cube": []
+            },
+            {
+                "date": "20140324",
+                "cube": []
+            },
+            {
+                "date": "20140325",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 3437.47,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140326",
+                "cube": []
+            },
+            {
+                "date": "20140327",
+                "cube": []
+            },
+            {
+                "date": "20140328",
+                "cube": []
+            },
+            {
+                "date": "20140329",
+                "cube": []
+            },
+            {
+                "date": "20140330",
+                "cube": []
+            },
+            {
+                "date": "20140331",
+                "cube": []
+            },
+            {
+                "date": "20140401",
+                "cube": []
+            },
+            {
+                "date": "20140402",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 10456.66,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 7,
+                        "avg": 6291.51,
+                        "num_cards": 7
+                    }
+                ]
+            },
+            {
+                "date": "20140403",
+                "cube": []
+            },
+            {
+                "date": "20140404",
+                "cube": []
+            },
+            {
+                "date": "20140405",
+                "cube": []
+            },
+            {
+                "date": "20140406",
+                "cube": []
+            },
+            {
+                "date": "20140407",
+                "cube": []
+            },
+            {
+                "date": "20140408",
+                "cube": []
+            },
+            {
+                "date": "20140409",
+                "cube": []
+            },
+            {
+                "date": "20140410",
+                "cube": []
+            },
+            {
+                "date": "20140411",
+                "cube": []
+            },
+            {
+                "date": "20140412",
+                "cube": []
+            },
+            {
+                "date": "20140413",
+                "cube": []
+            },
+            {
+                "date": "20140414",
+                "cube": []
+            },
+            {
+                "date": "20140415",
+                "cube": []
+            },
+            {
+                "date": "20140416",
+                "cube": []
+            },
+            {
+                "date": "20140417",
+                "cube": []
+            },
+            {
+                "date": "20140418",
+                "cube": []
+            },
+            {
+                "date": "20140419",
+                "cube": []
+            },
+            {
+                "date": "20140420",
+                "cube": []
+            },
+            {
+                "date": "20140421",
+                "cube": []
+            },
+            {
+                "date": "20140422",
+                "cube": []
+            },
+            {
+                "date": "20140423",
+                "cube": []
+            },
+            {
+                "date": "20140424",
+                "cube": []
+            },
+            {
+                "date": "20140425",
+                "cube": []
+            },
+            {
+                "date": "20140426",
+                "cube": []
+            },
+            {
+                "date": "20140427",
+                "cube": []
+            },
+            {
+                "date": "20140428",
+                "cube": []
+            },
+            {
+                "date": "20140429",
+                "cube": []
+            },
+            {
+                "date": "20140430",
+                "cube": []
+            }
+        ]
+    },
+    "mx_sport": {
+  "stats": [
+            {
+                "date": "20131101",
+                "cube": []
+            },
+            {
+                "date": "20131102",
+                "cube": []
+            },
+            {
+                "date": "20131103",
+                "cube": []
+            },
+            {
+                "date": "20131104",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 382.25,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131105",
+                "cube": []
+            },
+            {
+                "date": "20131106",
+                "cube": []
+            },
+            {
+                "date": "20131107",
+                "cube": []
+            },
+            {
+                "date": "20131108",
+                "cube": []
+            },
+            {
+                "date": "20131109",
+                "cube": []
+            },
+            {
+                "date": "20131110",
+                "cube": []
+            },
+            {
+                "date": "20131111",
+                "cube": []
+            },
+            {
+                "date": "20131112",
+                "cube": []
+            },
+            {
+                "date": "20131113",
+                "cube": []
+            },
+            {
+                "date": "20131114",
+                "cube": []
+            },
+            {
+                "date": "20131115",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 653.7,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 3658.5,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131116",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 4,
+                        "avg": 630.28,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 3268.9,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 523.53,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#5",
+                        "num_payments": 3,
+                        "avg": 703.77,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131117",
+                "cube": []
+            },
+            {
+                "date": "20131118",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 2071.23,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131119",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 953.33,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 442.4,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20131120",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 3958.33,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131121",
+                "cube": []
+            },
+            {
+                "date": "20131122",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 350,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131123",
+                "cube": []
+            },
+            {
+                "date": "20131124",
+                "cube": []
+            },
+            {
+                "date": "20131125",
+                "cube": []
+            },
+            {
+                "date": "20131126",
+                "cube": []
+            },
+            {
+                "date": "20131127",
+                "cube": []
+            },
+            {
+                "date": "20131128",
+                "cube": []
+            },
+            {
+                "date": "20131129",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 349.17,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 374,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131202",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 2006.33,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 1243.75,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131203",
+                "cube": []
+            },
+            {
+                "date": "20131204",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 363.83,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131205",
+                "cube": []
+            },
+            {
+                "date": "20131206",
+                "cube": []
+            },
+            {
+                "date": "20131207",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 1216.23,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131208",
+                "cube": []
+            },
+            {
+                "date": "20131209",
+                "cube": []
+            },
+            {
+                "date": "20131210",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 4,
+                        "avg": 477.13,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131211",
+                "cube": []
+            },
+            {
+                "date": "20131212",
+                "cube": []
+            },
+            {
+                "date": "20131213",
+                "cube": []
+            },
+            {
+                "date": "20131214",
+                "cube": []
+            },
+            {
+                "date": "20131216",
+                "cube": []
+            },
+            {
+                "date": "20131217",
+                "cube": []
+            },
+            {
+                "date": "20131218",
+                "cube": []
+            },
+            {
+                "date": "20131219",
+                "cube": []
+            },
+            {
+                "date": "20131220",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 4,
+                        "avg": 387,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "F#2",
+                        "num_payments": 5,
+                        "avg": 1708.48,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 1385.57,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#4",
+                        "num_payments": 4,
+                        "avg": 678.25,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 746,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 604.48,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 770.19,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 532.28,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131221",
+                "cube": []
+            },
+            {
+                "date": "20131222",
+                "cube": []
+            },
+            {
+                "date": "20131223",
+                "cube": []
+            },
+            {
+                "date": "20131224",
+                "cube": []
+            },
+            {
+                "date": "20131226",
+                "cube": []
+            },
+            {
+                "date": "20131228",
+                "cube": []
+            },
+            {
+                "date": "20131229",
+                "cube": []
+            },
+            {
+                "date": "20131230",
+                "cube": []
+            },
+            {
+                "date": "20131231",
+                "cube": []
+            },
+            {
+                "date": "20140102",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 4,
+                        "avg": 3219,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140103",
+                "cube": []
+            },
+            {
+                "date": "20140104",
+                "cube": []
+            },
+            {
+                "date": "20140105",
+                "cube": []
+            },
+            {
+                "date": "20140106",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 3383.33,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 634.63,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140107",
+                "cube": []
+            },
+            {
+                "date": "20140108",
+                "cube": []
+            },
+            {
+                "date": "20140109",
+                "cube": []
+            },
+            {
+                "date": "20140110",
+                "cube": []
+            },
+            {
+                "date": "20140111",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 1251.91,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 5,
+                        "avg": 2337.8,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140112",
+                "cube": []
+            },
+            {
+                "date": "20140113",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 4,
+                        "avg": 1212.5,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140114",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 3,
+                        "avg": 2703.13,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 3578.33,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 6,
+                        "avg": 1830.49,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 652.58,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140115",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 3,
+                        "avg": 1255,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#2",
+                        "num_payments": 5,
+                        "avg": 1097.89,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 1893.17,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 766.67,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 562.5,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140116",
+                "cube": []
+            },
+            {
+                "date": "20140117",
+                "cube": []
+            },
+            {
+                "date": "20140118",
+                "cube": []
+            },
+            {
+                "date": "20140119",
+                "cube": []
+            },
+            {
+                "date": "20140120",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 4,
+                        "avg": 1287.63,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 2786,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140121",
+                "cube": []
+            },
+            {
+                "date": "20140122",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 3,
+                        "avg": 823.33,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 233,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140123",
+                "cube": []
+            },
+            {
+                "date": "20140124",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 2559.94,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140125",
+                "cube": []
+            },
+            {
+                "date": "20140126",
+                "cube": []
+            },
+            {
+                "date": "20140127",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 3,
+                        "avg": 1865.67,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 5,
+                        "avg": 1818.6,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140128",
+                "cube": []
+            },
+            {
+                "date": "20140129",
+                "cube": []
+            },
+            {
+                "date": "20140130",
+                "cube": []
+            },
+            {
+                "date": "20140131",
+                "cube": []
+            },
+            {
+                "date": "20140201",
+                "cube": []
+            },
+            {
+                "date": "20140202",
+                "cube": []
+            },
+            {
+                "date": "20140203",
+                "cube": []
+            },
+            {
+                "date": "20140204",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 1020.89,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140205",
+                "cube": []
+            },
+            {
+                "date": "20140206",
+                "cube": []
+            },
+            {
+                "date": "20140207",
+                "cube": []
+            },
+            {
+                "date": "20140208",
+                "cube": []
+            },
+            {
+                "date": "20140209",
+                "cube": []
+            },
+            {
+                "date": "20140210",
+                "cube": []
+            },
+            {
+                "date": "20140211",
+                "cube": []
+            },
+            {
+                "date": "20140212",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 4,
+                        "avg": 2529.85,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140213",
+                "cube": []
+            },
+            {
+                "date": "20140214",
+                "cube": []
+            },
+            {
+                "date": "20140215",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 275.84,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 1145.1,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140217",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 6,
+                        "avg": 744.54,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 1032.1,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140218",
+                "cube": []
+            },
+            {
+                "date": "20140219",
+                "cube": []
+            },
+            {
+                "date": "20140220",
+                "cube": []
+            },
+            {
+                "date": "20140221",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 495.07,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 2884.67,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140222",
+                "cube": []
+            },
+            {
+                "date": "20140223",
+                "cube": []
+            },
+            {
+                "date": "20140224",
+                "cube": []
+            },
+            {
+                "date": "20140225",
+                "cube": []
+            },
+            {
+                "date": "20140226",
+                "cube": []
+            },
+            {
+                "date": "20140227",
+                "cube": []
+            },
+            {
+                "date": "20140228",
+                "cube": []
+            },
+            {
+                "date": "20140301",
+                "cube": []
+            },
+            {
+                "date": "20140302",
+                "cube": []
+            },
+            {
+                "date": "20140303",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 513,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 2096.33,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 1180.95,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140304",
+                "cube": []
+            },
+            {
+                "date": "20140305",
+                "cube": []
+            },
+            {
+                "date": "20140306",
+                "cube": []
+            },
+            {
+                "date": "20140307",
+                "cube": []
+            },
+            {
+                "date": "20140308",
+                "cube": []
+            },
+            {
+                "date": "20140310",
+                "cube": []
+            },
+            {
+                "date": "20140311",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 4,
+                        "avg": 2124.5,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140312",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 602.13,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 2676,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140313",
+                "cube": []
+            },
+            {
+                "date": "20140314",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 3,
+                        "avg": 1066,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 968.33,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 4,
+                        "avg": 494.5,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140315",
+                "cube": []
+            },
+            {
+                "date": "20140316",
+                "cube": []
+            },
+            {
+                "date": "20140317",
+                "cube": []
+            },
+            {
+                "date": "20140318",
+                "cube": []
+            },
+            {
+                "date": "20140319",
+                "cube": []
+            },
+            {
+                "date": "20140320",
+                "cube": []
+            },
+            {
+                "date": "20140321",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 5,
+                        "avg": 1421.12,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140322",
+                "cube": []
+            },
+            {
+                "date": "20140323",
+                "cube": []
+            },
+            {
+                "date": "20140324",
+                "cube": []
+            },
+            {
+                "date": "20140325",
+                "cube": []
+            },
+            {
+                "date": "20140326",
+                "cube": []
+            },
+            {
+                "date": "20140327",
+                "cube": []
+            },
+            {
+                "date": "20140328",
+                "cube": []
+            },
+            {
+                "date": "20140329",
+                "cube": []
+            },
+            {
+                "date": "20140330",
+                "cube": []
+            },
+            {
+                "date": "20140331",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 6,
+                        "avg": 1639.74,
+                        "num_cards": 6
+                    }
+                ]
+            },
+            {
+                "date": "20140401",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 3,
+                        "avg": 988.33,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#2",
+                        "num_payments": 5,
+                        "avg": 523.36,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 4172.35,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140402",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 273,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140403",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 4,
+                        "avg": 377.03,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140404",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 1249.33,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140405",
+                "cube": []
+            },
+            {
+                "date": "20140406",
+                "cube": []
+            },
+            {
+                "date": "20140407",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 426.37,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140408",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 5,
+                        "avg": 910.6,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140409",
+                "cube": []
+            },
+            {
+                "date": "20140410",
+                "cube": []
+            },
+            {
+                "date": "20140411",
+                "cube": []
+            },
+            {
+                "date": "20140412",
+                "cube": []
+            },
+            {
+                "date": "20140413",
+                "cube": []
+            },
+            {
+                "date": "20140414",
+                "cube": []
+            },
+            {
+                "date": "20140415",
+                "cube": []
+            },
+            {
+                "date": "20140416",
+                "cube": []
+            },
+            {
+                "date": "20140417",
+                "cube": []
+            },
+            {
+                "date": "20140418",
+                "cube": []
+            },
+            {
+                "date": "20140419",
+                "cube": []
+            },
+            {
+                "date": "20140420",
+                "cube": []
+            },
+            {
+                "date": "20140421",
+                "cube": []
+            },
+            {
+                "date": "20140422",
+                "cube": []
+            },
+            {
+                "date": "20140423",
+                "cube": []
+            },
+            {
+                "date": "20140424",
+                "cube": []
+            },
+            {
+                "date": "20140425",
+                "cube": []
+            },
+            {
+                "date": "20140426",
+                "cube": []
+            },
+            {
+                "date": "20140427",
+                "cube": []
+            },
+            {
+                "date": "20140428",
+                "cube": []
+            },
+            {
+                "date": "20140429",
+                "cube": []
+            },
+            {
+                "date": "20140430",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 1716.95,
+                        "num_cards": 4
+                    }
+                ]
+            }
+        ]
+
+     },
+      "mx_beauty": {
+	  "stats": [
+            {
+                "date": "20131101",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 203.33,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 833.33,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131102",
+                "cube": []
+            },
+            {
+                "date": "20131104",
+                "cube": []
+            },
+            {
+                "date": "20131105",
+                "cube": []
+            },
+            {
+                "date": "20131106",
+                "cube": []
+            },
+            {
+                "date": "20131107",
+                "cube": []
+            },
+            {
+                "date": "20131108",
+                "cube": []
+            },
+            {
+                "date": "20131109",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 5,
+                        "avg": 1016,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 875,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131111",
+                "cube": []
+            },
+            {
+                "date": "20131112",
+                "cube": []
+            },
+            {
+                "date": "20131113",
+                "cube": []
+            },
+            {
+                "date": "20131114",
+                "cube": []
+            },
+            {
+                "date": "20131115",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 7,
+                        "avg": 854.71,
+                        "num_cards": 7
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 1366.67,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131116",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 3,
+                        "avg": 396.67,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 816.67,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131120",
+                "cube": []
+            },
+            {
+                "date": "20131121",
+                "cube": []
+            },
+            {
+                "date": "20131122",
+                "cube": []
+            },
+            {
+                "date": "20131123",
+                "cube": []
+            },
+            {
+                "date": "20131125",
+                "cube": []
+            },
+            {
+                "date": "20131126",
+                "cube": []
+            },
+            {
+                "date": "20131127",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 462.5,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131128",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 1500.33,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131129",
+                "cube": []
+            },
+            {
+                "date": "20131130",
+                "cube": []
+            },
+            {
+                "date": "20131201",
+                "cube": []
+            },
+            {
+                "date": "20131202",
+                "cube": []
+            },
+            {
+                "date": "20131203",
+                "cube": []
+            },
+            {
+                "date": "20131204",
+                "cube": []
+            },
+            {
+                "date": "20131205",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 4,
+                        "avg": 300,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 533.33,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131206",
+                "cube": []
+            },
+            {
+                "date": "20131207",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 5,
+                        "avg": 568,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "F#4",
+                        "num_payments": 3,
+                        "avg": 863.33,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131209",
+                "cube": []
+            },
+            {
+                "date": "20131210",
+                "cube": []
+            },
+            {
+                "date": "20131211",
+                "cube": []
+            },
+            {
+                "date": "20131212",
+                "cube": [
+                    {
+                        "hash": "F#4",
+                        "num_payments": 4,
+                        "avg": 500,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131213",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 6,
+                        "avg": 242.5,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 266.67,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131214",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 6,
+                        "avg": 508.33,
+                        "num_cards": 6
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 423.33,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131215",
+                "cube": []
+            },
+            {
+                "date": "20131216",
+                "cube": []
+            },
+            {
+                "date": "20131217",
+                "cube": []
+            },
+            {
+                "date": "20131218",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 748.75,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20131219",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 5,
+                        "avg": 552,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131220",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 660,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 1015,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131221",
+                "cube": []
+            },
+            {
+                "date": "20131223",
+                "cube": []
+            },
+            {
+                "date": "20131224",
+                "cube": []
+            },
+            {
+                "date": "20131226",
+                "cube": []
+            },
+            {
+                "date": "20131227",
+                "cube": []
+            },
+            {
+                "date": "20131228",
+                "cube": []
+            },
+            {
+                "date": "20131230",
+                "cube": []
+            },
+            {
+                "date": "20131231",
+                "cube": []
+            },
+            {
+                "date": "20140102",
+                "cube": []
+            },
+            {
+                "date": "20140103",
+                "cube": []
+            },
+            {
+                "date": "20140104",
+                "cube": []
+            },
+            {
+                "date": "20140106",
+                "cube": []
+            },
+            {
+                "date": "20140108",
+                "cube": []
+            },
+            {
+                "date": "20140109",
+                "cube": []
+            },
+            {
+                "date": "20140110",
+                "cube": []
+            },
+            {
+                "date": "20140111",
+                "cube": []
+            },
+            {
+                "date": "20140113",
+                "cube": []
+            },
+            {
+                "date": "20140114",
+                "cube": []
+            },
+            {
+                "date": "20140115",
+                "cube": []
+            },
+            {
+                "date": "20140116",
+                "cube": []
+            },
+            {
+                "date": "20140117",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 4,
+                        "avg": 1105,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140118",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 560,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 906.67,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140120",
+                "cube": []
+            },
+            {
+                "date": "20140121",
+                "cube": []
+            },
+            {
+                "date": "20140122",
+                "cube": []
+            },
+            {
+                "date": "20140123",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 503.33,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 947.5,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140124",
+                "cube": []
+            },
+            {
+                "date": "20140125",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 5,
+                        "avg": 644,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140127",
+                "cube": []
+            },
+            {
+                "date": "20140128",
+                "cube": []
+            },
+            {
+                "date": "20140129",
+                "cube": []
+            },
+            {
+                "date": "20140130",
+                "cube": []
+            },
+            {
+                "date": "20140131",
+                "cube": []
+            },
+            {
+                "date": "20140201",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 7,
+                        "avg": 842.89,
+                        "num_cards": 6
+                    }
+                ]
+            },
+            {
+                "date": "20140203",
+                "cube": []
+            },
+            {
+                "date": "20140204",
+                "cube": []
+            },
+            {
+                "date": "20140205",
+                "cube": []
+            },
+            {
+                "date": "20140206",
+                "cube": []
+            },
+            {
+                "date": "20140207",
+                "cube": []
+            },
+            {
+                "date": "20140208",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 1020,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140209",
+                "cube": []
+            },
+            {
+                "date": "20140210",
+                "cube": [
+                    {
+                        "hash": "F#4",
+                        "num_payments": 4,
+                        "avg": 617.5,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 144.67,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140211",
+                "cube": []
+            },
+            {
+                "date": "20140212",
+                "cube": []
+            },
+            {
+                "date": "20140213",
+                "cube": []
+            },
+            {
+                "date": "20140214",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 830,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140215",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 587.5,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140216",
+                "cube": []
+            },
+            {
+                "date": "20140217",
+                "cube": []
+            },
+            {
+                "date": "20140218",
+                "cube": []
+            },
+            {
+                "date": "20140219",
+                "cube": []
+            },
+            {
+                "date": "20140220",
+                "cube": []
+            },
+            {
+                "date": "20140221",
+                "cube": []
+            },
+            {
+                "date": "20140222",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 4,
+                        "avg": 587.5,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 1245,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140224",
+                "cube": []
+            },
+            {
+                "date": "20140225",
+                "cube": []
+            },
+            {
+                "date": "20140226",
+                "cube": []
+            },
+            {
+                "date": "20140227",
+                "cube": []
+            },
+            {
+                "date": "20140228",
+                "cube": []
+            },
+            {
+                "date": "20140301",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 5,
+                        "avg": 412.89,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140302",
+                "cube": []
+            },
+            {
+                "date": "20140303",
+                "cube": []
+            },
+            {
+                "date": "20140304",
+                "cube": []
+            },
+            {
+                "date": "20140305",
+                "cube": []
+            },
+            {
+                "date": "20140306",
+                "cube": []
+            },
+            {
+                "date": "20140307",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 4,
+                        "avg": 1065,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140308",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 5,
+                        "avg": 622.85,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 672.5,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140309",
+                "cube": []
+            },
+            {
+                "date": "20140310",
+                "cube": []
+            },
+            {
+                "date": "20140311",
+                "cube": []
+            },
+            {
+                "date": "20140312",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 281.33,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140313",
+                "cube": []
+            },
+            {
+                "date": "20140314",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 5,
+                        "avg": 140,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140315",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 477.5,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 4,
+                        "avg": 292.16,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140316",
+                "cube": []
+            },
+            {
+                "date": "20140317",
+                "cube": []
+            },
+            {
+                "date": "20140318",
+                "cube": []
+            },
+            {
+                "date": "20140319",
+                "cube": []
+            },
+            {
+                "date": "20140320",
+                "cube": []
+            },
+            {
+                "date": "20140321",
+                "cube": []
+            },
+            {
+                "date": "20140322",
+                "cube": []
+            },
+            {
+                "date": "20140324",
+                "cube": []
+            },
+            {
+                "date": "20140325",
+                "cube": []
+            },
+            {
+                "date": "20140326",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 383.33,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 217,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140327",
+                "cube": []
+            },
+            {
+                "date": "20140328",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 5,
+                        "avg": 940,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140329",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 6,
+                        "avg": 500.17,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 2604.75,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140330",
+                "cube": []
+            },
+            {
+                "date": "20140331",
+                "cube": []
+            },
+            {
+                "date": "20140401",
+                "cube": []
+            },
+            {
+                "date": "20140402",
+                "cube": []
+            },
+            {
+                "date": "20140403",
+                "cube": []
+            },
+            {
+                "date": "20140404",
+                "cube": [
+                    {
+                        "hash": "F#5",
+                        "num_payments": 3,
+                        "avg": 191.83,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 340,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140405",
+                "cube": []
+            },
+            {
+                "date": "20140406",
+                "cube": []
+            },
+            {
+                "date": "20140407",
+                "cube": []
+            },
+            {
+                "date": "20140408",
+                "cube": []
+            },
+            {
+                "date": "20140409",
+                "cube": []
+            },
+            {
+                "date": "20140410",
+                "cube": []
+            },
+            {
+                "date": "20140411",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 633.33,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140412",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 486.67,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140414",
+                "cube": [
+                    {
+                        "hash": "F#4",
+                        "num_payments": 4,
+                        "avg": 787.5,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140415",
+                "cube": []
+            },
+            {
+                "date": "20140416",
+                "cube": []
+            },
+            {
+                "date": "20140417",
+                "cube": []
+            },
+            {
+                "date": "20140419",
+                "cube": []
+            },
+            {
+                "date": "20140420",
+                "cube": []
+            },
+            {
+                "date": "20140421",
+                "cube": [
+                    {
+                        "hash": "F#5",
+                        "num_payments": 3,
+                        "avg": 399.67,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140422",
+                "cube": []
+            },
+            {
+                "date": "20140423",
+                "cube": []
+            },
+            {
+                "date": "20140424",
+                "cube": []
+            },
+            {
+                "date": "20140425",
+                "cube": []
+            },
+            {
+                "date": "20140426",
+                "cube": [
+                    {
+                        "hash": "F#4",
+                        "num_payments": 4,
+                        "avg": 870,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140427",
+                "cube": []
+            },
+            {
+                "date": "20140428",
+                "cube": []
+            },
+            {
+                "date": "20140429",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 125.99,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140430",
+                "cube": []
+            }
+        ]
+
+      },
+"mx_health": {
+ "stats": [
+            {
+                "date": "20131101",
+                "cube": []
+            },
+            {
+                "date": "20131102",
+                "cube": []
+            },
+            {
+                "date": "20131103",
+                "cube": []
+            },
+            {
+                "date": "20131104",
+                "cube": [
+                    {
+                        "hash": "M#6",
+                        "num_payments": 3,
+                        "avg": 285.42,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131105",
+                "cube": []
+            },
+            {
+                "date": "20131106",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 283.34,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131107",
+                "cube": []
+            },
+            {
+                "date": "20131108",
+                "cube": []
+            },
+            {
+                "date": "20131109",
+                "cube": []
+            },
+            {
+                "date": "20131111",
+                "cube": []
+            },
+            {
+                "date": "20131112",
+                "cube": []
+            },
+            {
+                "date": "20131113",
+                "cube": []
+            },
+            {
+                "date": "20131114",
+                "cube": []
+            },
+            {
+                "date": "20131115",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 530,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131116",
+                "cube": []
+            },
+            {
+                "date": "20131117",
+                "cube": []
+            },
+            {
+                "date": "20131118",
+                "cube": []
+            },
+            {
+                "date": "20131119",
+                "cube": []
+            },
+            {
+                "date": "20131120",
+                "cube": []
+            },
+            {
+                "date": "20131121",
+                "cube": []
+            },
+            {
+                "date": "20131122",
+                "cube": []
+            },
+            {
+                "date": "20131123",
+                "cube": []
+            },
+            {
+                "date": "20131124",
+                "cube": []
+            },
+            {
+                "date": "20131125",
+                "cube": []
+            },
+            {
+                "date": "20131126",
+                "cube": []
+            },
+            {
+                "date": "20131127",
+                "cube": []
+            },
+            {
+                "date": "20131128",
+                "cube": []
+            },
+            {
+                "date": "20131129",
+                "cube": []
+            },
+            {
+                "date": "20131130",
+                "cube": []
+            },
+            {
+                "date": "20131202",
+                "cube": []
+            },
+            {
+                "date": "20131203",
+                "cube": []
+            },
+            {
+                "date": "20131204",
+                "cube": []
+            },
+            {
+                "date": "20131205",
+                "cube": []
+            },
+            {
+                "date": "20131206",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 718.6,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131207",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 236.67,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 1696.6,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131208",
+                "cube": []
+            },
+            {
+                "date": "20131209",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 496,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#4",
+                        "num_payments": 3,
+                        "avg": 430.3,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131210",
+                "cube": []
+            },
+            {
+                "date": "20131211",
+                "cube": []
+            },
+            {
+                "date": "20131212",
+                "cube": []
+            },
+            {
+                "date": "20131213",
+                "cube": []
+            },
+            {
+                "date": "20131214",
+                "cube": []
+            },
+            {
+                "date": "20131215",
+                "cube": []
+            },
+            {
+                "date": "20131216",
+                "cube": []
+            },
+            {
+                "date": "20131217",
+                "cube": []
+            },
+            {
+                "date": "20131218",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 266.33,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131219",
+                "cube": []
+            },
+            {
+                "date": "20131220",
+                "cube": []
+            },
+            {
+                "date": "20131221",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 1231.33,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131222",
+                "cube": []
+            },
+            {
+                "date": "20131223",
+                "cube": [
+                    {
+                        "hash": "F#4",
+                        "num_payments": 5,
+                        "avg": 687.18,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20131224",
+                "cube": []
+            },
+            {
+                "date": "20131226",
+                "cube": []
+            },
+            {
+                "date": "20131227",
+                "cube": []
+            },
+            {
+                "date": "20131228",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 764.8,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131229",
+                "cube": []
+            },
+            {
+                "date": "20131230",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 2606.5,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20131231",
+                "cube": []
+            },
+            {
+                "date": "20140102",
+                "cube": []
+            },
+            {
+                "date": "20140103",
+                "cube": []
+            },
+            {
+                "date": "20140104",
+                "cube": []
+            },
+            {
+                "date": "20140105",
+                "cube": []
+            },
+            {
+                "date": "20140106",
+                "cube": []
+            },
+            {
+                "date": "20140107",
+                "cube": []
+            },
+            {
+                "date": "20140108",
+                "cube": []
+            },
+            {
+                "date": "20140109",
+                "cube": []
+            },
+            {
+                "date": "20140110",
+                "cube": []
+            },
+            {
+                "date": "20140111",
+                "cube": []
+            },
+            {
+                "date": "20140112",
+                "cube": []
+            },
+            {
+                "date": "20140113",
+                "cube": [
+                    {
+                        "hash": "F#5",
+                        "num_payments": 3,
+                        "avg": 365.05,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140114",
+                "cube": [
+                    {
+                        "hash": "M#6",
+                        "num_payments": 3,
+                        "avg": 371.64,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140115",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 1059.98,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "F#4",
+                        "num_payments": 6,
+                        "avg": 727.17,
+                        "num_cards": 5
+                    }
+                ]
+            },
+            {
+                "date": "20140116",
+                "cube": []
+            },
+            {
+                "date": "20140117",
+                "cube": []
+            },
+            {
+                "date": "20140118",
+                "cube": []
+            },
+            {
+                "date": "20140119",
+                "cube": []
+            },
+            {
+                "date": "20140120",
+                "cube": []
+            },
+            {
+                "date": "20140121",
+                "cube": []
+            },
+            {
+                "date": "20140122",
+                "cube": []
+            },
+            {
+                "date": "20140123",
+                "cube": []
+            },
+            {
+                "date": "20140124",
+                "cube": []
+            },
+            {
+                "date": "20140125",
+                "cube": []
+            },
+            {
+                "date": "20140126",
+                "cube": []
+            },
+            {
+                "date": "20140127",
+                "cube": []
+            },
+            {
+                "date": "20140128",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 3,
+                        "avg": 306.63,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140129",
+                "cube": []
+            },
+            {
+                "date": "20140130",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 1266.33,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140131",
+                "cube": []
+            },
+            {
+                "date": "20140201",
+                "cube": []
+            },
+            {
+                "date": "20140203",
+                "cube": []
+            },
+            {
+                "date": "20140204",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 3,
+                        "avg": 561.67,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140205",
+                "cube": []
+            },
+            {
+                "date": "20140206",
+                "cube": []
+            },
+            {
+                "date": "20140207",
+                "cube": [
+                    {
+                        "hash": "F#5",
+                        "num_payments": 5,
+                        "avg": 1279.08,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140208",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 2067.35,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140209",
+                "cube": []
+            },
+            {
+                "date": "20140210",
+                "cube": [
+                    {
+                        "hash": "M#4",
+                        "num_payments": 4,
+                        "avg": 167.38,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140211",
+                "cube": []
+            },
+            {
+                "date": "20140212",
+                "cube": []
+            },
+            {
+                "date": "20140213",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 515.33,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140214",
+                "cube": []
+            },
+            {
+                "date": "20140215",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 1033.33,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140216",
+                "cube": []
+            },
+            {
+                "date": "20140217",
+                "cube": []
+            },
+            {
+                "date": "20140218",
+                "cube": []
+            },
+            {
+                "date": "20140219",
+                "cube": []
+            },
+            {
+                "date": "20140220",
+                "cube": []
+            },
+            {
+                "date": "20140221",
+                "cube": []
+            },
+            {
+                "date": "20140222",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 4,
+                        "avg": 888.13,
+                        "num_cards": 4
+                    },
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 379.71,
+                        "num_cards": 4
+                    }
+                ]
+            },
+            {
+                "date": "20140223",
+                "cube": []
+            },
+            {
+                "date": "20140224",
+                "cube": [
+                    {
+                        "hash": "F#5",
+                        "num_payments": 3,
+                        "avg": 723.78,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140225",
+                "cube": [
+                    {
+                        "hash": "F#4",
+                        "num_payments": 3,
+                        "avg": 1911.33,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140226",
+                "cube": []
+            },
+            {
+                "date": "20140227",
+                "cube": []
+            },
+            {
+                "date": "20140228",
+                "cube": []
+            },
+            {
+                "date": "20140301",
+                "cube": []
+            },
+            {
+                "date": "20140302",
+                "cube": []
+            },
+            {
+                "date": "20140303",
+                "cube": [
+                    {
+                        "hash": "M#4",
+                        "num_payments": 3,
+                        "avg": 407.84,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140304",
+                "cube": []
+            },
+            {
+                "date": "20140305",
+                "cube": [
+                    {
+                        "hash": "M#1",
+                        "num_payments": 4,
+                        "avg": 588.73,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140306",
+                "cube": []
+            },
+            {
+                "date": "20140307",
+                "cube": []
+            },
+            {
+                "date": "20140308",
+                "cube": [
+                    {
+                        "hash": "F#3",
+                        "num_payments": 3,
+                        "avg": 1453.33,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140309",
+                "cube": []
+            },
+            {
+                "date": "20140310",
+                "cube": [
+                    {
+                        "hash": "F#5",
+                        "num_payments": 3,
+                        "avg": 645.61,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140311",
+                "cube": []
+            },
+            {
+                "date": "20140312",
+                "cube": []
+            },
+            {
+                "date": "20140313",
+                "cube": []
+            },
+            {
+                "date": "20140314",
+                "cube": []
+            },
+            {
+                "date": "20140315",
+                "cube": []
+            },
+            {
+                "date": "20140316",
+                "cube": []
+            },
+            {
+                "date": "20140317",
+                "cube": []
+            },
+            {
+                "date": "20140318",
+                "cube": []
+            },
+            {
+                "date": "20140319",
+                "cube": []
+            },
+            {
+                "date": "20140320",
+                "cube": []
+            },
+            {
+                "date": "20140321",
+                "cube": []
+            },
+            {
+                "date": "20140322",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 1024.97,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140323",
+                "cube": []
+            },
+            {
+                "date": "20140324",
+                "cube": []
+            },
+            {
+                "date": "20140325",
+                "cube": []
+            },
+            {
+                "date": "20140326",
+                "cube": []
+            },
+            {
+                "date": "20140327",
+                "cube": [
+                    {
+                        "hash": "F#4",
+                        "num_payments": 3,
+                        "avg": 390,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140328",
+                "cube": []
+            },
+            {
+                "date": "20140329",
+                "cube": []
+            },
+            {
+                "date": "20140331",
+                "cube": []
+            },
+            {
+                "date": "20140401",
+                "cube": []
+            },
+            {
+                "date": "20140402",
+                "cube": [
+                    {
+                        "hash": "F#4",
+                        "num_payments": 3,
+                        "avg": 1359.93,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#6",
+                        "num_payments": 3,
+                        "avg": 566.33,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140403",
+                "cube": []
+            },
+            {
+                "date": "20140404",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 990,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140405",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 3,
+                        "avg": 1908.57,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140406",
+                "cube": []
+            },
+            {
+                "date": "20140407",
+                "cube": []
+            },
+            {
+                "date": "20140408",
+                "cube": []
+            },
+            {
+                "date": "20140409",
+                "cube": []
+            },
+            {
+                "date": "20140410",
+                "cube": []
+            },
+            {
+                "date": "20140411",
+                "cube": [
+                    {
+                        "hash": "M#2",
+                        "num_payments": 3,
+                        "avg": 138.84,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140412",
+                "cube": []
+            },
+            {
+                "date": "20140413",
+                "cube": []
+            },
+            {
+                "date": "20140414",
+                "cube": [
+                    {
+                        "hash": "F#4",
+                        "num_payments": 3,
+                        "avg": 1120,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "F#5",
+                        "num_payments": 3,
+                        "avg": 293.3,
+                        "num_cards": 3
+                    },
+                    {
+                        "hash": "M#6",
+                        "num_payments": 3,
+                        "avg": 959.3,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140415",
+                "cube": []
+            },
+            {
+                "date": "20140416",
+                "cube": []
+            },
+            {
+                "date": "20140417",
+                "cube": []
+            },
+            {
+                "date": "20140418",
+                "cube": []
+            },
+            {
+                "date": "20140419",
+                "cube": []
+            },
+            {
+                "date": "20140421",
+                "cube": []
+            },
+            {
+                "date": "20140422",
+                "cube": []
+            },
+            {
+                "date": "20140423",
+                "cube": []
+            },
+            {
+                "date": "20140424",
+                "cube": []
+            },
+            {
+                "date": "20140425",
+                "cube": [
+                    {
+                        "hash": "F#1",
+                        "num_payments": 3,
+                        "avg": 481.67,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140426",
+                "cube": [
+                    {
+                        "hash": "F#2",
+                        "num_payments": 5,
+                        "avg": 671.98,
+                        "num_cards": 5
+                    },
+                    {
+                        "hash": "F#3",
+                        "num_payments": 4,
+                        "avg": 879.42,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140427",
+                "cube": []
+            },
+            {
+                "date": "20140428",
+                "cube": []
+            },
+            {
+                "date": "20140429",
+                "cube": [
+                    {
+                        "hash": "M#3",
+                        "num_payments": 4,
+                        "avg": 264.38,
+                        "num_cards": 3
+                    }
+                ]
+            },
+            {
+                "date": "20140430",
+                "cube": []
+            }
+        ]
+}
 };
-    
+
