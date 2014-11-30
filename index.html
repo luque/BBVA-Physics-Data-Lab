@@ -12,25 +12,38 @@
 <script src="js/dataset/monterrey_tech.js"></script>
 </head>
 <body>
-  <h1>PhyoDAT - Physics-oriented Data Analysis Tool</h1>
-  <h2>with BBVA Data API</h2>
-    <div id="months">
-      <input type="button" value="11/2013" onClick="populateWorld(0)">
-      <input type="button" value="12/2013" onClick="populateWorld(1)">
-      <input type="button" value="01/2014" onClick="populateWorld(2)">
-      <input type="button" value="02/2014" onClick="populateWorld(3)">
-      <input type="button" value="03/2014" onClick="populateWorld(4)">
-      <input type="button" value="04/2014" onClick="populateWorld(5)">
-    </div>
+    <h1>PhyoDAT - Physics-oriented Data Analysis Tool</h1>
+    <h2>with BBVA Data API</h2>
+
     <div id="controls">
-      <input type="button" value="filter wall" onClick="activateFilter()"/>
+      
+      <div id="months">
+        <p>Choose a month:</p>
+        <input type="button" value="Nov 2013" onClick="populateWorld(0)">
+        <input type="button" value="Dec 2013" onClick="populateWorld(1)">
+        <input type="button" value="Jan 2014" onClick="populateWorld(2)">
+        <input type="button" value="Feb 2014" onClick="populateWorld(3)">
+        <input type="button" value="Mar 2014" onClick="populateWorld(4)">
+        <input type="button" value="Apr 2014" onClick="populateWorld(5)">
+      </div>     
+            
     </div>
-    <div id="dayInfo"></div>
+
+    <div id="tools">
+      <input id="inspectorBtn" type="button" value="Object Inspector" onClick="toggleInspector()"/>
+      <div id="sphereInfo"></div>
+    </div>
+    
     <div id='lab'></div>
+
+    <div id="dayInfo"></div>
+    
 <script>
     // Three.js vars
-    var camera, scene, light, renderer, container;
+    var camera, scene, light, renderer, container, projector, mouseVector, spheres;
+    var selectedMesh, previousSelectedMeshMaterial;
     var meshs = [];
+    var bodys=[];
     var grounds = [];
     var isMobile = false;
     var antialias = true;
@@ -78,9 +91,11 @@
         'sph.mx_beauty': '#ecc82c',
         'sph.mx_health':'#fffeef'
     };
+
     var paymentsPerSphere = 50;
     var paymentBucket = 500;
     var radioPerPaymentBucket = 20;
+
     var yGapBetweenDays = 100;
     var daysOfMonth = [
         30, // 0 -> 11/2013
@@ -90,7 +105,9 @@
         31, // 4 -> 03/2014
         30  // 5 -> 04/2014
     ];
-    var currentDate = 0;    
+    var currentDate = 0;
+    var inspectorActivated = false;
+
 
     init();
     loop();
@@ -114,10 +131,18 @@
         var cameraNearPlane = 1;
         var cameraFarPlane = 15000;
         camera = new THREE.PerspectiveCamera(cameraFOV, cameraAspectRatio, cameraNearPlane, cameraFarPlane);
-        initCamera(0,0,2000);
+        initCamera(0, 0, 1500);
+        camera.lookAt( new THREE.Vector3( 0, 0, 0 ) )        
 
         scene = new THREE.Scene();
 
+        spheres = new THREE.Object3D();
+        scene.add(spheres);        
+       
+	// object picking stuff
+	projector = new THREE.Projector();
+	raycaster = new THREE.Raycaster();
+        
         // renderer
         renderer = new THREE.WebGLRenderer({precision: "mediump", antialias: antialias});
         renderer.setSize(window.innerWidth, window.innerHeight);
@@ -250,11 +275,11 @@ function addStaticBox(size, position, rotation, spec) {
         mesh.receiveShadow = true;
     }
 
-    function clearMesh(){
+    function clearMeshes(){
         var i=meshs.length;
-        while (i--) scene.remove(meshs[ i ]);
+        while (i--) spheres.remove(meshs[ i ]);
         i = grounds.length;
-        while (i--) scene.remove(grounds[ i ]);
+        while (i--) scene.remove(grounds[ i ]);                
         grounds = [];
         meshs = [];
     }
@@ -278,12 +303,12 @@ function addStaticBox(size, position, rotation, spec) {
     function populateWorld(month) {
     
         // Reset old
+        turnOffInspector();
         clearInterval(updateOimoPhysics, 1000/60);
         currentDate = 0;
         document.getElementById("dayInfo").innerHTML = '';        
-        clearMesh();
+        clearMeshes();
         world.clear();
-        bodys=[];
 
         // add ground
         var ground = new OIMO.Body({size:[1000, 100, 1000], pos:[0,-50,0], world:world, config: config});
@@ -341,7 +366,7 @@ function addStaticBox(size, position, rotation, spec) {
                             paymentsPerSphere;
                         
                         // Create sphere body and mesh
-                        var bodyMetadata = {
+                        var sphereMetadata = {
                             date: date,
                             category: category,
                             payments: numPayments,
@@ -350,13 +375,16 @@ function addStaticBox(size, position, rotation, spec) {
                             age: cube.hash.substring(2),
                             landed: false
                         };
-                        config[3] = bodyMetadata.gender == 'M' ? group2 : group3;                        
-                        bodys[i] = new OIMO.Body({type:'sphere', size:[w*0.5], pos:[x,y,z], move:true, sleeping: false, world:world, metadata: bodyMetadata, config: config});
+                        config[3] = sphereMetadata.gender == 'M' ? group2 : group3;                        
+                        bodys[i] = new OIMO.Body({type:'sphere', size:[w*0.5], pos:[x,y,z], move:true, sleeping: false, world:world, metadata: sphereMetadata, config: config});
                         meshs[i] = new THREE.Mesh( geos.sphere, mats['sph.' + category]);
+                        meshs[i].name = i;
+                        meshs[i].userData = sphereMetadata;
                         meshs[i].scale.set( w*0.5, w*0.5, w*0.5 );           
                         meshs[i].castShadow = true;
                         meshs[i].receiveShadow = true;
-                        scene.add(meshs[i++]);                                            
+                        //scene.add(meshs[i++]);
+                        spheres.add(meshs[i++]);
                     } // bodies                    
                 } // cubes                
             } // categories
@@ -369,7 +397,7 @@ function addStaticBox(size, position, rotation, spec) {
         world.step();
 
         var x, y, z;
-        var i = bodys.length;
+        var i = spheres.children.length;
         var mesh;
         var body; 
 
@@ -438,10 +466,58 @@ function addStaticBox(size, position, rotation, spec) {
         return tx;
     }
 
+    // Raycast Test
+    var rayTest = function () {
+        if (inspectorActivated && mouse.down) {
+            var vector = new THREE.Vector3( mouse.mx, mouse.my, 1 );
+            projector.unprojectVector( vector, camera );
+            raycaster.set( camera.position, vector.sub(camera.position).normalize());
+            var intersects = raycaster.intersectObjects(spheres.children, true);
+            if (intersects.length > 0) {
+                if (selectedMesh) {
+                    selectedMesh.material = previousSelectedMeshMaterial;
+                }
+                selectedMesh = intersects[0].object;
+                var selectedBody = bodys[selectedMesh.name].body;
+                var metadata = selectedMesh.userData;
+                document.getElementById("sphereInfo").innerHTML =
+                    "Date: " + metadata.date + "<br/>" +
+                    "Category: " + metadata.category + "<br/>" +
+                    "Payments: " + metadata.payments + "<br/>" +
+                    "Avg payment: " + metadata.avg + "<br/>" +
+                    "Gender: " + genderAsString(metadata.gender) + "<br/>" +
+                    "Age: " + ageAsString(metadata.age);
+                //selectedBody.resetPosition(selectedBody.position.x, 200, selectedBody.position.z);
+                previousSelectedMeshMaterial = selectedMesh.material;
+                selectedMesh.material = selectedMesh.material.clone();
+                selectedMesh.material.color.setRGB(.5,0,0);
+            }        
+        }
+    }
+
     // UI Controls
 
     function getCurrentDataset() {
         return monterrey_tech_dataset;
+    }
+
+    function toggleInspector() {
+        inspectorActivated = !inspectorActivated;
+        if (inspectorActivated) {
+            document.getElementById("inspectorBtn").className = "activated";
+        } else {
+            document.getElementById("sphereInfo").innerHTML = "";            
+            document.getElementById("inspectorBtn").className = "";
+            if (selectedMesh) {
+                selectedMesh.material = previousSelectedMeshMaterial;
+            }
+        }
+    }
+
+    function turnOffInspector() {
+        if (inspectorActivated) {
+            toggleInspector();
+        }
     }
 
     function activateFilter() {
@@ -449,6 +525,30 @@ function addStaticBox(size, position, rotation, spec) {
         config[4] = all & ~group2; // all except group2
         var filter = new OIMO.Body({size:[5, 100, 390], pos:[0,40,0], rot:[0,0,0], world:world, config:config});
         addStaticBox([10, 400, 1000], [0,200,0], [0,0,0], true);            
+    }
+
+    function genderAsString(gender) {
+        var genders = {
+            'M': 'male',
+            'F': 'female',
+            'E': 'enterprise',
+            'U': 'unknown'
+        };
+        return genders[gender];
+    }
+
+    function ageAsString(age) {
+        var ages = {
+            '0': '<= 18',
+            '1': '19 - 25',
+            '2': '26 - 35',
+            '3': '36 - 45',
+            '4': '46 - 55',
+            '5': '56 - 65',
+            '6': '> 66',
+            'U': 'unknown'
+        };
+        return ages[age];    
     }
 
 </script>
