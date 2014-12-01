@@ -18650,6 +18650,7 @@ var monterrey_tech_dataset = { // zipcode = 64700
             }
         ]
     },
+
     "mx_food": {
         "stats": [
             {
@@ -34151,6 +34152,7 @@ var monterrey_tech_dataset = { // zipcode = 64700
             }
         ]                   
     },
+
     "mx_office": {
      "stats": [
             {
@@ -38338,6 +38340,7 @@ var monterrey_tech_dataset = { // zipcode = 64700
             }
         ]
     },
+
     "mx_car": {
                 "stats": [
             {
@@ -38696,12 +38699,20 @@ var monterrey_tech_dataset = { // zipcode = 64700
                 "date": "20131221",
                 "cube": []
             },
+		    {
+                "date": "20131222",
+                "cube": []
+            },
             {
                 "date": "20131223",
                 "cube": []
             },
             {
                 "date": "20131224",
+                "cube": []
+            },
+{
+                "date": "20131225",
                 "cube": []
             },
             {
@@ -38728,6 +38739,9 @@ var monterrey_tech_dataset = { // zipcode = 64700
             {
                 "date": "20131228",
                 "cube": []
+            },{
+                "date": "20131229",
+                "cube": []
             },
             {
                 "date": "20131230",
@@ -38742,6 +38756,10 @@ var monterrey_tech_dataset = { // zipcode = 64700
             },
             {
                 "date": "20131231",
+                "cube": []
+            },
+{
+                "date": "20140101",
                 "cube": []
             },
             {
@@ -38802,6 +38820,10 @@ var monterrey_tech_dataset = { // zipcode = 64700
             },
             {
                 "date": "20140111",
+                "cube": []
+            },
+ {
+                "date": "20140112",
                 "cube": []
             },
             {
@@ -38908,6 +38930,10 @@ var monterrey_tech_dataset = { // zipcode = 64700
                 "date": "20140125",
                 "cube": []
             },
+{
+                "date": "20140126",
+                "cube": []
+            },
             {
                 "date": "20140127",
                 "cube": []
@@ -38964,6 +38990,9 @@ var monterrey_tech_dataset = { // zipcode = 64700
             {
                 "date": "20140201",
                 "cube": []
+            } ,{
+                "date": "20140202",
+                "cube": []
             },
             {
                 "date": "20140203",
@@ -39002,6 +39031,10 @@ var monterrey_tech_dataset = { // zipcode = 64700
                         "num_cards": 3
                     }
                 ]
+            },
+{
+                "date": "20140209",
+                "cube": []
             },
             {
                 "date": "20140210",
@@ -39072,6 +39105,10 @@ var monterrey_tech_dataset = { // zipcode = 64700
                         "num_cards": 5
                     }
                 ]
+            },
+ {
+                "date": "20140216",
+                "cube": []
             },
             {
                 "date": "20140217",
@@ -39337,6 +39374,10 @@ var monterrey_tech_dataset = { // zipcode = 64700
                 "date": "20140316",
                 "cube": []
             },
+	    {
+                "date": "20140317",
+                "cube": []
+            },
             {
                 "date": "20140318",
                 "cube": [
@@ -39564,6 +39605,10 @@ var monterrey_tech_dataset = { // zipcode = 64700
                     }
                 ]
             },
+	    {
+                "date": "20140406",
+                "cube": []
+            },
             {
                 "date": "20140407",
                 "cube": []
@@ -39731,6 +39776,10 @@ var monterrey_tech_dataset = { // zipcode = 64700
                 "date": "20140419",
                 "cube": []
             },
+		  {
+                "date": "20140420",
+                "cube": []
+            },
             {
                 "date": "20140421",
                 "cube": [
@@ -39802,6 +39851,10 @@ var monterrey_tech_dataset = { // zipcode = 64700
                     }
                 ]
             },
+ {
+                "date": "20140427", //missing in api response
+                "cube": []
+            },
             {
                 "date": "20140428",
                 "cube": [
@@ -39825,6 +39878,7 @@ var monterrey_tech_dataset = { // zipcode = 64700
 
 
      },
+
 
       "mx_auto": {
       "stats": [
@@ -42391,6 +42445,7 @@ var monterrey_tech_dataset = { // zipcode = 64700
             }
         ]
     },
+
     "mx_travel": {
     "stats": [
             {
@@ -43345,6 +43400,7 @@ var monterrey_tech_dataset = { // zipcode = 64700
             }
         ]
     },
+
     "mx_sport": {
   "stats": [
             {
@@ -43555,6 +43611,14 @@ var monterrey_tech_dataset = { // zipcode = 64700
                     }
                 ]
             },
+{
+                "date": "20131130",
+                "cube": []
+            },
+{
+                "date": "20131201",
+                "cube": []
+            },
             {
                 "date": "20131202",
                 "cube": [
@@ -43639,6 +43703,10 @@ var monterrey_tech_dataset = { // zipcode = 64700
             },
             {
                 "date": "20131214",
+                "cube": []
+            },
+ {
+                "date": "20131215",
                 "cube": []
             },
             {
@@ -43726,8 +43794,16 @@ var monterrey_tech_dataset = { // zipcode = 64700
                 "date": "20131224",
                 "cube": []
             },
+{
+                "date": "20131225",
+                "cube": []
+            },
             {
                 "date": "20131226",
+                "cube": []
+            },
+{
+                "date": "20131227",
                 "cube": []
             },
             {
@@ -43744,6 +43820,10 @@ var monterrey_tech_dataset = { // zipcode = 64700
             },
             {
                 "date": "20131231",
+                "cube": []
+            },
+{
+                "date": "20140101",
                 "cube": []
             },
             {
@@ -44095,6 +44175,10 @@ var monterrey_tech_dataset = { // zipcode = 64700
                     }
                 ]
             },
+{
+                "date": "20140216",
+                "cube": []
+            },
             {
                 "date": "20140217",
                 "cube": [
@@ -44170,7 +44254,7 @@ var monterrey_tech_dataset = { // zipcode = 64700
                 "cube": []
             },
             {
-                "date": "20140301",
+                "date": "2014<0301",
                 "cube": []
             },
             {
@@ -44218,6 +44302,10 @@ var monterrey_tech_dataset = { // zipcode = 64700
             },
             {
                 "date": "20140308",
+                "cube": []
+            },
+ {
+                "date": "20140309",
                 "cube": []
             },
             {
@@ -44568,6 +44656,10 @@ var monterrey_tech_dataset = { // zipcode = 64700
                 "date": "20131102",
                 "cube": []
             },
+	    {
+                "date": "20131103",
+                "cube": []
+            },
             {
                 "date": "20131104",
                 "cube": []
@@ -44604,6 +44696,10 @@ var monterrey_tech_dataset = { // zipcode = 64700
                         "num_cards": 4
                     }
                 ]
+            },
+	    {
+                "date": "20131110",
+                "cube": []
             },
             {
                 "date": "20131111",
@@ -44655,10 +44751,24 @@ var monterrey_tech_dataset = { // zipcode = 64700
                     }
                 ]
             },
-            {
+	    {
+                "date": "20131117",
+                "cube": []
+            },
+{
+                "date": "20131118",
+                "cube": []
+            },
+{
+                "date": "20131119",
+                "cube": []
+            },
+{
                 "date": "20131120",
                 "cube": []
             },
+
+            
             {
                 "date": "20131121",
                 "cube": []
@@ -44669,6 +44779,11 @@ var monterrey_tech_dataset = { // zipcode = 64700
             },
             {
                 "date": "20131123",
+                "cube": []
+            },
+
+{
+                "date": "20131124",
                 "cube": []
             },
             {
@@ -44763,6 +44878,11 @@ var monterrey_tech_dataset = { // zipcode = 64700
                     }
                 ]
             },
+ {
+                "date": "20131208",
+                "cube": []
+            },
+
             {
                 "date": "20131209",
                 "cube": []
@@ -44875,12 +44995,20 @@ var monterrey_tech_dataset = { // zipcode = 64700
                 "date": "20131221",
                 "cube": []
             },
+{
+                "date": "20131222",
+                "cube": []
+            },
             {
                 "date": "20131223",
                 "cube": []
             },
             {
                 "date": "20131224",
+                "cube": []
+            },
+{
+                "date": "20131225",
                 "cube": []
             },
             {
@@ -44895,6 +45023,10 @@ var monterrey_tech_dataset = { // zipcode = 64700
                 "date": "20131228",
                 "cube": []
             },
+{
+                "date": "20131229",
+                "cube": []
+            },
             {
                 "date": "20131230",
                 "cube": []
@@ -44904,6 +45036,10 @@ var monterrey_tech_dataset = { // zipcode = 64700
                 "cube": []
             },
             {
+                "date": "20140101",
+                "cube": []
+            },
+ {
                 "date": "20140102",
                 "cube": []
             },
@@ -44915,8 +45051,16 @@ var monterrey_tech_dataset = { // zipcode = 64700
                 "date": "20140104",
                 "cube": []
             },
+ {
+                "date": "20140105",
+                "cube": []
+            },
             {
                 "date": "20140106",
+                "cube": []
+            },
+ {
+                "date": "20140107",
                 "cube": []
             },
             {
@@ -44933,6 +45077,10 @@ var monterrey_tech_dataset = { // zipcode = 64700
             },
             {
                 "date": "20140111",
+                "cube": []
+            },
+ {
+                "date": "20140112",
                 "cube": []
             },
             {
@@ -44979,6 +45127,10 @@ var monterrey_tech_dataset = { // zipcode = 64700
                     }
                 ]
             },
+ {
+                "date": "20140119",
+                "cube": []
+            },
             {
                 "date": "20140120",
                 "cube": []
@@ -45023,6 +45175,10 @@ var monterrey_tech_dataset = { // zipcode = 64700
                     }
                 ]
             },
+ {
+                "date": "20140126",
+                "cube": []
+            },
             {
                 "date": "20140127",
                 "cube": []
@@ -45055,6 +45211,10 @@ var monterrey_tech_dataset = { // zipcode = 64700
                 ]
             },
             {
+                "date": "20140202",
+                "cube": []
+            },
+{
                 "date": "20140203",
                 "cube": []
             },
@@ -45181,10 +45341,15 @@ var monterrey_tech_dataset = { // zipcode = 64700
                     }
                 ]
             },
-            {
+{
+                "date": "20140223",
+                "cube": []
+            },
+{
                 "date": "20140224",
                 "cube": []
             },
+            
             {
                 "date": "20140225",
                 "cube": []
@@ -45344,6 +45509,10 @@ var monterrey_tech_dataset = { // zipcode = 64700
                 "cube": []
             },
             {
+                "date": "20140323",
+                "cube": []
+            },
+            {
                 "date": "20140324",
                 "cube": []
             },
@@ -45483,6 +45652,10 @@ var monterrey_tech_dataset = { // zipcode = 64700
                     }
                 ]
             },
+{
+                "date": "20140413",
+                "cube": []
+            },
             {
                 "date": "20140414",
                 "cube": [
@@ -45504,6 +45677,10 @@ var monterrey_tech_dataset = { // zipcode = 64700
             },
             {
                 "date": "20140417",
+                "cube": []
+            },
+{
+                "date": "20140418",
                 "cube": []
             },
             {
@@ -45578,6 +45755,8 @@ var monterrey_tech_dataset = { // zipcode = 64700
         ]
 
       },
+
+
 "mx_health": {
  "stats": [
             {
@@ -45628,6 +45807,10 @@ var monterrey_tech_dataset = { // zipcode = 64700
             },
             {
                 "date": "20131109",
+                "cube": []
+            },
+ {
+                "date": "20131110",
                 "cube": []
             },
             {
@@ -45715,6 +45898,10 @@ var monterrey_tech_dataset = { // zipcode = 64700
             },
             {
                 "date": "20131130",
+                "cube": []
+            },
+ {
+                "date": "20131201",
                 "cube": []
             },
             {
@@ -45861,6 +46048,10 @@ var monterrey_tech_dataset = { // zipcode = 64700
             },
             {
                 "date": "20131224",
+                "cube": []
+            },
+ {
+                "date": "20141225",
                 "cube": []
             },
             {
@@ -46066,7 +46257,11 @@ var monterrey_tech_dataset = { // zipcode = 64700
                 "date": "20140201",
                 "cube": []
             },
-            {
+
+ {
+                "date": "20140202",
+                "cube": []
+            },            {
                 "date": "20140203",
                 "cube": []
             },
@@ -46397,6 +46592,10 @@ var monterrey_tech_dataset = { // zipcode = 64700
                 "date": "20140329",
                 "cube": []
             },
+ {
+                "date": "20140330",
+                "cube": []
+            },
             {
                 "date": "20140331",
                 "cube": []
@@ -46526,11 +46725,15 @@ var monterrey_tech_dataset = { // zipcode = 64700
                 "date": "20140418",
                 "cube": []
             },
-            {
-                "date": "20140419",
+             {
+                "date": "20140419", ///missing  in api
                 "cube": []
-            },
-            {
+            },           
+             {
+                "date": "20140420",//missing in api
+                "cube": []
+            },           
+             {
                 "date": "20140421",
                 "cube": []
             },
@@ -46560,7 +46763,7 @@ var monterrey_tech_dataset = { // zipcode = 64700
             {
                 "date": "20140426",
                 "cube": [
-                    {
+                   {
                         "hash": "F#2",
                         "num_payments": 5,
                         "avg": 671.98,
