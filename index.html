@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="css/lab.css"/>
 <script src="js/three.min.js"></script>
 <script src="js/navigation.js"></script>
-<script src="js/Oimo.rev.js"></script>
+<script src="js/Oimo.js"></script>
 <script src="js/dataset/monterrey_tech.js"></script>
 </head>
 <body>
@@ -32,6 +32,7 @@
     <div id="tools">
       <input id="inspectorBtn" type="button" value="Object Inspector" onClick="toggleInspector()"/>
       <div id="sphereInfo"></div>
+      <input id="filterBtn" type="button" value="Wall Filter" onClick="toggleFilter()"/>
     </div>
     
     <div id='lab'></div>
@@ -40,11 +41,13 @@
     
 <script>
     // Three.js vars
-    var camera, scene, light, renderer, container, projector, mouseVector, spheres;
-    var selectedMesh, previousSelectedMeshMaterial;
+    var camera, scene, light, renderer, container, projector, mouseVector, spheres, groundContents, groundMesh, wall;
     var meshs = [];
     var bodys=[];
+    var joints=[];
     var grounds = [];
+    var selectedMesh, previousSelectedMeshMaterial;
+    var filterWallBody, filterWall1, filterWall2, filterWall3, filterWall4;
     var isMobile = false;
     var antialias = true;
 
@@ -63,17 +66,17 @@
     var debugColor2 = 0x288829;
     var debugAlpha = 0.3;
 
-    // The Bit of a collision group
-    var group1 = 1 << 0;  // 00000000 00000000 00000000 00000001
-    var group2 = 1 << 1;  // 00000000 00000000 00000000 00000010
-    var group3 = 1 << 2;  // 00000000 00000000 00000000 00000100
-    var all = 0xffffffff; // 11111111 11111111 11111111 11111111
+    // Collision groups
+    var spheres_mask = 1 << 0;  // 00000000 00000000 00000000 00000001
+    var walls_mask = 1 << 2;    // 00000000 00000000 00000000 00000010
+    var filtered_mask = 1 << 3; // 00000000 00000000 00000000 00001000
+    var all_mask = 0xffffffff;  // 11111111 11111111 11111111 11111111
 
     // Is all the physics setting for rigidbody
     var config = [
         1, // The density of the shape.
-        0.5, // The coefficient of friction of the shape.
-        0.5, // The coefficient of restitution of the shape.
+        0.4, // The coefficient of friction of the shape.
+        0.2, // The coefficient of restitution of the shape.
         1, // The bits of the collision groups to which the shape belongs.
         0xffffffff // The bits of the collision groups with which the shape collides.
     ];
@@ -96,7 +99,7 @@
     var paymentBucket = 500;
     var radioPerPaymentBucket = 20;
 
-    var yGapBetweenDays = 100;
+    var yGapBetweenDays = 150;
     var daysOfMonth = [
         30, // 0 -> 11/2013
         31, // 1 -> 12/2013
@@ -106,7 +109,7 @@
         30  // 5 -> 04/2014
     ];
     var currentDate = 0;
-    var inspectorActivated = false;
+    var inspectorActivated = false, filterActivated = false;
 
 
     init();
@@ -131,14 +134,21 @@
         var cameraNearPlane = 1;
         var cameraFarPlane = 15000;
         camera = new THREE.PerspectiveCamera(cameraFOV, cameraAspectRatio, cameraNearPlane, cameraFarPlane);
-        initCamera(0, 0, 1500);
+        initCamera(0, 50, 2000);
         camera.lookAt( new THREE.Vector3( 0, 0, 0 ) )        
 
         scene = new THREE.Scene();
 
+        // container objects
         spheres = new THREE.Object3D();
-        scene.add(spheres);        
-       
+        groundContents = new THREE.Object3D();
+        scene.add(spheres);                
+        scene.add(groundContents);
+
+        // filter wall objects
+        wall = new THREE.Object3D();
+        scene.add(wall);
+        
 	// object picking stuff
 	projector = new THREE.Projector();
 	raycaster = new THREE.Raycaster();
@@ -205,7 +215,7 @@
 
 
             mats['box'] = new THREE.MeshPhongMaterial( { map: basicTexture(1), name:'box' } );
-            mats['filter'] = new THREE.MeshLambertMaterial( { color: 0x3D4143, transparent:true, opacity:0.6 } );            
+            mats['filter'] = new THREE.MeshLambertMaterial( { color: 0x3D4143, transparent: true, opacity: 0.8 } );            
             mats['ground'] = new THREE.MeshBasicMaterial( { color:debugColor, wireframe:true, transparent:true, opacity:0, fog: false, depthTest: false, depthWrite: false});
         } else {
             mats['sph.mx_barsandrestaurants'] = new THREE.MeshBasicMaterial( { map: basicTexture('sph.mx_barsandrestaurants'), name:'sph.mx_barsandrestaurants' } );
@@ -243,10 +253,11 @@ function addStaticBox(size, position, rotation, spec) {
         mesh.scale.set( size[0], size[1], size[2] );
         mesh.position.set( position[0], position[1], position[2] );
         mesh.rotation.set( rotation[0]*ToRad, rotation[1]*ToRad, rotation[2]*ToRad );
-        scene.add( mesh );
+        scene.add(mesh);
         grounds.push(mesh);
         mesh.castShadow = true;
         mesh.receiveShadow = true;
+        return mesh;
     }
 
     function addGround(size, position, rotation) {
@@ -273,15 +284,18 @@ function addStaticBox(size, position, rotation, spec) {
         grounds.push(mesh);
         mesh.castShadow = true;
         mesh.receiveShadow = true;
+        return mesh;
     }
 
     function clearMeshes(){
         var i=meshs.length;
         while (i--) spheres.remove(meshs[ i ]);
         i = grounds.length;
-        while (i--) scene.remove(grounds[ i ]);                
+        while (i--) scene.remove(grounds[ i ]);
+        groundContents.remove(groundMesh);
         grounds = [];
         meshs = [];
+        joints = [];
     }
 
     //----------------------------------
@@ -297,6 +311,7 @@ function addStaticBox(size, position, rotation, spec) {
         // 3 : dynamic bounding volume tree
 
         world = new OIMO.World(1/60, 2, 8);
+
         populateWorld(0);
     }
 
@@ -311,14 +326,17 @@ function addStaticBox(size, position, rotation, spec) {
         world.clear();
 
         // add ground
-        var ground = new OIMO.Body({size:[1000, 100, 1000], pos:[0,-50,0], world:world, config: config});
-        addGround([1000, 1, 1000], [0,0,0], [0,0,0]);
+        config[3] = walls_mask;
+        config[4] = all_mask & ~filtered_mask;
+        var ground = new OIMO.Body({size:[2000, 100, 1000], pos:[0,-50,0], world:world, config: config});
+        groundMesh = addGround([2000, 1, 1000], [0,0,0], [0,0,0]);
+        groundContents.add(groundMesh);
 
         // add walls
-        var wall1 = new OIMO.Body({size:[1100, 2000, 50], pos:[0,1000,525], world:world, config: config});
-        var wall2 = new OIMO.Body({size:[1100, 2000, 50], pos:[0,1000,-525], world:world, config: config});               
-        var wall3 = new OIMO.Body({size:[50, 2000, 1000], pos:[525,1000,0], world:world, config: config});
-        var wall4 = new OIMO.Body({size:[50, 2000, 1000], pos:[-525,1000,0], world:world, config: config});
+        var wall1 = new OIMO.Body({size:[1100, 3000, 50], pos:[0,1500,525], world:world, config: config});
+        var wall2 = new OIMO.Body({size:[1100, 3000, 50], pos:[0,1500,-525], world:world, config: config});               
+        var wall3 = new OIMO.Body({size:[50, 3000, 1000], pos:[525,1500,0], world:world, config: config});
+        var wall4 = new OIMO.Body({size:[50, 3000, 1000], pos:[-525,1500,0], world:world, config: config});               
         
         // dataset by month
         var dataset = getCurrentDataset();
@@ -375,8 +393,9 @@ function addStaticBox(size, position, rotation, spec) {
                             age: cube.hash.substring(2),
                             landed: false
                         };
-                        config[3] = sphereMetadata.gender == 'M' ? group2 : group3;                        
-                        bodys[i] = new OIMO.Body({type:'sphere', size:[w*0.5], pos:[x,y,z], move:true, sleeping: false, world:world, metadata: sphereMetadata, config: config});
+                        config[3] = spheres_mask;
+                        config[4] = all_mask;
+                        bodys[i] = new OIMO.Body({name: 'sphere-' + i, type:'sphere', size:[w*0.5], pos:[x,y,z], move:true, sleeping: false, world:world, metadata: sphereMetadata, config: config});
                         meshs[i] = new THREE.Mesh( geos.sphere, mats['sph.' + category]);
                         meshs[i].name = i;
                         meshs[i].userData = sphereMetadata;
@@ -396,8 +415,13 @@ function addStaticBox(size, position, rotation, spec) {
     function updateOimoPhysics() {
         world.step();
 
+
+        if (filterWallBody) {
+            filterWallBody.resetPosition(wall.position.x, 75, 0);
+        }
+
         var x, y, z;
-        var i = spheres.children.length;
+        var i = bodys.length;
         var mesh;
         var body; 
 
@@ -424,11 +448,20 @@ function addStaticBox(size, position, rotation, spec) {
                 y = 100 + Math.random()*1000;
                 body.resetPosition(x,y,z);
             }
+
+            // contact test
+            /*
+            if (world.checkContact('wall', 'sphere-' + i)) {
+                console.log("Contact with sphere-" + i);
+                joints[joints.length] = new OIMO.Link({body1:'wall', body2:'sphere-'+i, min:0, max:0, collision:false, world:world });       
+            }
+            */
+            
         }
     }
 
     function gravity(g){
-        nG = -10;
+        nG = -9;
         world.gravity = new OIMO.Vec3(0, nG, 0);
     }
 
@@ -493,6 +526,15 @@ function addStaticBox(size, position, rotation, spec) {
                 selectedMesh.material.color.setRGB(.5,0,0);
             }        
         }
+        if (filterActivated) {
+            var vector = new THREE.Vector3( mouse.mx, mouse.my, 1 );
+            projector.unprojectVector( vector, camera );
+            raycaster.set( camera.position, vector.sub( camera.position ).normalize() );
+            var intersects = raycaster.intersectObjects(groundContents.children);
+            if ( intersects.length) {
+                wall.position.copy( intersects[0].point );
+            }            
+        }
     }
 
     // UI Controls
@@ -520,11 +562,52 @@ function addStaticBox(size, position, rotation, spec) {
         }
     }
 
-    function activateFilter() {
-        config[3] = group1;
-        config[4] = all & ~group2; // all except group2
-        var filter = new OIMO.Body({size:[5, 100, 390], pos:[0,40,0], rot:[0,0,0], world:world, config:config});
-        addStaticBox([10, 400, 1000], [0,200,0], [0,0,0], true);            
+    function toggleFilter() {
+        filterActivated = !filterActivated;
+        if (filterActivated) {
+            config[3] = filtered_mask;
+            config[4] = all_mask;            
+            filterWallBody = new OIMO.Body({name: 'wall', size:[20, 150, 1000], pos:[600,75,0], rot:[0,0,0], world:world, move: false, config:config});
+            bodys[bodys.length] = filterWallBody;
+            meshs[meshs.length] = addStaticBox([20, 150, 1000], [600,75,0], [0,0,0], true);
+
+            var i = bodys.length;
+            var body;
+            while (i--) {
+                body = bodys[i];
+                if (body.metadata && body.metadata.category == 'mx_barsandrestaurants') {
+                    body.body.shapes.belongsTo = filtered_mask;
+                    joints[joints.length] = new OIMO.Link({
+                        type: 'jointBall',
+                        body1:'wall',
+                        body2:'sphere-'+i,
+                        pos1: [0, 0, body.getPosition().z],
+                        pos2: [0, 0, 0],
+                        min:0,
+                        max:100,
+                        collision:true,
+                        world:world });
+                }
+            }
+            
+            /*
+            filterWall1 = new OIMO.Body({size:[200, 200, 20], pos:[400,100,490], world:world, move:true, config: config});
+            filterWall2 = new OIMO.Body({size:[200, 200, 20], pos:[400,100,310], world:world, move:true, config: config});               
+            filterWall3 = new OIMO.Body({size:[20, 200, 160], pos:[310,100,400], world:world, move:true, config: config});
+            filterWall4 = new OIMO.Body({size:[20, 200, 160], pos:[490,100,400], world:world, move:true, config: config});
+            bodys[bodys.length] = filterWall1;            
+            meshs[meshs.length] = addStaticBox([200, 200, 20], [400,100,490], [0,0,0], true);
+            bodys[bodys.length] = filterWall2;            
+            meshs[meshs.length] = addStaticBox([200, 200, 20], [400,100,310], [0,0,0], true);
+            bodys[bodys.length] = filterWall3;                        
+            meshs[meshs.length] = addStaticBox([20, 200, 160], [310,100,400], [0,0,0], true);
+            bodys[bodys.length] = filterWall4;                                    
+            meshs[meshs.length] = addStaticBox([20, 200, 160], [490,100,400], [0,0,0], true);            
+            */
+            document.getElementById("filterBtn").className = "activated";
+        } else {
+            
+        }
     }
 
     function genderAsString(gender) {
