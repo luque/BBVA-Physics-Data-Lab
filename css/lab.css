@@ -1,51 +1,262 @@
-* {  margin: 0; padding: 0; border: 0;}
-
-body{ background-color: #3D4143; overflow: hidden; color:#cccccc; font-family:Consolas, 'ConsolasRegular', 'Courier New', monospace;; font-size: 11px;}
-
-h1, h2, #controls, #tools, #dayInfo {
-    position: absolute;
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
+* {  margin: 0; padding: 0; border: 0;}
+
+body{
+    background-color: #3D4143;
+    overflow: hidden;
+    color: #cccccc;
+    //font-family: Consolas, 'ConsolasRegular', 'Courier New', monospace;
+    font-family: 'proxima_nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 13px;
+}
+
+p {
+    margin: 1em 0;
+    text-align: justify;
+}
+
+em {
+    font-weight: bold;
+}
+
+a, a:hover, a:focus, a:active {
+    outline: 0;
+}
+
+/* Header */
+
 h1 {
-    top: 10px;
-    left: 10px;
+    position: absolute;    
+    top: 20px;
+    left: 20px;
+    font-size: 3em;    
 }
 
 h2 {
-    top: 40px;
-    left: 10px;
+    position: absolute;    
+    top: 60px;
+    left: 20px;
+    font-size: 1.5em;    
+    font-style: italic;    
 }
+
+/* Controls */
 
 #controls {
-    top: 100px;
-    left: 10px;
+    position: absolute;
+    left: 0;
+    top: 120px;
+    width: 300px;
+    margin-left: 20px;
 }
 
-#months {
+#choose-zipcode, #choose-period {
+    width: 100%;
+}
+
+.choose-header {
+    font-size: 2em;
+    border-bottom: 1px solid #666;
     margin: 1em 0;
 }
 
-#tools {
-    right: 60px;
-    top: 100px;
+#choose-period {
+    position: absolute;
+    left: -400px;
+    transition: left 1s ease-in-out 0s;
 }
 
-#dayInfo {
-    bottom: 30px;
-    right: 30px;
-    font-size: 3em;
+#choose-period.show {
+    left: 0;
 }
 
-#sphereInfo {
-    background-color: #aaa;
+/* Info */
+
+#info {
+    position: absolute;
+    left: 0;
+    top: 300px;
+    padding: 1em;
+    background-color: #999;
     color: #333;
-    margin: 2em 0;
+    opacity: 0;
+    text-align: center;
+    transition: opacity 1s ease-in-out 0s;
 }
+
+#info.activated {
+    opacity: 0.7;
+}
+
+#info input {
+    font-family: "icomoon" !important;
+    font-size: 2em;
+    margin: 0 auto;
+}
+
+#pause-button {
+    display: none;
+}
+
+/* Buttons */
 
 input[type=button] {
-    border: 2px solid #333;
+    font-family: monospace;    
+    border: 3px solid #666;
+    margin: 5px;
+    padding: 1px;
+    transition: padding 1s ease-in-out 0s;
 }
 
 input[type=button].activated {
-    border: 2px solid red;
+    border: 3px solid #009;
+    background-color: #339;
+    color: #eee;
 }
+
+/* Icons */
+
+.icon-map:before {
+    font-family: "icomoon" !important;
+    content: "\e601";
+}
+.icon-calendar:before {
+    font-family: "icomoon" !important;
+    content: "\e603";
+}
+.icon-stats:before {
+    font-family: "icomoon" !important;
+    content: "\e605";
+}
+.icon-magnet:before {
+    font-family: "icomoon" !important;
+    content: "\e606";
+}
+.icon-github:before {
+    font-family: "icomoon" !important;
+    content: "\e607";
+}
+.icon-target:before {
+    font-family: "icomoon" !important;
+    content: "\e608";
+}
+.icon-play:before {
+    font-family: "icomoon" !important;
+    content: "\e60a";
+}
+
+/* Tools */
+
+#tools {
+    position: absolute;
+    z-index: 100;
+    right: -100px;
+    top: 0px;
+    width: 100px;
+    height: 100%;
+    background-color: #222;
+    text-align: center;
+    transition: right 1s ease-in-out 0s;
+}
+
+#tools.shown {
+    right: 0px;
+}
+
+#tools ul {
+    list-style: none;
+}
+
+#tools li {
+    width: 100px;
+    height: 100px;
+    margin: 3em 0;
+}
+
+#tools a {
+    display: block;
+    height: 100px;
+    color: #666;
+    text-decoration: none;
+    transition: color .3s ease-in-out 0s;
+}
+
+#tools a:hover {
+    color: #ddd;
+}
+
+#tools .icon {
+    font-size: 4em;
+}
+
+#tools .tool-text {
+    font-size: 1.2em;
+}
+
+#tools .activated {
+    color: #E7B513;
+}
+
+#tools .github {
+    position: absolute;
+    bottom: 0;
+}
+
+/* Inspector Info */
+
+#inspectorInfo {   
+    position: absolute;
+    z-index: 10;
+    right: -300px;
+    top: 0px;
+    width: 250px;
+    height: 100%;    
+    background-color: #2a2a2a;
+    transition: right .5s ease-in-out 0s;
+}
+
+#inspectorInfo.shown {
+    right: 100px;
+}
+
+#inspectorInfo .subtoolbar-header {
+    display: block;
+    background-color: #333;
+    font-size: 1.5em;
+    font-variant: small-caps;
+    text-align: center;    
+    padding: 1em;
+}
+
+#inspectorInfo .content {
+    padding: 1em;
+    font-size: 1.4em;
+}
+
+dl {
+    padding: 1em;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+
+
+/* Day info */
+
+#dayInfo {
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    font-size: 2.5em;
+    text-align: center;
+}
+
