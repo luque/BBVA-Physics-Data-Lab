@@ -66,12 +66,15 @@ var textureColors = {
     'sph.mx_health':'#fffeef'
 };
 var filterColors = [ '#633', '#363', '#336' ];
-var filters = [];
-
-var paymentsPerSphere = 50;
+var filters = {};
+var defaultFilterEnabled = true;
+var defaultFilterPositionX = 0;
+var filterIdMoving = -1;
+var filterIdCounter = 0;
+var paymentsPerSphere = 100;
 var paymentBucket = 500;
 var radioPerPaymentBucket = 20;
-
+var allLanded = false;
 var yGapBetweenDays = 250;
 var daysOfMonth = [
     30, // 0 -> 11/2013
@@ -113,10 +116,6 @@ function init() {
     groundContents = new THREE.Object3D();
     scene.add(spheres);                
     scene.add(groundContents);
-
-    // filter wall objects
-    wall = new THREE.Object3D();
-    scene.add(wall);
     
     // object picking stuff
     projector = new THREE.Projector();
@@ -268,6 +267,17 @@ function clearMeshes(){
     joints = [];
 }
 
+function clearFilters() {
+    var filterKeys = Object.keys(filters);
+    var filter;
+    for (var i = 0; i < filterKeys.length; i++) {
+        filter = filters[filterKeys[i]];
+        filter.wall = null;
+        filter.wallBody = null;
+        filter.wallMesh = null;                
+    }
+}
+
 //----------------------------------
 //  OIMO PHYSICS
 //----------------------------------
@@ -354,11 +364,21 @@ function populateWorld() {
                         avg: cube.avg,
                         gender: cube.hash.substring(0,1),
                         age: cube.hash.substring(2),
-                        landed: false
+                        landed: false,
+                        isData: true
                     };
                     config[3] = spheres_mask;
                     config[4] = all_mask;
-                    bodys[i] = new OIMO.Body({name: 'sphere-' + i, type:'sphere', size:[w*0.5], pos:[x,y,z], move:true, sleeping: false, world:world, metadata: sphereMetadata, config: config});
+                    bodys[i] = new OIMO.Body({
+                        name: 'sphere-' + i,
+                        type:'sphere',
+                        size:[w*0.5],
+                        pos:[x,y,z],
+                        move:true,
+                        sleeping: false,
+                        world:world,
+                        metadata: sphereMetadata,
+                        config: config});
                     meshs[i] = new THREE.Mesh( geos.sphere, mats['sph.' + category]);
                     meshs[i].name = i;
                     meshs[i].userData = sphereMetadata;
@@ -379,8 +399,10 @@ function resetWorld() {
     turnOffInspector();
     clearInterval(updateOimoPhysics, 1000/60);
     currentDate = 0;
+    allLanded = false;
     document.getElementById("dayInfo").innerHTML = null;
     clearMeshes();
+    clearFilters();
     world.clear();    
 }
 
@@ -398,8 +420,9 @@ function updateOimoPhysics() {
     
     world.step();
 
-    if (filterWallBody) {
-        filterWallBody.resetPosition(wall.position.x, 75, 0);
+    if (filterIdMoving > -1) {
+        var movingFilter = filters[filterIdMoving];
+        movingFilter.wallBody.resetPosition(movingFilter.wall.position.x, 75, 0);
     }
 
     var x, y, z;
@@ -415,23 +438,23 @@ function updateOimoPhysics() {
         mesh.quaternion.copy(body.getQuaternion());
 
         // landing objects
-        if ((mesh.position.y < 100) && (!bodys[i].metadata.landed)) {
-            bodys[i].metadata.landed = true;
-            if (bodys[i].metadata.date > currentDate) {
-                currentDate = bodys[i].metadata.date;
-                document.getElementById("dayInfo").innerHTML = "Day " + bodys[i].metadata.date;
-                if (currentDate.substring(6) == daysOfMonth[month]) {
-                    showTools();
+        if (!allLanded) {
+            if ((mesh.position.y < 100) && (!bodys[i].metadata.landed)) {
+                bodys[i].metadata.landed = true;
+                if (bodys[i].metadata.date > currentDate) {
+                    currentDate = bodys[i].metadata.date;
+                    document.getElementById("dayInfo").innerHTML = "Day " + bodys[i].metadata.date;
+                    if (currentDate.substring(6) == daysOfMonth[month]) {
+                        showTools();
+                        allLanded = true;
+                    }
                 }
             }
         }
         
         // reset position
-        if (mesh.position.y < -100){
-            x = -100 + Math.random()*200;
-            z = -100 + Math.random()*200;
-            y = 100 + Math.random()*1000;
-            body.resetPosition(x,y,z);
+        if (mesh.position.y < -100) {
+            fallBodyFromSky(body);
         }
 
         // contact test
@@ -443,6 +466,13 @@ function updateOimoPhysics() {
         */
         
     }
+}
+
+function fallBodyFromSky(body) {    
+    var x = -100 + Math.random()*200;
+    var z = -100 + Math.random()*200;
+    var y = 100 + Math.random()*1000;
+    body.resetPosition(x,y,z);    
 }
 
 function gravity(g){
@@ -511,14 +541,15 @@ var rayTest = function () {
             selectedMesh.material.color.setRGB(.5,0,0);
         }        
     }
-    if (filterActivated) {
-        var vector = new THREE.Vector3( mouse.mx, mouse.my, 1 );
-        projector.unprojectVector( vector, camera );
-        raycaster.set( camera.position, vector.sub( camera.position ).normalize() );
+    if (filterIdMoving > -1) {
+        var movingFilter = filters[filterIdMoving];
+        var vector = new THREE.Vector3(mouse.mx, mouse.my, 1);
+        projector.unprojectVector(vector, camera);
+        raycaster.set(camera.position, vector.sub( camera.position ).normalize());
         var intersects = raycaster.intersectObjects(groundContents.children);
-        if ( intersects.length) {
-            wall.position.copy( intersects[0].point );
-        }            
+        if (intersects.length) {
+            movingFilter.wall.position.copy(intersects[0].point);
+        }
     }
 }
 
@@ -531,6 +562,7 @@ function getCurrentDataset() {
 function toggleInspector() {
     inspectorActivated = !inspectorActivated;
     if (inspectorActivated) {
+        turnOffFiltersInfo();
         document.getElementById("inspectorBtn").className = "activated";
         document.getElementById("inspectorInfo").className = "shown";        
     } else {
@@ -552,49 +584,17 @@ function turnOffInspector() {
 function toggleFiltersInfo() {
     filterActivated = !filterActivated;
     if (filterActivated) {
+        turnOffInspector();        
         document.getElementById("filterBtn").className = "activated";
         document.getElementById("filtersInfo").className = "shown";        
     } else {
-        document.getElementById("filtersInfo").className = "";        
-        document.querySelector("#filtersInfo .content").innerHTML = "";        
+        document.getElementById("filtersInfo").className = "";
         document.getElementById("filterBtn").className = "";
     }
-
-
-    /*
-    if (filterActivated) {
-        config[3] = filtered_mask;
-        config[4] = all_mask;
-        wall.position.x=-550;        
-        filterWallBody = new OIMO.Body({name: 'wall', size:[20, 150, 1000], pos:[-550,75,0], rot:[0,0,0], world:world, move: false, config:config});
-        bodys[bodys.length] = filterWallBody;
-        meshs[meshs.length] = addStaticBox([20, 150, 1000], [-550,75,0], [0,0,0], true);
-
-        var i = bodys.length;
-        var body;
-        while (i--) {
-            body = bodys[i];
-            if (body.metadata && body.metadata.category == 'mx_barsandrestaurants') {
-                body.body.shapes.belongsTo = filtered_mask;
-                joints[joints.length] = new OIMO.Link({
-                    type: 'jointBall',
-                    body1:'wall',
-                    body2:'sphere-'+i,
-                    pos1: [0, 0, body.getPosition().z],
-                    pos2: [0, 0, 0],
-                    min:0,
-                    max:100,
-                    collision:true,
-                    world:world });
-            }
-        }        
-        document.getElementById("filterBtn").className = "activated";
-    }
-    */
 }
 
 function turnOffFiltersInfo() {
-    if (filtersActivated) {
+    if (filterActivated) {
         toggleFiltersInfo();
     }
 }
@@ -610,41 +610,136 @@ function toggleMoreFilterInstructions() {
     }
 }
 
-function addFilter() {
+function createFilter() {
     var filterName = document.getElementById("newFilterName").value;
     var filterExpression = document.getElementById("newFilterExpression").value;
-    if (validateFilterData(filterName, filterExpression)) {        
-        filters.push(createNewFilter(filterName, filterExpression));
+    if (validateFilterData(filterName, filterExpression)) {
+        var filter = createNewFilter(filterName, filterExpression)
+        filters[filter.id] = filter;
         clearNewFilterForm();
-        addLastFilterInfo();
+        addFilterInfo(filter);
+        if (filter.enabled) {
+            enableFilter(filter.id);
+        }
     } else {
         alert("Oops, filter creation error!");
     }
 }
 
-function addLastFilterInfo() {
-    addFilterInfo(filters[filters.length - 1]);
+function toggleFilter(filterId) {
+    var filter = filters[filterId];
+    filter.enabled = !filter.enabled;
+    document.querySelector("#toggleFilter-" + filterId + " span").className =
+        filter.enabled ? 'icon-checkbox-checked' : 'icon-checkbox-unchecked';
+    filter.enabled ? enableFilter(filterId): disableFilter(filterId);
+}
+
+function enableFilter(filterId) {
+    var filter = filters[filterId];
+    if (!filter.wall) {
+        config[3] = filtered_mask;
+        config[4] = all_mask;
+        filter.wall = new THREE.Object3D();    
+        filter.wall.position.x = defaultFilterPositionX;
+        filter.wallBody = new OIMO.Body({
+            name: 'filter-' + filter.id,
+            size: [20, 150, 1000],
+            pos: [defaultFilterPositionX,75,0],
+            rot: [0,0,0],
+            world: world,
+            move: false,
+            config: config
+        });
+        filter.wallMesh = addStaticBox([20, 150, 1000], [defaultFilterPositionX,75,0], [0,0,0], true);
+        scene.add(filter.wall);
+        bodys[bodys.length] = filter.wallBody;
+        meshs[meshs.length] = filter.wallMesh;
+        filter.bodyIndex = bodys.length;
+    }
+    
+    var i = bodys.length;
+    var body;
+    while (i--) {
+        body = bodys[i];
+        if (body.metadata.isData &&
+            (body.body.jointLink == null) &&
+            filter.matchData(body.metadata)) {
+            
+            body.body.shapes.belongsTo = filtered_mask;
+            joints[joints.length] = new OIMO.Link({
+                type: 'jointBall',
+                body1: filter.wallBody.name,
+                body2: 'sphere-' + i,
+                pos1: [0, 0, body.getPosition().z],
+                pos2: [0, 0, 0],
+                min:0,
+                max:100,
+                collision:true,
+                world:world });
+        }
+    }
+}
+
+function disableFilter(filterId) {
+    var filter = filters[filterId];
+    var joint, sphere;
+    var newJoints = [];
+    for (var i = 0; i < joints.length; i++) {
+        joint = joints[i];
+        if (joint.joint.body1.name == filter.wallBody.name) {
+            sphere = joint.joint.body2;
+            sphere.shapes.belongsTo = spheres_mask;
+            world.removeJoint(joint.joint);
+            fallBodyFromSky(sphere);
+        } else {
+            newJoints.push(joint);
+        }
+    }
+    joints = newJoints;
+}
+
+function toggleFilterMoving(filterId) {
+    var filter = filters[filterId];
+    filter.movingEnabled = !filter.movingEnabled;
+    document.getElementById("toggleFilterMoving-" + filterId).className =
+        filter.movingEnabled ? 'activated' : null;
+    filterIdMoving = filter.movingEnabled ? filterId : -1;
 }
 
 function addFilterInfo(filter) {
     var filtersContent = document.querySelector("#filtersInfo .content");
-    filtersContent.innerHTML += '<div id="filter-' + filter.position + '" class="filter" style="border-color: ' + filter.color + '">' +
+    filtersContent.innerHTML += '<div id="filter-' + filter.id + '" class="filter" style="border-color: ' + filter.color + '">' +
         '<div class="filter-header" style="background-color: ' + filter.color + '">' + filter.name + '</div>' +
         '<div class="filter-contents">' +
         '<div class="code">' + filter.expression + '</div>' +
-        '<a href="#" onclick="removeFilter(' + filter.position + ')"><span class="icon-remove"></span></a>' +
-        '<a id="moveFilter-' + filter.position + '" href="#" onclick="moveFilter(' + filter.position + ')"><span class="icon-target"></span></a>' +        
-        '<a id="toggleFilter-' + filter.position + '" href="#" onclick="toogleFilter(' + filter.position + ')"><span class="icon-checkbox-unchecked"></span></a>' +
+        '<a href="#" onclick="removeFilter(' + filter.id + ')"><span class="icon-remove"></span></a>' +
+        '<a id="toggleFilterMoving-' + filter.id + '" href="#" onclick="toggleFilterMoving(' + filter.id + ')"><span class="icon-target"></span></a>' +        
+        '<a id="toggleFilter-' + filter.id + '" href="#" onclick="toggleFilter(' + filter.id + ')"><span class="' + (filter.enabled ? 'icon-checkbox-checked' : 'icon-checkbox-unchecked') + '"></span></a>' +
         '</div>' +
         '</div>';
 }
 
-function removeFilter(filterIndex) {
+function removeFilter(filterId) {
     if (confirm("Are you sure you want to remove this force field?")) {
-        filters.splice(filterIndex, 1);
-        var filterElement = document.getElementById("filter-" + filterIndex);
-        filterElement.parentNode.removeChild(filterElement);
+        disableFilter(filterId);
+        removeFilterWall(filterId);        
+        removeFilterInfo(filterId);
+        filters[filterId] = null;
     }
+}
+
+function removeFilterWall(filterId) {
+    var filter = filters[filterId];
+    scene.remove(filter.wall);
+    filter.wallBody.remove();
+    scene.remove(filter.wallMesh);
+    //bodys.splice(filter.bodyIndex, 1);
+    //meshs.splice(filter.bodyIndex, 1);
+}
+
+function removeFilterInfo(filterId) {
+    var filterElement = document.getElementById("filter-" + filterId);
+    filterElement.parentNode.removeChild(filterElement);
 }
 
 function clearNewFilterForm() {
@@ -663,12 +758,20 @@ function validateFilterData(name, expression) {
 
 function createNewFilter(name, expression) {
     var filter = {
+        id: filterIdCounter++,
         name: name,
         expression: expression,
-        position: filters.length,
-        color: filterColors[filters.length],
+        color: filterColors[filterIdCounter % filterColors.length],
+        enabled: defaultFilterEnabled,
+        movingEnabled: false,
         matchData: function(data) {
-            return true;
+            var resolvedExpression = expression.replace(/\$date/g, "data.date");
+            resolvedExpression = resolvedExpression.replace(/\$gender/g, "data.gender");
+            resolvedExpression = resolvedExpression.replace(/\$age_range/g, "data.age");
+            resolvedExpression = resolvedExpression.replace(/\$category/g, "data.category");
+            resolvedExpression = resolvedExpression.replace(/\$num_payments/g, "data.payments");
+            resolvedExpression = resolvedExpression.replace(/\$avg_payment/g, "data.avg");
+            return eval(resolvedExpression);
         }
     };
     return filter;

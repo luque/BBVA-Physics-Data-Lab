@@ -31,6 +31,8 @@ a, a:hover, a:focus, a:active {
     text-decoration: none;
 }
 
+
+
 code,
 .code {
     font-family: monospace;
@@ -274,8 +276,9 @@ input[type=button].activated,
     font-family: "icomoon" !important;
     content: "\e60f";
 }
-.icon-checked:before {
+.icon-checkbox-checked:before {
     font-family: "icomoon" !important;
+    color: #339;
     content: "\e610";
 }
 .icon-checkbox-unchecked:before {
@@ -490,6 +493,10 @@ dt {
 
 .filter a:hover {
     color: #ddd;
+}
+
+.filter a.activated {
+    color: #339;
 }
 
 /* Day info */
