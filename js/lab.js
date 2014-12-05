@@ -40,6 +40,9 @@ var config = [
 ];
 
 // Dataset vars
+var zipcode = null;
+var month = null;
+var analysisStarted = false;
 var datasets = {
     64700: 'monterrey_tech_dataset',
     44130: 'guadalajara_ccd_dataset',
@@ -62,6 +65,8 @@ var textureColors = {
     'sph.mx_beauty': '#ecc82c',
     'sph.mx_health':'#fffeef'
 };
+var filterColors = [ '#633', '#363', '#336' ];
+var filters = [];
 
 var paymentsPerSphere = 50;
 var paymentBucket = 500;
@@ -77,7 +82,7 @@ var daysOfMonth = [
     30  // 5 -> 04/2014
 ];
 var currentDate = 0;
-var inspectorActivated = false, filterActivated = false;
+var inspectorActivated = false, filterActivated = false, showMoreFilterInstructions = false;
 
 function init() {
     var n = navigator.userAgent;
@@ -277,7 +282,9 @@ function initOimoPhysics(){
 
     world = new OIMO.World(1/60, 2, 8);
 
-    //populateWorld();
+    addGroundToWorld();
+
+    //populateWorld();    
 }
 
 function populateWorld() {
@@ -286,12 +293,8 @@ function populateWorld() {
     resetWorld();
 
     // add ground
-    config[3] = walls_mask;
-    config[4] = all_mask & ~filtered_mask;
-    var ground = new OIMO.Body({size:[2000, 100, 1000], pos:[0,-50,0], world:world, config: config});
-    groundMesh = addGround([2000, 1, 1000], [0,0,0], [0,0,0]);
-    groundContents.add(groundMesh);
-
+    addGroundToWorld();
+    
     // add walls
     var wall1 = new OIMO.Body({size:[1100, 5000, 50], pos:[0,2500,525], world:world, config: config});
     var wall2 = new OIMO.Body({size:[1100, 5000, 50], pos:[0,2500,-525], world:world, config: config});               
@@ -381,11 +384,19 @@ function resetWorld() {
     world.clear();    
 }
 
+function addGroundToWorld() {
+    // add ground    
+    config[3] = walls_mask;
+    config[4] = all_mask & ~filtered_mask;
+    var ground = new OIMO.Body({size:[2000, 100, 1000], pos:[0,-50,0], world:world, config: config});
+    groundMesh = addGround([2000, 1, 1000], [0,0,0], [0,0,0]);
+    groundContents.add(groundMesh);    
+}
+
 function updateOimoPhysics() {
     if (!analysisStarted) return;
     
     world.step();
-
 
     if (filterWallBody) {
         filterWallBody.resetPosition(wall.position.x, 75, 0);
@@ -490,8 +501,8 @@ var rayTest = function () {
             document.querySelector("#inspectorInfo .content").innerHTML =
                 "<dl><dt>Date</dt><dd>" + metadata.date + "</dd>" +
                 "<dt>Category</dt><dd>" + metadata.category + "</dd>" +
-                "<dt>Payments</dt><dd>" + metadata.payments + "</dd>" +
-                "<dt>Avg payment</dt><dd>" + metadata.avg + "</dd>" +
+                "<dt>Num. payments</dt><dd>" + metadata.payments + "</dd>" +
+                "<dt>Avg. payment</dt><dd>" + metadata.avg + "</dd>" +
                 "<dt>Gender</dt><dd>" + genderAsString(metadata.gender) + "</dd>" +
                 "<dt>Age</dt><dd>" + ageAsString(metadata.age) + "</dd></dl>";
             //selectedBody.resetPosition(selectedBody.position.x, 200, selectedBody.position.z);
@@ -538,14 +549,26 @@ function turnOffInspector() {
     }
 }
 
-function toggleFilter() {
+function toggleFiltersInfo() {
     filterActivated = !filterActivated;
     if (filterActivated) {
+        document.getElementById("filterBtn").className = "activated";
+        document.getElementById("filtersInfo").className = "shown";        
+    } else {
+        document.getElementById("filtersInfo").className = "";        
+        document.querySelector("#filtersInfo .content").innerHTML = "";        
+        document.getElementById("filterBtn").className = "";
+    }
+
+
+    /*
+    if (filterActivated) {
         config[3] = filtered_mask;
-        config[4] = all_mask;            
-        filterWallBody = new OIMO.Body({name: 'wall', size:[20, 150, 1000], pos:[600,75,0], rot:[0,0,0], world:world, move: false, config:config});
+        config[4] = all_mask;
+        wall.position.x=-550;        
+        filterWallBody = new OIMO.Body({name: 'wall', size:[20, 150, 1000], pos:[-550,75,0], rot:[0,0,0], world:world, move: false, config:config});
         bodys[bodys.length] = filterWallBody;
-        meshs[meshs.length] = addStaticBox([20, 150, 1000], [600,75,0], [0,0,0], true);
+        meshs[meshs.length] = addStaticBox([20, 150, 1000], [-550,75,0], [0,0,0], true);
 
         var i = bodys.length;
         var body;
@@ -564,34 +587,99 @@ function toggleFilter() {
                     collision:true,
                     world:world });
             }
-        }
-        
-        /*
-          filterWall1 = new OIMO.Body({size:[200, 200, 20], pos:[400,100,490], world:world, move:true, config: config});
-          filterWall2 = new OIMO.Body({size:[200, 200, 20], pos:[400,100,310], world:world, move:true, config: config});               
-          filterWall3 = new OIMO.Body({size:[20, 200, 160], pos:[310,100,400], world:world, move:true, config: config});
-          filterWall4 = new OIMO.Body({size:[20, 200, 160], pos:[490,100,400], world:world, move:true, config: config});
-          bodys[bodys.length] = filterWall1;            
-          meshs[meshs.length] = addStaticBox([200, 200, 20], [400,100,490], [0,0,0], true);
-          bodys[bodys.length] = filterWall2;            
-          meshs[meshs.length] = addStaticBox([200, 200, 20], [400,100,310], [0,0,0], true);
-          bodys[bodys.length] = filterWall3;                        
-          meshs[meshs.length] = addStaticBox([20, 200, 160], [310,100,400], [0,0,0], true);
-          bodys[bodys.length] = filterWall4;                                    
-          meshs[meshs.length] = addStaticBox([20, 200, 160], [490,100,400], [0,0,0], true);            
-        */
+        }        
         document.getElementById("filterBtn").className = "activated";
-    } else {
-        
     }
+    */
+}
+
+function turnOffFiltersInfo() {
+    if (filtersActivated) {
+        toggleFiltersInfo();
+    }
+}
+
+function toggleMoreFilterInstructions() {
+    showMoreFilterInstructions = !showMoreFilterInstructions;
+    if (showMoreFilterInstructions) {
+        document.getElementById("moreFilterInstructions").className = 'shown';
+        document.querySelector("#filtersInfo .showMore").innerHTML = 'hide instructions';
+    } else {
+        document.getElementById("moreFilterInstructions").className = '';
+        document.querySelector("#filtersInfo .showMore").innerHTML = 'show instructions';
+    }
+}
+
+function addFilter() {
+    var filterName = document.getElementById("newFilterName").value;
+    var filterExpression = document.getElementById("newFilterExpression").value;
+    if (validateFilterData(filterName, filterExpression)) {        
+        filters.push(createNewFilter(filterName, filterExpression));
+        clearNewFilterForm();
+        addLastFilterInfo();
+    } else {
+        alert("Oops, filter creation error!");
+    }
+}
+
+function addLastFilterInfo() {
+    addFilterInfo(filters[filters.length - 1]);
+}
+
+function addFilterInfo(filter) {
+    var filtersContent = document.querySelector("#filtersInfo .content");
+    filtersContent.innerHTML += '<div id="filter-' + filter.position + '" class="filter" style="border-color: ' + filter.color + '">' +
+        '<div class="filter-header" style="background-color: ' + filter.color + '">' + filter.name + '</div>' +
+        '<div class="filter-contents">' +
+        '<div class="code">' + filter.expression + '</div>' +
+        '<a href="#" onclick="removeFilter(' + filter.position + ')"><span class="icon-remove"></span></a>' +
+        '<a id="moveFilter-' + filter.position + '" href="#" onclick="moveFilter(' + filter.position + ')"><span class="icon-target"></span></a>' +        
+        '<a id="toggleFilter-' + filter.position + '" href="#" onclick="toogleFilter(' + filter.position + ')"><span class="icon-checkbox-unchecked"></span></a>' +
+        '</div>' +
+        '</div>';
+}
+
+function removeFilter(filterIndex) {
+    if (confirm("Are you sure you want to remove this force field?")) {
+        filters.splice(filterIndex, 1);
+        var filterElement = document.getElementById("filter-" + filterIndex);
+        filterElement.parentNode.removeChild(filterElement);
+    }
+}
+
+function clearNewFilterForm() {
+    document.getElementById("newFilterName").value = '';
+    document.getElementById("newFilterExpression").value = '';
+}
+
+function validateFilterData(name, expression) {
+    var isValid = false;
+    if (name && expression) {
+        // TODO: check only supported data variables and operators are used
+        isValid = true;
+    }
+    return isValid;
+}
+
+function createNewFilter(name, expression) {
+    var filter = {
+        name: name,
+        expression: expression,
+        position: filters.length,
+        color: filterColors[filters.length],
+        matchData: function(data) {
+            return true;
+        }
+    };
+    return filter;
 }
 
 function genderAsString(gender) {
     var genders = {
-        'M': 'male',
-        'F': 'female',
-        'E': 'enterprise',
-        'U': 'unknown'
+        'M': 'Male',
+        'F': 'Female',
+        'E': 'Enterprise',
+        'U': 'Unknown'
     };
     return genders[gender];
 }
@@ -609,11 +697,6 @@ function ageAsString(age) {
     };
     return ages[age];    
 }
-
-
-var zipcode = null;
-var month = null;
-var analysisStarted = false;
 
 function selectZipcode() {
     var select = document.getElementById('zipcodeSelect');
@@ -703,6 +786,7 @@ function showTools() {
 function hideTools() {
     document.getElementById("tools").className = '';
     turnOffInspector();
+    turnOffFiltersInfo();    
 }
 
 init();

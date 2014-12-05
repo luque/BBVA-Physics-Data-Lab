@@ -38,23 +38,39 @@
       </div>
 
       <div id="info">
-        <p id="summary">
-          You are about to analyze card payments data from <a href="http://bbvaopen4u.com/content/innovachallenge-mx" target="_blank">BBVA Bancomer Innova Challenger MX API</a> that took place on <em><span id="monthInfo"></span></em> in <em><span id="zipcodeInfo"></span></em>.
-        </p>
-        <input id="start-button" type="button" onClick="toggleAnalysis()" value="&#xe60a; Start analysis"/>
-        <input id="pause-button" class="activated" type="button" onClick="toggleAnalysis()" value="&#xe60b; Stop analysis"/>        
-        <p>
-          The payments are depicted as 3D spheres that you...
-        </p>
-        <p>
-          Each of the spheres depicts a group of N payments in a particular
-          day from people with same gender and age group.
-        </p>
-        <p>
-          The sphere size is proporcional to the payment average and their color
-          represents the commercial category following this legend:
-        </p>
-      </div>      
+
+        <a href="#" id="start-button" onClick="toggleAnalysis()"><span class="icon-play"></span> Launch</a>
+        <a href="#" id="pause-button" onClick="toggleAnalysis()"><span class="icon-pause"></span> Pause</a>
+        
+        <div class="arrow_box" id="summary">
+          <p>
+            You are about to analyze card payments from <a href="http://bbvaopen4u.com/content/innovachallenge-mx" target="_blank">BBVA Data API</a> that took place on <em><span id="monthInfo"></span></em> at <em><span id="zipcodeInfo"></span></em>.
+          </p>
+          <p>
+            Payments are depicted as 3D spheres and they fall inside a transparent box at the pace they were carried out.
+          </p>
+          <p>
+            Each sphere corresponds with a group of 50 payments on an specific
+            day made by people in the same age group and gender.
+          </p>
+          <p>
+            The sphere radius is proportional to the average payment and its color
+            represents the commercial category following this legend:
+          </p>
+          <ul id="legend">
+            <li><span class="mx_barsandrestaurants color"></span> bars/restaurants</li>
+            <li><span class="mx_food color"></span> food</li>
+            <li><span class="mx_services color"></span> services</li>
+            <li><span class="mx_office color"></span> office</li>
+            <li><span class="mx_car color"></span> car</li>
+            <li><span class="mx_auto color"></span> auto</li>
+            <li><span class="mx_travel color"></span> travel</li>
+            <li><span class="mx_sport color"></span> sport</li>
+            <li><span class="mx_beauty color"></span> beauty</li>
+            <li><span class="mx_health color"></span> health</li>
+          </ul>
+        </div>      
+      </div>
     </div>
     
     <div id="tools">
@@ -62,11 +78,11 @@
         <li>
           <a id="inspectorBtn" class="tool-item" href="#" onclick="toggleInspector()">
             <span class="icon-target icon"></span><br/>
-            <span class="tool-text">Object Inspector</span>
+            <span class="tool-text">Object Inspector</span>            
           </a>
         </li>
         <li>
-          <a class="tool-item" href="#">
+          <a id="filterBtn" class="tool-item" href="#" onclick="toggleFiltersInfo()">
             <span class="icon-magnet icon"></span><br/>
             <span class="tool-text">Force Fields</span>
           </a>
@@ -90,18 +106,57 @@
     </div>
 
     <div id="inspectorInfo">
-      <span class="subtoolbar-header">Object Inspector</span>
+      <div class="subtoolbar-header">Object Inspector</div>
+      <p class="subtoolbar-info">You can point and click over any sphere to inspect the data it represents.</p>
       <div class="content"></div>
     </div>
+
+    <div id="filtersInfo">
+      <div class="subtoolbar-header">Force Fields</div>
+      <p>You can create several force fields (a.k.a. filters) to take apart the spheres matching given criteria out of the transparent box</p>
+      <a href="#" class="showMore" onclick="toggleMoreFilterInstructions()">show instructions</a>
+      <div id="moreFilterInstructions">
+        <p>You can use the following <em>data variables</em> in your filter expressions: <code>$date</code>, </code>$category</code>, <code>$num_payments</code>, <code>$avg_payment</code>, <code>$gender</code> and <code>$age_range</code>.</p>
+
+         <p>Filter expressions support the following <em>comparison operators</em>: <code>==</code> (equals to), <code>!=</code> (not equals to), <code>></code> (greater than), <code>>=</code> (greater than or equals to), <code><</code> (less than), <code><=</code> (less than or equals to); and the <em>logical operators</em>: <code>&&</code> (and), <code>||</code> (or) and <code>!</code> (not).</p>
+         <p>Some examples:</p>
+         
+         <dl>
+           <dt>Payments by men and average payment greater than or equals to 2,500:</dt><dd class="code">($male == 'M') && ($avg_payment >= 2500)</dd>
+         </dl>         
+       </div>
+
+       <div class="content">
+  
+        <div id="newFilter" class="filter">
+          <div class="filter-header">Add New Filter</div>
+          <div class="filter-contents">
+            <input type="text" id="newFilterName" placeholder="Give me a name"></input>
+            <textarea id="newFilterExpression" placeholder="Your filter expression here. E.g:"></textarea>
+            <a href="#" onclick="addFilter()"><span class="icon-add"></span></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
     
     <div id='lab'></div>
     
     <div id="dayInfo"></div>
 
+    <footer>      
+      &copy; 2014 by <a href="http://twitter.com/rafael_luque">@rafael_luque</a> for <a href="">BBVA Innova Challenge MX</a>.
+      <a href="https://twitter.com/share" class="twitter-share-button" data-text="Feel the data at your hands with BBVA Physics Data Lab" data-via="rafael_luque" data-hashtags="bbvainnovachallenge" data-size="medium">Tweet</a>      
+    </footer>
+    
     <script src="js/three.min.js"></script>
     <script src="js/navigation.js"></script>
     <script src="js/Oimo.js"></script>
     <script src="js/dataset/monterrey_tech.js"></script>
     <script src="js/lab.js"></script>
+    <script type="text/javascript">
+window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}})}(document,"script","twitter-wjs"));
+    </script>
 </body>
 </html>
