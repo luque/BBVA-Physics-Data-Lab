@@ -44,7 +44,7 @@
         
         <div class="arrow_box" id="summary">
           <p>
-            You are about to analyze card payments from <a href="http://bbvaopen4u.com/content/innovachallenge-mx" target="_blank">BBVA Data API</a> that took place on <em><span id="monthInfo"></span></em> at <em><span id="zipcodeInfo"></span></em>.
+            You are about to analyze card payments  that took place on <em><span id="monthInfo"></span></em> at <em><span id="zipcodeInfo"></span></em>.
           </p>
           <p>
             Payments are depicted as 3D spheres and they fall inside a transparent box at the pace they were carried out.
@@ -84,11 +84,11 @@
         <li>
           <a id="filterBtn" class="tool-item" href="#" onclick="toggleFiltersInfo()">
             <span class="icon-magnet icon"></span><br/>
-            <span class="tool-text">Force Fields</span>
+            <span class="tool-text">Magnetic Fields</span>
           </a>
         </li>
         <li>
-          <a class="tool-item" href="#">
+          <a id="statsCubeBtn" class="tool-item" href="#" onclick="toggleStatsCubeInfo()">
             <span class="icon-stats icon"></span><br/>
             <span class="tool-text">Stats Cube</span>
           </a>
@@ -112,11 +112,11 @@
     </div>
 
     <div id="filtersInfo">
-      <div class="subtoolbar-header">Force Fields</div>
-      <p>You can create several force fields (a.k.a. filters) to take apart the spheres matching given criteria out of the transparent box</p>
+      <div class="subtoolbar-header">Magnetic Fields</div>
+      <p>You can create several magnetic fields (a.k.a. filters) to take apart the spheres matching given criteria out of the transparent box</p>
       <a href="#" class="showMore" onclick="toggleMoreFilterInstructions()">show instructions</a>
       <div id="moreFilterInstructions">
-        <p>You can use the following <em>data variables</em> in your filter expressions: <code>$date</code>, </code>$category</code>, <code>$num_payments</code>, <code>$avg_payment</code>, <code>$gender</code> and <code>$age_range</code>.</p>
+        <p>You can use the following <em>data variables</em> in your filter expressions: <code>$date</code>, <code>$category</code>, <code>$num_payments</code>, <code>$avg_payment</code>, <code>$gender</code> and <code>$age_range</code>.</p>
 
          <p>Filter expressions support the following <em>comparison operators</em>: <code>==</code> (equals to), <code>!=</code> (not equals to), <code>></code> (greater than), <code>>=</code> (greater than or equals to), <code><</code> (less than), <code><=</code> (less than or equals to); and the <em>logical operators</em>: <code>&&</code> (and), <code>||</code> (or) and <code>!</code> (not).</p>
          <p>Some examples:</p>
@@ -153,6 +153,8 @@
     <script src="js/three.min.js"></script>
     <script src="js/navigation.js"></script>
     <script src="js/Oimo.js"></script>
+    <script src="js/Detector.js"></script>
+    <script src="js/helvetiker_regular.typeface.js"></script>        
     <script src="js/dataset/monterrey_tech.js"></script>
     <script src="js/lab.js"></script>
     <script type="text/javascript">
