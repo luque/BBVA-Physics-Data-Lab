@@ -49,9 +49,10 @@ h1 {
 }
 
 h2 {
-    position: absolute;    
-    top: 60px;
+    position: absolute;
+    top: 70px;
     left: 20px;
+    color: #33f;
     font-size: 1.5em;    
     font-style: italic;    
 }
@@ -110,7 +111,7 @@ footer {
 #info {
     position: absolute;
     left: 0;
-    top: 320px;
+    top: 280px;
     color: #333;
     opacity: 0;
     text-align: center;
@@ -190,6 +191,7 @@ footer {
 .mx_sport {  background-color: #2c66a4 }
 .mx_beauty { background-color: #ecc82c }
 .mx_health { background-color: #fffeef }
+.mx_fashion { background-color: #ff00ff }
 
 
 /* Buttons */

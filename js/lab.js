@@ -48,11 +48,12 @@ var analysisStarted = false;
 var datasets = {
     64700: 'monterrey_tech_dataset',
     44130: 'guadalajara_ccd_dataset',
-    '': 'cc_santafe_dataset'
+    11529: 'mexico_soumaya_museum_dataset'
 };
 var zipcodeAsString = {
-    64700: 'Instituto Tecnológico de Monterrey (64700)',
-    44130: 'Centro Comercial Guadalajara (44130)'
+    64700: 'Instituto Tecnológico de Monterrey (64700 zipcode)',
+    44130: 'Ciudad Creativa Digital de Guadalajara (44130 zipcode)',
+    11529: 'Museo Soumaya de Mexico DF (11529 zipcode)'
 };
 var monthAsString = ['Nov 2013', 'Dic 2013', 'Jan 2014', 'Feb 2014', 'Mar 2014', 'Apr 2014'];
 var textureColors = {
@@ -65,7 +66,8 @@ var textureColors = {
     'sph.mx_travel': '#ebef4e',
     'sph.mx_sport': '#2c66a4',
     'sph.mx_beauty': '#ecc82c',
-    'sph.mx_health':'#fffeef'
+    'sph.mx_health':'#fffeef',
+    'sph.mx_fashion':'#ff00ff'    
 };
 var filterColors = [ '#633', '#363', '#336' ];
 var filters = {};
@@ -73,7 +75,7 @@ var defaultFilterEnabled = true;
 var defaultFilterPositionX = 0;
 var filterIdMoving = -1;
 var filterIdCounter = 0;
-var paymentsPerSphere = 100;
+var paymentsPerSphere = 250;
 var paymentBucket = 500;
 var radioPerPaymentBucket = 20;
 var maxRadius = 150;
@@ -188,6 +190,7 @@ function init() {
 	mats['sph.mx_sport'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_sport'), name:'sph.mx_sport' } );            
 	mats['sph.mx_beauty'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_beauty'), name:'sph.mx_beauty' } );            
 	mats['sph.mx_health'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_health'), name:'sph.mx_health' } );            
+	mats['sph.mx_fashion'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_fashion'), name:'sph.mx_fashion' } );            
 
 
         mats['box'] = new THREE.MeshPhongMaterial( { map: basicTexture(1), name:'box' } );
@@ -203,7 +206,10 @@ function init() {
 	mats['sph.mx_travel'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_travel'), name:'sph.mx_travel' } );            
         mats['sph.mx_sport'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_sport'), name:'sph.mx_sport' } );            
 	mats['sph.mx_beauty'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_beauty'), name:'sph.mx_beauty' } );            
-	mats['sph.mx_health'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_health'), name:'sph.mx_health' } );            
+	mats['sph.mx_health'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_health'), name:'sph.mx_health' } );
+	mats['sph.mx_fashion'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_fashion'), name:'sph.mx_fashion' } );            
+
+        
         mats['box'] = new THREE.MeshBasicMaterial( { map: basicTexture(1), name:'box' } );
         mats['filter'] = new THR
         EE.MeshLambertMaterial( { color: 0x3D4143, transparent:true, opacity:0.6 } );            
@@ -455,7 +461,7 @@ function updateOimoPhysics() {
         }
         
         // reset position
-        if (mesh.position.y < -100) {
+        if (mesh.position.y < -500) {
             fallBodyFromSky(body);
         }
 
@@ -624,7 +630,7 @@ function createFilter() {
             enableFilter(filter.id);
         }
     } else {
-        alert("Oops, filter creation error!");
+        alert("Oops, filter creation error!. Name and expression are mandatory fields.");
     }
 }
 
@@ -714,9 +720,9 @@ function addFilterInfo(filter) {
         '<div class="filter-header" style="background-color: ' + filter.color + '">' + filter.name + '</div>' +
         '<div class="filter-contents">' +
         '<div class="code">' + filter.expression + '</div>' +
-        '<a href="#" onclick="removeFilter(' + filter.id + ')"><span class="icon-remove"></span></a>' +
-        '<a id="toggleFilterMoving-' + filter.id + '" href="#" onclick="toggleFilterMoving(' + filter.id + ')"><span class="icon-target"></span></a>' +        
-        '<a id="toggleFilter-' + filter.id + '" href="#" onclick="toggleFilter(' + filter.id + ')"><span class="' + (filter.enabled ? 'icon-checkbox-checked' : 'icon-checkbox-unchecked') + '"></span></a>' +
+        '<a href="#" onclick="removeFilter(' + filter.id + ')" title="remove"><span class="icon-remove"></span></a>' +
+        '<a id="toggleFilterMoving-' + filter.id + '" href="#" onclick="toggleFilterMoving(' + filter.id + ')" title="move the field over the 3D ground"><span class="icon-target"></span></a>' +        
+        '<a id="toggleFilter-' + filter.id + '" href="#" onclick="toggleFilter(' + filter.id + ')" title="toggle filter"><span class="' + (filter.enabled ? 'icon-checkbox-checked' : 'icon-checkbox-unchecked') + '"></span></a>' +
         '</div>' +
         '</div>';
 }
