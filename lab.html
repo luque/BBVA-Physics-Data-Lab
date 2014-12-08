@@ -19,8 +19,8 @@
         <select id="zipcodeSelect" onChange="selectZipcode()">
           <option value="">Choose one zip...</option>          
           <option value="64700">Instituto Tecnológico de Monterrey</option>
-          <option value="44130">C.C. Santafé de Guadalajara</option>          
-          <option value="">Aeropuerto Internacional de Mexido DF</option>
+          <option value="44130">Ciudad Creativa Digital de Guadalajara</option>          
+          <option value="11529">Museo Soumaya de Mexido DF</option>
         </select>
       </div>
 
@@ -31,9 +31,8 @@
           <input id="button-period-1" type="button" value="Dec 2013" onClick="selectPeriod(1)">
           <input id="button-period-2" type="button" value="Jan 2014" onClick="selectPeriod(2)"><br/>
           <input id="button-period-3" type="button" value="Feb 2014" onClick="selectPeriod(3)">
-          <input id="button-period-4" type="button" value="Feb 2014" onClick="selectPeriod(4)">
-          <input id="button-period-5" type="button" value="Mar 2014" onClick="selectPeriod(5)"><br/>
-          <input id="button-period-6" type="button" value="Apr 2014" onClick="selectPeriod(6)">
+          <input id="button-period-4" type="button" value="Mar 2014" onClick="selectPeriod(4)">
+          <input id="button-period-5" type="button" value="Apr 2014" onClick="selectPeriod(5)">
         </div>
       </div>
 
@@ -50,7 +49,7 @@
             Payments are depicted as 3D spheres and they fall inside a transparent box at the pace they were carried out.
           </p>
           <p>
-            Each sphere corresponds with a group of 50 payments on an specific
+            Each sphere corresponds with a group of upto 150 payments on an specific
             day made by people in the same age group and gender.
           </p>
           <p>
@@ -68,6 +67,7 @@
             <li><span class="mx_sport color"></span> sport</li>
             <li><span class="mx_beauty color"></span> beauty</li>
             <li><span class="mx_health color"></span> health</li>
+            <li><span class="mx_fashion color"></span> fashion</li>            
           </ul>
         </div>      
       </div>
@@ -119,11 +119,14 @@
         <p>You can use the following <em>data variables</em> in your filter expressions: <code>$date</code>, <code>$category</code>, <code>$num_payments</code>, <code>$avg_payment</code>, <code>$gender</code> and <code>$age_range</code>.</p>
 
          <p>Filter expressions support the following <em>comparison operators</em>: <code>==</code> (equals to), <code>!=</code> (not equals to), <code>></code> (greater than), <code>>=</code> (greater than or equals to), <code><</code> (less than), <code><=</code> (less than or equals to); and the <em>logical operators</em>: <code>&&</code> (and), <code>||</code> (or) and <code>!</code> (not).</p>
-         <p>Some examples:</p>
+         <p>Examples:</p>
          
          <dl>
            <dt>Payments by men and average payment greater than or equals to 2,500:</dt><dd class="code">($male == 'M') && ($avg_payment >= 2500)</dd>
-         </dl>         
+                                                                                                                                                                                                                                             <dt>Payments in mx_office category between 20131101 and 20131110:</dt>
+                                                                                                                                                                                                                                             <dd><code>($category == 'mx_office') && ($date >= '20131101') && ($date <= 20131110')</code></dd>
+         </dl>
+</p>
        </div>
 
        <div class="content">
@@ -133,7 +136,7 @@
           <div class="filter-contents">
             <input type="text" id="newFilterName" placeholder="Give me a name"></input>
             <textarea id="newFilterExpression" placeholder="Your filter expression here. E.g:"></textarea>
-            <a href="#" onclick="createFilter()"><span class="icon-add"></span></a>
+            <a href="#" onclick="createFilter()" title="Add a new filter"><span class="icon-add"></span></a>
           </div>
         </div>
 
@@ -147,7 +150,7 @@
 
     <footer>      
       &copy; 2014 by <a href="http://twitter.com/rafael_luque">@rafael_luque</a> for <a href="">BBVA Innova Challenge MX</a>.
-      <a href="https://twitter.com/share" class="twitter-share-button" data-text="Feel the data at your hands with BBVA Physics Data Lab" data-via="rafael_luque" data-hashtags="bbvainnovachallenge" data-size="medium">Tweet</a>      
+      <a href="https://twitter.com/share" class="twitter-share-button" data-text="Feel the data at your hands with BBVA Physics Data Lab" data-via="rafael_luque" data-hashtags="bbvainnovachallenge" data-size="medium" data-url="http://luque.github.io/BBVA-Physics-Data-Lab/lab.html">Tweet</a>      
     </footer>
     
     <script src="js/three.min.js"></script>
@@ -156,6 +159,8 @@
     <script src="js/Detector.js"></script>
     <script src="js/helvetiker_regular.typeface.js"></script>        
     <script src="js/dataset/monterrey_tech.js"></script>
+    <script src="js/dataset/guadalajara_ccd.js"></script>
+    <script src="js/dataset/mexico_soumaya_museum.js"></script>    
     <script src="js/lab.js"></script>
     <script type="text/javascript">
 window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}})}(document,"script","twitter-wjs"));
