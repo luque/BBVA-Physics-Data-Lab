@@ -1,3 +1,5 @@
+if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
+
 // Three.js vars
 var camera, scene, light, renderer, container, projector, mouseVector, spheres, groundContents, groundMesh, wall;
 var meshs = [];
@@ -74,6 +76,7 @@ var filterIdCounter = 0;
 var paymentsPerSphere = 100;
 var paymentBucket = 500;
 var radioPerPaymentBucket = 20;
+var maxRadius = 150;
 var allLanded = false;
 var yGapBetweenDays = 250;
 var daysOfMonth = [
@@ -85,7 +88,12 @@ var daysOfMonth = [
     30  // 5 -> 04/2014
 ];
 var currentDate = 0;
-var inspectorActivated = false, filterActivated = false, showMoreFilterInstructions = false;
+var inspectorActivated = false, filterActivated = false, showMoreFilterInstructions = false, statsCubeActivated = false;
+var statsCube;
+var vertices = {};
+var cubeJoints = [];
+
+
 
 function init() {
     var n = navigator.userAgent;
@@ -345,13 +353,7 @@ function populateWorld() {
                 for (var j = 0; j < numBodiesPerCube; j++) {
                     x = -100 + Math.random()*200;
                     z = -100 + Math.random()*200;
-		    p = Math.floor(cube.avg / paymentBucket);
-                    if (p < 5) {
-                        w = (p + 1) * radioPerPaymentBucket;
-                    } else {
-			w= p* radioPerPaymentBucket / 5;
-                    }
-                    
+		    w = Math.min((1 + Math.floor(cube.avg / paymentBucket)) * radioPerPaymentBucket, maxRadius);                    
                     var numPayments = (((j + 1) * paymentsPerSphere) > cube.num_payments) ?
                         cube.num_payments % paymentsPerSphere :
                         paymentsPerSphere;
@@ -777,6 +779,20 @@ function createNewFilter(name, expression) {
     return filter;
 }
 
+function toggleStatsCubeInfo() {
+    statsCubeActivated = !statsCubeActivated;
+    if (statsCubeActivated) {
+        document.getElementById("statsCubeBtn").className = "activated";
+        statsCube = buildCube([-500, 0, -500], ['gender', 'age', 'avg payment'], 1100);
+        scene.add(statsCube);
+        enableStatsCube();
+    } else {
+        document.getElementById("statsCubeBtn").className = "";
+        scene.remove(statsCube);
+        removeStatsCube();
+    }
+}
+
 function genderAsString(gender) {
     var genders = {
         'M': 'Male',
@@ -891,6 +907,175 @@ function hideTools() {
     turnOffInspector();
     turnOffFiltersInfo();    
 }
+
+function buildCube(position, labels, length) {
+    var axes = buildCubeAxes(position, length);
+    var texts = buildCubeLabels(position, labels, length);    
+    buildCubeVertices();
+    
+    cubeGroup = new THREE.Group();    
+    cubeGroup.add(axes);
+    cubeGroup.add(texts);
+        
+    return cubeGroup;
+}
+
+function buildCubeAxes(position, length) {
+    var axes = new THREE.Object3D();
+    axes.add(buildAxis(new THREE.Vector3( 0, 0, 0 ), new THREE.Vector3( length, 0, 0 ), 0x339933, false)); // +X
+    axes.add(buildAxis( new THREE.Vector3( 0, 0, 0 ), new THREE.Vector3( 0, length, 0 ), 0x339933, false)); // +Y
+    axes.add( buildAxis( new THREE.Vector3( 0, 0, 0 ), new THREE.Vector3( 0, 0, length ), 0x339933, false)); // +Z
+    axes.translateX(position[0]);
+    axes.translateY(position[1]);    
+    axes.translateZ(position[2]);
+    return axes;
+}
+
+function buildCubeLabels(position, labels, length) {
+    var texts = new THREE.Object3D();   
+    texts.add(buildAxisText(labels[0], 0x339933, [length, 0, 0], [0, 0, 0]));
+    texts.add(buildAxisText(labels[1], 0x339933, [0, length, 0], [0, 0, Math.PI/2]));
+    var labelZ = buildAxisText(labels[2], 0x339933, [0, 0, length], [0, Math.PI/2, 0]);
+    texts.add(labelZ);
+
+    labelZ.geometry.computeBoundingBox();
+    labelZBoundingBox = labelZ.geometry.boundingBox;
+    var labelZWidth = (labelZBoundingBox.max.x - labelZBoundingBox.min.x);
+    labelZ.position.z += labelZWidth;
+    
+    
+    texts.translateX(position[0]);
+    texts.translateY(position[1]);    
+    texts.translateZ(position[2]);    
+    return texts;
+}
+
+function buildAxisText(text, colorHex, position, rotation) {
+    var textMaterial = new THREE.MeshBasicMaterial({ color: colorHex, overdraw: 0.5 });
+    var text3d = new THREE.TextGeometry(text, {
+	size: 40,
+	height: 10,
+	curveSegments: 2,
+	font: "helvetiker"
+    });
+        
+    var textMesh = new THREE.Mesh(text3d, textMaterial);
+        
+    textMesh.position.x = position[0];
+    textMesh.position.y = position[1];
+    textMesh.position.z = position[2];
+    
+    textMesh.rotation.x = rotation[0];
+    textMesh.rotation.y = rotation[1];
+    textMesh.rotation.z = rotation[2];    
+    
+    return textMesh;
+}
+    
+   
+function buildAxis(src, dst, colorHex, dashed, text) {
+    var geom = new THREE.Geometry(), mat;
+
+    if(dashed) {
+        mat = new THREE.LineDashedMaterial({ linewidth: 3, color: colorHex, dashSize: 3, gapSize: 3 });
+    } else {
+        mat = new THREE.LineBasicMaterial({ linewidth: 3, color: colorHex });
+    }
+    
+    geom.vertices.push( src.clone() );
+    geom.vertices.push( dst.clone() );
+    geom.computeLineDistances(); // This one is SUPER important, otherwise dashed lines will appear as simple plain lines
+    
+    var axis = new THREE.Line( geom, mat, THREE.LinePieces );
+    
+    return axis;
+}
+
+function buildCubeVertices() {
+    vertices = {};
+    var stepX = 1000/3;        
+    var i = bodys.length;
+    var body, verticeX, verticeKey;
+    var maxAvg = getMaxAvgPaymentNotFiltered();
+    while (i--) {
+        body = bodys[i];
+        if (body && body.metadata.isData && (body.body.jointLink == null)) {
+            if ((body.metadata.gender != 'U') &&
+                (body.metadata.gender != 'E') &&
+                (body.metadata.age != 'U')) {
+
+                switch (body.metadata.gender) {
+                    case 'M': verticeX = stepX - 500; break;
+                    case 'F': verticeX = 2 * stepX - 500; break;
+                }
+                verticeY = (1000 / 8) * (parseInt(body.metadata.age) + 1);
+                verticeZ = (1000 * body.metadata.avg / maxAvg) - 500;
+                verticeKey = body.metadata.gender + '-' + body.metadata.age + '-' + body.metadata.avg;
+                vertice = new OIMO.Body({
+                    name: verticeKey,
+                    size: [1, 1, 1],
+                    pos: [verticeX, verticeY, verticeZ],
+                    rot: [0,0,0],
+                    world: world,
+                    move: false
+                });
+                vertices[verticeKey] = vertice;
+            }
+        }
+    }    
+}
+
+function getMaxAvgPaymentNotFiltered() {
+    var body, maxAvgPaymentNotFiltered = 0;    
+    var i = bodys.length;
+    while (i--) {
+        body = bodys[i];
+        if (body && body.metadata.isData && (body.body.jointLink == null)) {
+            if (body.metadata.avg > maxAvgPaymentNotFiltered) {
+                maxAvgPaymentNotFiltered = body.metadata.avg;
+            }
+        }
+    }
+    return maxAvgPaymentNotFiltered;
+}
+
+
+function removeStatsCube() {
+    var joint;
+    for (var i = 0; i < cubeJoints.length; i++) {
+        joint = cubeJoints[i];
+        world.removeJoint(joint.joint);
+    }
+    for (var key in vertices) {
+        vertices[key].remove();
+    }
+    vertices = {};
+    cubeJoints = [];
+}
+
+function enableStatsCube() {
+    var i = bodys.length;
+    var body, verticeKey;    
+    while (i--) {
+        body = bodys[i];
+        if (body && body.metadata.isData && (body.body.jointLink == null)) {
+            verticeKey = body.metadata.gender + "-" + body.metadata.age + "-" + body.metadata.avg;
+            if (vertices[verticeKey] != undefined) {
+                cubeJoints[cubeJoints.length] = new OIMO.Link({
+                    type: 'jointBall',
+                    body1: verticeKey,
+                    body2: 'sphere-' + i,
+                    pos1: [0, 0, 0],
+                    pos2: [0, 0, 0],
+                    min:0,
+                    max:100,
+                    collision:true,
+                    world:world });                
+            }
+        }
+    }    
+}
+
 
 init();
 loop();
