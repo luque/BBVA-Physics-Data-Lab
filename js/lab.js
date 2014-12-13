@@ -67,7 +67,8 @@ var textureColors = {
     'sph.mx_sport': '#2c66a4',
     'sph.mx_beauty': '#ecc82c',
     'sph.mx_health':'#fffeef',
-    'sph.mx_fashion':'#ff00ff'    
+    'sph.mx_fashion':'#ff00ff',
+    'sph.mx_leisure':'#ff0033'        
 };
 var filterColors = [ '#633', '#363', '#336' ];
 var filters = {};
@@ -77,8 +78,8 @@ var filterIdMoving = -1;
 var filterIdCounter = 0;
 var paymentsPerSphere = 250;
 var paymentBucket = 500;
-var radioPerPaymentBucket = 20;
-var maxRadius = 150;
+var radioPerPaymentBucket = 15;
+var maxRadius = 100;
 var allLanded = false;
 var yGapBetweenDays = 250;
 var daysOfMonth = [
@@ -191,7 +192,7 @@ function init() {
 	mats['sph.mx_beauty'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_beauty'), name:'sph.mx_beauty' } );            
 	mats['sph.mx_health'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_health'), name:'sph.mx_health' } );            
 	mats['sph.mx_fashion'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_fashion'), name:'sph.mx_fashion' } );            
-
+	mats['sph.mx_leisure'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_leisure'), name:'sph.mx_leisure' } );            
 
         mats['box'] = new THREE.MeshPhongMaterial( { map: basicTexture(1), name:'box' } );
         mats['filter'] = new THREE.MeshLambertMaterial( { color: 0x3D4143, transparent: true, opacity: 0.8 } );            
@@ -207,7 +208,8 @@ function init() {
         mats['sph.mx_sport'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_sport'), name:'sph.mx_sport' } );            
 	mats['sph.mx_beauty'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_beauty'), name:'sph.mx_beauty' } );            
 	mats['sph.mx_health'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_health'), name:'sph.mx_health' } );
-	mats['sph.mx_fashion'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_fashion'), name:'sph.mx_fashion' } );            
+	mats['sph.mx_fashion'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_fashion'), name:'sph.mx_fashion' } );
+	mats['sph.mx_leisure'] = new THREE.MeshPhongMaterial( { map: basicTexture('sph.mx_leisure'), name:'sph.mx_leisure' } );                    
 
         
         mats['box'] = new THREE.MeshBasicMaterial( { map: basicTexture(1), name:'box' } );
@@ -320,10 +322,10 @@ function populateWorld() {
     addGroundToWorld();
     
     // add walls
-    var wall1 = new OIMO.Body({size:[1100, 5000, 50], pos:[0,2500,525], world:world, config: config});
-    var wall2 = new OIMO.Body({size:[1100, 5000, 50], pos:[0,2500,-525], world:world, config: config});               
-    var wall3 = new OIMO.Body({size:[50, 5000, 1000], pos:[525,2500,0], world:world, config: config});
-    var wall4 = new OIMO.Body({size:[50, 5000, 1000], pos:[-525,2500,0], world:world, config: config});               
+    var wall1 = new OIMO.Body({size:[1100, 10000, 50], pos:[0,5000,525], world:world, config: config});
+    var wall2 = new OIMO.Body({size:[1100, 10000, 50], pos:[0,5000,-525], world:world, config: config});               
+    var wall3 = new OIMO.Body({size:[50, 10000, 1000], pos:[525,5000,0], world:world, config: config});
+    var wall4 = new OIMO.Body({size:[50, 10000, 1000], pos:[-525,5000,0], world:world, config: config});               
     
     // dataset by month
     var dataset = getCurrentDataset();
@@ -1082,6 +1084,26 @@ function enableStatsCube() {
     }    
 }
 
+function setupSampleFilters() {
+    var sampleFilters = [
+        {
+            name: "Men payments",
+            expression: "$gender == 'M'"
+        },
+        {
+            name: "Age group 3 (36-45 years)",
+            expression: "$age_range == 3"
+        }
+    ];
+    var filter;
+    for (var i in sampleFilters) {
+        filter = createNewFilter(sampleFilters[i].name, sampleFilters[i].expression);
+        filter.enabled = false;
+        filters[filter.id] = filter;
+        addFilterInfo(filter);      
+    }    
+}
 
 init();
 loop();
+setupSampleFilters();
